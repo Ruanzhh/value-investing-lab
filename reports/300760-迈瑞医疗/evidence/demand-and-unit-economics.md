@@ -6,7 +6,7 @@
 
 
 性质：补公开材料硬缺口；**不是**用户本人原话授权的独立复核；买点仍不启用；门槛常数不改。
-对照正式卡：合理价 **206.4** / 闸价 **123.9** / exit_pe **22** / NI3 **105.05** / 净现金 **15.68**（[calc_out.json](../valuation/calc_out.json)）。
+对照正式卡：合理价 **206.4** / 合理买入点 **123.9** / exit_pe **22** / NI3 **105.05** / 净现金 **15.68**（[calc_out.json](../valuation/calc_out.json)）。
 注：同目录 [industry-estimates.md](industry-estimates.md) 已收录国信配置推算，本轮只作低置信度交叉复核，**不写入模型改数**。
 
 

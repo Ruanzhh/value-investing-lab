@@ -146,7 +146,7 @@ out = {
         "chg_fv_pct": round((fv / prior_fv - 1) * 100, 1),
         "chg_TR_pct": round((gate_with_div / prior_tr - 1) * 100, 1),
         "chg_ex_pct": round((gate_ex_div / prior_ex - 1) * 100, 1),
-        "reason": "退出PE主报由历史剔谷中位21.8改为判断取值带内下沿20（SIMPLE-FLOW §4 2026-11-06）；NI3/股本/haircut/hurdle未改。相对改前一次闸价约−7%/−8%（<15%）。",
+        "reason": "退出PE主报由历史剔谷中位21.8改为判断取值带内下沿20（SIMPLE-FLOW §4 2026-11-06）；NI3/股本/haircut/hurdle未改。相对改前一次合理买入点约−7%/−8%（<15%）。",
     },
     "vs_old_20261105": {
         "old_fv_range": [5.9, 6.3],

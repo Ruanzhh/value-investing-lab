@@ -92,7 +92,7 @@ sens["net_margin"] = sens["NI3"]
 old_gate = 89.3
 gate_chg = round((b20 / old_gate - 1) * 100, 1)
 
-# 翻倍交叉：从现价 / 从闸价，三年后 15/20/25×
+# 翻倍交叉：从现价 / 从合理买入点，三年后 15/20/25×
 def flip(entry, mult):
     exit_px = fv_pe(NI3, mult)
     return round(((exit_px + n * DPS) / entry) , 3)

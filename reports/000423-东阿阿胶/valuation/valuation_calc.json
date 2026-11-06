@@ -117,7 +117,7 @@
     "new_exit_pe": 22,
     "new_fv3_pe_only": 67.8,
     "new_b20_research": 41.32,
-    "change_one_liner": "退出PE由中位20.11改为生意判断22；FV3 61.97→67.80，研究用闸价38.05→41.32；仍只走PE轨；买点未启用；independent_signoff=false"
+    "change_one_liner": "退出PE由中位20.11改为生意判断22；FV3 61.97→67.80，研究用合理买入点38.05→41.32；仍只走PE轨；买点未启用；independent_signoff=false"
   },
   "snapshots": [
     {

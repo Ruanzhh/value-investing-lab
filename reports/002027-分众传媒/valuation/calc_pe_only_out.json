@@ -110,7 +110,7 @@
     "chg_fv_pct": -8.2,
     "chg_TR_pct": -7.0,
     "chg_ex_pct": -8.2,
-    "reason": "退出PE主报由历史剔谷中位21.8改为判断取值带内下沿20（SIMPLE-FLOW §4 2026-11-06）；NI3/股本/haircut/hurdle未改。相对改前一次闸价约−7%/−8%（<15%）。"
+    "reason": "退出PE主报由历史剔谷中位21.8改为判断取值带内下沿20（SIMPLE-FLOW §4 2026-11-06）；NI3/股本/haircut/hurdle未改。相对改前一次合理买入点约−7%/−8%（<15%）。"
   },
   "vs_old_20261105": {
     "old_fv_range": [
