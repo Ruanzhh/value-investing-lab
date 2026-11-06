@@ -1,44 +1,38 @@
 # 价值投资实验室
 
-## English
+这里分享价值投资的思考与公司研究。每家公司都有一篇可以独立阅读和分享的报告：先说明核心判断，再解释生意、证据、估值假设和可能推翻结论的风险。
 
-This is a public notebook for a value-investing way of thinking and for AI-written equity research. It is built for people and for AI agents: anything in this repository may be read, and anyone may open an issue or send a pull request. Gate prices copied from the reports are research figures. They are not instructions to buy or sell.
-
-## 这是什么
-
-这里分享价值投资（value investing）的看法，以及 AI 写出的公司研究报告。仓库按 AI Agent 可直接阅读的方式组织：规则在 `AGENTS.md`，研报在 `reports/`，估值技能在 `skills/a-share-deep-valuation/`。
-
-任何人、任何 agent 都可以读完全部公开内容，也可以开 issue 纠错、补充证伪信号、提议新公司，或用 pull request 改内容。
+研究由 AI 辅助完成。阅读版依据仓内已有报告整理；完整研究、结论卡和计算底稿保留供核查。阅读版不是新一轮事实核验，也不随行情自动更新。
 
 ## 怎么参与
 
-- 读：从下表进每家的摘要，再进研报原文。
+- 读：从下表选择公司的阅读版；需要验证数据和计算时，再打开完整研究与底稿。
 - 提问和纠错：用 [Issue 表单](https://github.com/ruanzh6/value-investing-lab/issues/new/choose)。请写公司代码、引用的文件路径、证据链接。只问「该不该买 / 该不该卖」的 issue 不会受理。
 - 改内容：走 pull request。不要在 PR 里夹带未披露的内部硬数、个人持仓或未审草稿。
 
-## 十二家最新研报
+## 十二家公司研究
 
-数字以各目录 `decision_card.md` 为准，摘要页只照抄、不另算。
+研究日期均为 **2026-11-06**，各页另标明报告所用股价的日期或口径。价格与状态以现行结论卡为准；“约三年后合理价”不是今天的价值，“研究闸价”不是买卖指令。
 
-| 代码 | 公司 | 摘要 | 研报 |
-|------|------|------|------|
-| 300750 | 宁德时代 | [摘要](reports/300750-ningde-shidai/README.md) | [研报](reports/300750-ningde-shidai/research_report.md) |
-| 600519 | 贵州茅台 | [摘要](reports/600519-guizhou-maotai/README.md) | [研报](reports/600519-guizhou-maotai/research_report.md) |
-| 000333 | 美的集团 | [摘要](reports/000333-meidi-jituan/README.md) | [研报](reports/000333-meidi-jituan/research_report.md) |
-| 600690 | 海尔智家 | [摘要](reports/600690-haier-zhijia/README.md) | [研报](reports/600690-haier-zhijia/research_report.md) |
-| 002027 | 分众传媒 | [摘要](reports/002027-fenzhong-chuanmei/README.md) | [研报](reports/002027-fenzhong-chuanmei/research_report.md) |
-| 300760 | 迈瑞医疗 | [摘要](reports/300760-mairui-yiliao/README.md) | [研报](reports/300760-mairui-yiliao/research_report.md) |
-| 000423 | 东阿阿胶 | [摘要](reports/000423-donge-ejiao/README.md) | [研报](reports/000423-donge-ejiao/research_report.md) |
-| 600036 | 招商银行 | [摘要](reports/600036-zhaoshang-yinhang/README.md) | [研报](reports/600036-zhaoshang-yinhang/research_report.md) |
-| 002415 | 海康威视 | [摘要](reports/002415-haikang-weishi/README.md) | [研报](reports/002415-haikang-weishi/research_report.md) |
-| 601318 | 中国平安 | [摘要](reports/601318-zhongguo-pingan/README.md) | [研报](reports/601318-zhongguo-pingan/research_report.md) |
-| 600660 | 福耀玻璃 | [摘要](reports/600660-fuyao-boli/README.md) | [研报](reports/600660-fuyao-boli/research_report.md) |
-| 000596 | 古井贡酒 | [摘要](reports/000596-gujing-gongjiu/README.md) | [研报](reports/000596-gujing-gongjiu/research_report.md) |
+| 公司 | 核心问题 | 阅读版 | 完整研究与底稿入口 |
+|---|---|---|---|
+| 宁德时代（300750） | 增长之外，多少利润能留给股东 | [阅读与分享](reports/300750-ningde-shidai/README.md) | [完整研究](reports/300750-ningde-shidai/research_report.md) |
+| 贵州茅台（600519） | 品牌优势与渠道承受力 | [阅读与分享](reports/600519-guizhou-maotai/README.md) | [完整研究](reports/600519-guizhou-maotai/research_report.md) |
+| 美的集团（000333） | 扣非利润与现金揭示的经营压力 | [阅读与分享](reports/000333-meidi-jituan/README.md) | [完整研究](reports/000333-meidi-jituan/research_report.md) |
+| 海尔智家（600690） | 低于研究闸价，仍需看清海外利润 | [阅读与分享](reports/600690-haier-zhijia/README.md) | [完整研究](reports/600690-haier-zhijia/research_report.md) |
+| 分众传媒（002027） | 点位网络、租金与价格约束 | [阅读与分享](reports/002027-fenzhong-chuanmei/README.md) | [完整研究](reports/002027-fenzhong-chuanmei/research_report.md) |
+| 迈瑞医疗（300760） | 现金质量与需求修复 | [阅读与分享](reports/300760-mairui-yiliao/README.md) | [完整研究](reports/300760-mairui-yiliao/research_report.md) |
+| 东阿阿胶（000423） | 用回款验证增长 | [阅读与分享](reports/000423-donge-ejiao/README.md) | [完整研究](reports/000423-donge-ejiao/research_report.md) |
+| 招商银行（600036） | 低成本存款与信用成本 | [阅读与分享](reports/600036-zhaoshang-yinhang/README.md) | [完整研究](reports/600036-zhaoshang-yinhang/research_report.md) |
+| 海康威视（002415） | 高毛利、库存与现金回收 | [阅读与分享](reports/002415-haikang-weishi/README.md) | [完整研究](reports/002415-haikang-weishi/research_report.md) |
+| 中国平安（601318） | 账面利润与可分配现金的距离 | [阅读与分享](reports/601318-zhongguo-pingan/README.md) | [完整研究](reports/601318-zhongguo-pingan/research_report.md) |
+| 福耀玻璃（600660） | 制造优势与资本投入 | [阅读与分享](reports/600660-fuyao-boli/README.md) | [完整研究](reports/600660-fuyao-boli/research_report.md) |
+| 古井贡酒（000596） | 去库存后费用能否降下来 | [阅读与分享](reports/000596-gujing-gongjiu/README.md) | [完整研究](reports/000596-gujing-gongjiu/research_report.md) |
 
 ## 目录
 
 - `philosophy/` — 理念文章。首版只有骨架，正文待补。
-- `reports/<代码-公司拼音>/` — 每家一份摘要，加上该次研究的原件。
+- `reports/<代码-公司拼音>/` — 每家一篇阅读版，附结论卡、完整研究和计算／复核底稿。
 - `skills/a-share-deep-valuation/` — 当前使用的深估技能。
 - `AGENTS.md` — 给 agent 的阅读和改稿规则。
 - `.github/` — Issue 表单和 pull request 模板。

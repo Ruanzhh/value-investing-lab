@@ -1,5 +1,7 @@
 # 福耀玻璃（600660.SH / 3606.HK）完整深研报告 · PE 轨 · 2026-11-06（Asia/Shanghai）
 
+> 阅读与分享请先看[公司阅读版](README.md)。本文件保留完整研究、来源与修订过程；历史参数不代表现行结论，价格口径与买点状态以[当前结论卡](decision_card.md)为准。
+
 个人研究，非投资建议。数字唯一来源：本目录 `drill_tree.md`、`calc_pe_only_out.json`、年报原文；行业份额/五力细节交叉 `../（未发布的更早工作目录）`；返利与 Capex 拆分交叉 `../（未发布的更早工作目录）/rebates.md`、`capex_split.md`。估值只报基准线。
 
 年报链接：[2025年报](https://static.cninfo.com.cn/finalpage/2026-03-18/1225014577.PDF) · [2026三季报](https://www.fuyaogroup.com/upfiles/investor/202610/1792488108164.pdf) · [2024年报](https://www.fuyaogroup.com/upfiles/investor/202503/1742298281488.pdf)
