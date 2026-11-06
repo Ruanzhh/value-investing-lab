@@ -1,5 +1,5 @@
 name: 数据纠错
-description: 报告或结论卡里的事实、口径或计算和公开证据不一致
+description: 主报告或附录里的事实、口径或计算和公开证据不一致
 title: "[数据纠错] "
 body:
   - type: markdown
@@ -20,7 +20,7 @@ body:
     attributes:
       label: 引用文件路径
       description: 仓库内相对路径，指向你认为写错的文件。
-      placeholder: reports/600519-guizhou-maotai/decision_card.md
+      placeholder: reports/600519-guizhou-maotai/README.md
     validations:
       required: true
   - type: textarea

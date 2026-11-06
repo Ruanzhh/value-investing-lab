@@ -19,8 +19,8 @@ body:
     id: path
     attributes:
       label: 引用文件路径
-      description: 被这个信号挑战的研报、结论卡或技能规则路径。
-      placeholder: reports/000333-meidi-jituan/research_report.md
+      description: 被这个信号挑战的主报告、证据附录、估值附录或技能规则路径。
+      placeholder: reports/000333-meidi-jituan/README.md
     validations:
       required: true
   - type: textarea

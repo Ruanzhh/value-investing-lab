@@ -1,3 +1,0 @@
-review_packet_readonly/decision_card.md
-review_packet_readonly/drill_tree.md
-review_packet_readonly/valuation_calc.json

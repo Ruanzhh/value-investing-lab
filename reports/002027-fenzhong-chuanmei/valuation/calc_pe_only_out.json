@@ -1,0 +1,161 @@
+{
+  "as_of": "2026-11-06 Asia/Shanghai",
+  "rule": "PE-only after cash-conversion screen (rent-adjusted); exit PE judged in 20–30 band",
+  "px_ref": 5.51,
+  "px_date": "2026-11-05 close",
+  "n_years": 3.151266,
+  "fy3": "2029-12-31",
+  "hurdle": 0.2,
+  "dps_min3": 0.33,
+  "shares_yi": 159.776048,
+  "shares_note": "144.422现有+15.354新潮(分红调整后修订稿);交割未完成",
+  "pe_exit": 20.0,
+  "pe_exit_judgment": {
+    "main": 20.0,
+    "band": "20–30",
+    "rationale": "价格三性不过+周期中位偏弱+增速近平台 → 带内下沿20；历史中位21.8仅参照；与独立挑刺「可把退出压到约20」一致。详见 README.md",
+    "hist_median_ref_only": 21.8,
+    "hist_snaps_keep": [
+      21.85,
+      20.87,
+      21.75,
+      21.85
+    ],
+    "hist_not_pricing": true
+  },
+  "cash_conversion": {
+    "screen": "打折",
+    "haircut_applied": 0.92,
+    "method": "IFRS16下用OCF−偿还租赁负债本金和利息相对核心净利",
+    "conv_hist": {
+      "2021": {
+        "ocf": 95.9,
+        "rent": 29.24,
+        "after_rent": 66.66,
+        "core": 54.14,
+        "ocf_ni": 1.771,
+        "ar_ni": 1.231
+      },
+      "2022": {
+        "ocf": 66.99,
+        "rent": 27.98,
+        "after_rent": 39.01,
+        "core": 23.94,
+        "ocf_ni": 2.798,
+        "ar_ni": 1.629
+      },
+      "2023": {
+        "ocf": 76.78,
+        "rent": 31.82,
+        "after_rent": 44.96,
+        "core": 43.74,
+        "ocf_ni": 1.755,
+        "ar_ni": 1.028
+      },
+      "2024": {
+        "ocf": 66.42,
+        "rent": 30.6,
+        "after_rent": 35.82,
+        "core": 46.68,
+        "ocf_ni": 1.423,
+        "ar_ni": 0.767
+      },
+      "2025": {
+        "ocf": 72.09,
+        "rent": 25.81,
+        "after_rent": 46.28,
+        "core": 48.71,
+        "ocf_ni": 1.48,
+        "ar_ni": 0.95
+      }
+    },
+    "mean_ocf_ni": 1.845,
+    "mean_ar_ni_all": 1.121,
+    "mean_ar_ni_excl2022": 0.994,
+    "note": "独立挑刺后：正常年2023–25扣租/核心均值≈0.915、2024=0.77 → 改判打折×0.92（非干净过）。维持性capex约1–3亿很轻；营运资本未长期吸血。出处 review_report.md §C7。"
+  },
+  "scenario_base": {
+    "rev_fy26": 122.0,
+    "rev_cagr": 0.015,
+    "rev_fy29": 127.57,
+    "core_margin": 0.36,
+    "xinchao_ni": 0.54,
+    "ni3_raw": 46.47,
+    "ni3_after_haircut": 42.75,
+    "assumptions": "单位经济正常年锚利润率;限价无提价;Q3偏弱压FY26;新潮0.54;中位偏弱+1.5%量;独立挑刺后现金转化打折×0.92"
+  },
+  "fv3_base_pe": 5.35,
+  "gate": {
+    "with_div_TR": 3.6,
+    "ex_div": 3.01,
+    "mainline": "待用户原话拍板（含息 vs 不含息）",
+    "formula": "含息=(FV+n×DPS)/(1.2)^n；不含息=FV/(1.2)^n"
+  },
+  "cross_only_not_pricing": {
+    "fv_div_yield_method": 5.46,
+    "yield_median": 0.0465,
+    "fv_ddm_r9_g2": 4.52,
+    "spread_pe_vs_ddm": 1.183,
+    "pe_hist_median_ref": 21.8,
+    "note": "股息率法/DDM/历史PE中位只交叉；禁止进定价或与PE取低；历史21.8不得再当主报"
+  },
+  "vs_prior": {
+    "prior_label": "挑刺小修后（haircut0.92 × pe21.8）",
+    "prior_fv": 5.83,
+    "prior_gate_TR": 3.87,
+    "prior_gate_ex": 3.28,
+    "new_fv": 5.35,
+    "new_gate_TR": 3.6,
+    "new_gate_ex": 3.01,
+    "chg_fv_pct": -8.2,
+    "chg_TR_pct": -7.0,
+    "chg_ex_pct": -8.2,
+    "reason": "退出PE主报由历史剔谷中位21.8改为判断取值带内下沿20（SIMPLE-FLOW §4 2026-11-06）；NI3/股本/haircut/hurdle未改。相对改前一次闸价约−7%/−8%（<15%）。"
+  },
+  "vs_old_20261105": {
+    "old_fv_range": [
+      5.9,
+      6.3
+    ],
+    "old_gate_published_TR": 3.93,
+    "old_gate_published_ex": 3.34,
+    "old_gate_pe_leg_TR": 4.15,
+    "old_gate_pe_leg_ex": 3.57,
+    "pre_critique_fv": 6.34,
+    "pre_critique_gate_TR": 4.15,
+    "pre_critique_gate_ex": 3.57,
+    "post_critique_fv_pe218": 5.83,
+    "post_critique_gate_TR": 3.87,
+    "post_critique_gate_ex": 3.28,
+    "new_fv": 5.35,
+    "new_gate_TR": 3.6,
+    "new_gate_ex": 3.01,
+    "chg_vs_published_TR_pct": -8.5,
+    "chg_vs_published_ex_pct": -9.8,
+    "chg_vs_pre_critique_TR_pct": -13.3,
+    "chg_vs_pre_critique_ex_pct": -15.6,
+    "chg_vs_post_critique_TR_pct": -7.0,
+    "chg_vs_post_critique_ex_pct": -8.2,
+    "reason": "累计：现金转化九折 + 退出PE由21.8（历史中位参照）改为判断主报20。相对改前一次（挑刺后）约−7%/−8%<15%；相对挑刺前PE-only累计约−13%/−16%（累计路径，非单次>15%硬关）。仍只走PE轨，禁止两轨取低。"
+  },
+  "buy_point_enabled": false,
+  "gate_block_reasons": [
+    "生意质量三性：价格受管制不通过",
+    "新潮未交割，并表利润与股本未定",
+    "独立挑刺已完成·小修后可用（仍不得启用买点）",
+    "含息/不含息主线待用户原话",
+    "扣非同口径一致预期n≥5仍缺",
+    "未进正式路由签发"
+  ],
+  "cross_checks": {
+    "earn_yield_at_px_ttm_approx": 0.0405,
+    "static_div_yield": 0.0617,
+    "from_px_to_fv_ann": -0.0092,
+    "from_px_to_fv_plus_div_ann": 0.0482,
+    "double_in_3y_at_15_25pe_from_gate_TR": {
+      "15": 1.4,
+      "20": 1.78,
+      "25": 2.15
+    }
+  }
+}
