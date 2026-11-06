@@ -38,7 +38,7 @@
 
 ---
 
-底稿目录：`reports/300760-mairui-yiliao/`\
+底稿目录：`reports/300760-迈瑞医疗/`\
 主要引用：[README.md](../README.md) · [calc_out.json](../valuation/calc_out.json) · [README.md](../valuation/README.md) · [business.md](business.md) · [README.md](../valuation/README.md) · `iteration_ledger.md`（旧过程文件已移除，可由 Git 历史追溯） · [industry-estimates.md](industry-estimates.md)；前序 `（未发布的更早工作目录）`（`fcf_history.json`（原材料未收录）、缺口补记、作者自审）与 `（未发布的更早工作目录）/src/ar.txt`（2025 年报原文）。
 
 个人研究，非投资建议。

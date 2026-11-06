@@ -35,6 +35,6 @@
 
 ---
 
-底稿目录：`reports/600690-haier-zhijia/`\
+底稿目录：`reports/600690-海尔智家/`\
 研究页 canvas_id：`0b42db4d-7ca6-4a2d-a4a6-219a8d2a8e55`\
 个人研究，非投资建议。

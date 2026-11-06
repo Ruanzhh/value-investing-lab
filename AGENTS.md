@@ -43,12 +43,12 @@
 |------|------|
 | `README.md` | 仓库介绍和十二家入口 |
 | `philosophy/` | 价值投资理念文章（待补） |
-| `reports/<代码>-<公司拼音>/` | 一家公司的主报告 `README.md`，及 `evidence/`、`valuation/` 附录 |
+| `reports/<代码>-<中文公司名>/` | 一家公司的主报告 `README.md`，及 `evidence/`、`valuation/` 附录 |
 | `skills/a-share-deep-valuation/` | 深估技能。入口是 `SKILL.md` |
 | `.github/ISSUE_TEMPLATE/` | 数据纠错、证伪信号、新公司候选、skill 改进 |
 | `CHANGELOG.md` | 版本记录 |
 
-公司目录名是「代码-拼音」，例如 `reports/600519-guizhou-maotai/`。每家公司根目录只保留 `README.md` 一篇主报告，不再并列维护结论卡、阅读版、完整报告或旧报告。
+公司目录名是「代码-中文公司名」，例如 `reports/600519-贵州茅台/`。每家公司根目录只保留 `README.md` 一篇主报告，不再并列维护结论卡、阅读版、完整报告或旧报告。
 
 主报告用于外部审阅与挑战，按以下七部分组织：
 

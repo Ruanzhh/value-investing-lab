@@ -20,7 +20,7 @@ body:
     attributes:
       label: 引用文件路径
       description: 被这个信号挑战的主报告、证据附录、估值附录或技能规则路径。
-      placeholder: reports/000333-meidi-jituan/README.md
+      placeholder: reports/000333-美的集团/README.md
     validations:
       required: true
   - type: textarea

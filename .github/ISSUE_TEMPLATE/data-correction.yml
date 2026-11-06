@@ -20,7 +20,7 @@ body:
     attributes:
       label: 引用文件路径
       description: 仓库内相对路径，指向你认为写错的文件。
-      placeholder: reports/600519-guizhou-maotai/README.md
+      placeholder: reports/600519-贵州茅台/README.md
     validations:
       required: true
   - type: textarea

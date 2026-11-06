@@ -16,23 +16,23 @@
 
 | 公司 | 核心问题 | 主报告 | 复核材料 |
 |---|---|---|---|
-| 宁德时代（300750） | 增长之外，多少利润能留给股东 | [主报告](reports/300750-ningde-shidai/README.md) | [来源与附录](reports/300750-ningde-shidai/evidence/README.md) |
-| 贵州茅台（600519） | 品牌优势与渠道承受力 | [主报告](reports/600519-guizhou-maotai/README.md) | [来源与附录](reports/600519-guizhou-maotai/evidence/README.md) |
-| 美的集团（000333） | 扣非利润与现金揭示的经营压力 | [主报告](reports/000333-meidi-jituan/README.md) | [来源与附录](reports/000333-meidi-jituan/evidence/README.md) |
-| 海尔智家（600690） | 低于研究闸价，仍需看清海外利润 | [主报告](reports/600690-haier-zhijia/README.md) | [来源与附录](reports/600690-haier-zhijia/evidence/README.md) |
-| 分众传媒（002027） | 点位网络、租金与价格约束 | [主报告](reports/002027-fenzhong-chuanmei/README.md) | [来源与附录](reports/002027-fenzhong-chuanmei/evidence/README.md) |
-| 迈瑞医疗（300760） | 现金质量与需求修复 | [主报告](reports/300760-mairui-yiliao/README.md) | [来源与附录](reports/300760-mairui-yiliao/evidence/README.md) |
-| 东阿阿胶（000423） | 用回款验证增长 | [主报告](reports/000423-donge-ejiao/README.md) | [来源与附录](reports/000423-donge-ejiao/evidence/README.md) |
-| 招商银行（600036） | 低成本存款与信用成本 | [主报告](reports/600036-zhaoshang-yinhang/README.md) | [来源与附录](reports/600036-zhaoshang-yinhang/evidence/README.md) |
-| 海康威视（002415） | 高毛利、库存与现金回收 | [主报告](reports/002415-haikang-weishi/README.md) | [来源与附录](reports/002415-haikang-weishi/evidence/README.md) |
-| 中国平安（601318） | 账面利润与可分配现金的距离 | [主报告](reports/601318-zhongguo-pingan/README.md) | [来源与附录](reports/601318-zhongguo-pingan/evidence/README.md) |
-| 福耀玻璃（600660） | 制造优势与资本投入 | [主报告](reports/600660-fuyao-boli/README.md) | [来源与附录](reports/600660-fuyao-boli/evidence/README.md) |
-| 古井贡酒（000596） | 去库存后费用能否降下来 | [主报告](reports/000596-gujing-gongjiu/README.md) | [来源与附录](reports/000596-gujing-gongjiu/evidence/README.md) |
+| 宁德时代（300750） | 增长之外，多少利润能留给股东 | [主报告](reports/300750-宁德时代/README.md) | [来源与附录](reports/300750-宁德时代/evidence/README.md) |
+| 贵州茅台（600519） | 品牌优势与渠道承受力 | [主报告](reports/600519-贵州茅台/README.md) | [来源与附录](reports/600519-贵州茅台/evidence/README.md) |
+| 美的集团（000333） | 扣非利润与现金揭示的经营压力 | [主报告](reports/000333-美的集团/README.md) | [来源与附录](reports/000333-美的集团/evidence/README.md) |
+| 海尔智家（600690） | 低于研究闸价，仍需看清海外利润 | [主报告](reports/600690-海尔智家/README.md) | [来源与附录](reports/600690-海尔智家/evidence/README.md) |
+| 分众传媒（002027） | 点位网络、租金与价格约束 | [主报告](reports/002027-分众传媒/README.md) | [来源与附录](reports/002027-分众传媒/evidence/README.md) |
+| 迈瑞医疗（300760） | 现金质量与需求修复 | [主报告](reports/300760-迈瑞医疗/README.md) | [来源与附录](reports/300760-迈瑞医疗/evidence/README.md) |
+| 东阿阿胶（000423） | 用回款验证增长 | [主报告](reports/000423-东阿阿胶/README.md) | [来源与附录](reports/000423-东阿阿胶/evidence/README.md) |
+| 招商银行（600036） | 低成本存款与信用成本 | [主报告](reports/600036-招商银行/README.md) | [来源与附录](reports/600036-招商银行/evidence/README.md) |
+| 海康威视（002415） | 高毛利、库存与现金回收 | [主报告](reports/002415-海康威视/README.md) | [来源与附录](reports/002415-海康威视/evidence/README.md) |
+| 中国平安（601318） | 账面利润与可分配现金的距离 | [主报告](reports/601318-中国平安/README.md) | [来源与附录](reports/601318-中国平安/evidence/README.md) |
+| 福耀玻璃（600660） | 制造优势与资本投入 | [主报告](reports/600660-福耀玻璃/README.md) | [来源与附录](reports/600660-福耀玻璃/evidence/README.md) |
+| 古井贡酒（000596） | 去库存后费用能否降下来 | [主报告](reports/000596-古井贡酒/README.md) | [来源与附录](reports/000596-古井贡酒/evidence/README.md) |
 
 ## 一家公司怎样组织
 
 ```text
-reports/<代码>-<公司拼音>/
+reports/<代码>-<中文公司名>/
 ├── README.md          主报告：判断、证据、假设、估值、反方与更新条件
 ├── evidence/
 │   ├── README.md      来源索引、可核范围与材料缺口
@@ -51,7 +51,7 @@ reports/<代码>-<公司拼音>/
 ## 目录
 
 - `philosophy/` — 理念文章。首版只有骨架，正文待补。
-- `reports/<代码-公司拼音>/` — 每家一篇主报告，必要证据与估值计算分目录存放。
+- `reports/<代码-中文公司名>/` — 每家一篇主报告，必要证据与估值计算分目录存放。
 - `skills/a-share-deep-valuation/` — 当前使用的深估技能。
 - `AGENTS.md` — 给 agent 的阅读和改稿规则。
 - `.github/` — Issue 表单和 pull request 模板。
