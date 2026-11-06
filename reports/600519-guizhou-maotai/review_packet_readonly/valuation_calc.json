@@ -1,0 +1,78 @@
+{
+  "as_of": "2026-11-06",
+  "updated": "2026-11-06T00:30+08:00",
+  "reval_tag": "pe_only_screen_cash_conversion_hard_gate",
+  "price": 1452.0,
+  "price_date": "2026-11-05",
+  "price_note": "as-of 2026-11-06 Asia/Shanghai pre-open; last close 2026-11-05 15:00",
+  "price_sources": [
+    "tencent_qt",
+    "sina_hq"
+  ],
+  "shares_yi": 12.50081601,
+  "fy3": "2029-12-31",
+  "n_years": 3.151266,
+  "n_days": 1151,
+  "ni3_yi_base": 960.0,
+  "exit_pe_base": 26.157,
+  "exit_pe_source": "结构窗2021+ P50与轻资产回退中点下压 min(30,(30.31+22)/2)=26.155≈26.157；pemid 2026-10-26 用户确认",
+  "excess_cash_yi": 1496.05,
+  "excess_cash_note": "Q3'26 主口径；FY3 资产负债项保持最近报告日不变（V§5 D15）",
+  "add_excess_cash": true,
+  "fv3_base": 2128.4,
+  "dps_min3": 27.624,
+  "dps_min3_note": "FY23-25 年度派息单笔最小=FY2024 年报派息 27.624（每10股276.24）；沿用门槛常数口径",
+  "A20_TR": 1247.22,
+  "A18_TR": 1315.05,
+  "hurdle_h": 0.2,
+  "method": "PE_only_same_FY",
+  "forbidden_tracks_not_used": [
+    "owner_earnings_RI",
+    "FCFE_Gordon",
+    "dual_track_min"
+  ],
+  "screen_cash_conversion": "pass",
+  "buy_point_enabled": false,
+  "vs_old_gate_1227": {
+    "old": 1227.49,
+    "new_A20": 1247.22,
+    "delta": 19.73,
+    "delta_pct": 1.61,
+    "primary_reason": "method_switch_to_PE_only_drop_RI_min_leg"
+  },
+  "sensitivity_L1_pct_of_fv3": {
+    "NI3_plus10": 9.44,
+    "NI3_minus10": -9.44,
+    "PE_plus10": 9.44,
+    "PE_minus10": -9.44,
+    "EXC_plus10": 0.56,
+    "EXC_minus10": -0.56
+  },
+  "cross_reminders": {
+    "exit_15_20_25x_multiple_vs_price": [
+      0.88,
+      1.14,
+      1.4
+    ],
+    "earnings_yield_fy25_pct": 4.54,
+    "base_expected_cagr_pct_if_fv3_hits": 12.9,
+    "base_TR_cagr_pct_approx": 14.35,
+    "implied_ni3_at_pe_base": 636.7
+  },
+  "contract_price_latest": {
+    "value": 1369,
+    "date": "2026-07-18"
+  },
+  "channel_batch_approx": {
+    "loose": 1680,
+    "case": 1710,
+    "as_of": "2026-11-04",
+    "source": "酒业参考报"
+  },
+  "channel_buffer_yuan": [
+    310,
+    340
+  ],
+  "prev_dir": "（未发布的更早工作目录）",
+  "user_facing_policy": "base_line_only_no_bear_bull_to_user; research_gate_number_no_draft_label"
+}

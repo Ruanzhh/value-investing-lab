@@ -1,0 +1,49 @@
+{
+  "as_of": "2026-11-06",
+  "as_of_tz": "Asia/Shanghai",
+  "ticker": "300750.SZ",
+  "name": "宁德时代",
+  "price": 264.06,
+  "price_time": "2026-11-05 15:35:45 Asia/Shanghai",
+  "shares_yi": 46.27249686,
+  "n_years": 3.151,
+  "fy3": "FY2029",
+  "version": "pe_only_20261106_discount080",
+  "V20_LIVE_INHERIT": true,
+  "rule": "cash_conversion_discount_then_PE_only",
+  "screen": {
+    "profit_real": "过（质量预警：2026 9M OCF/NI=0.95）",
+    "profit_sustainable": "过（基准须中位）",
+    "cash_conversion": "打折",
+    "discount": 0.8,
+    "discount_one_liner": "购建类维持300-450→OE/NI约0.75-0.95，取八折；海外门票与近端OCF作下压；利润为真故不永久不过",
+    "formal_valuation_allowed": true
+  },
+  "scenario_base": {
+    "shipment_gwh": 1300,
+    "unit_ni_yuan_per_wh": 0.066,
+    "ni3_gross_yi": 858,
+    "ni3_adj_yi": 686.4
+  },
+  "exit_pe": 22.0,
+  "exit_pe_basis": "judgment_20_30_weak_moat_cyclical_lower_band",
+  "fv3_base": 326.35,
+  "fv3_display": 326,
+  "dps_min3": 5.028,
+  "required_return_pct": 20,
+  "buy_gate": 192.64,
+  "buy_gate_display": 193,
+  "buy_point_formally_enabled": false,
+  "reasons_not_enabled": [
+    "税负官方转嫁比例未知",
+    "投产后利用率无公司%",
+    "系统净利不可拆",
+    "FY2029一致预期交叉未齐",
+    "购建维持/扩张官方拆分仍缺"
+  ],
+  "old_anchors_status": {
+    "old_fv3_406": "废止（两轨取低）",
+    "old_gate_237": "废止",
+    "prior_informal_undisc_408_239": "已被打折正式价闸取代为对照主路径；全额×22仅交叉"
+  }
+}

@@ -1,0 +1,3 @@
+2026-11-05 close: 35.63 CNY
+sources: Yahoo Finance / Longbridge / Exa raw close
+asof: 2026-11-06 Asia/Shanghai research refresh

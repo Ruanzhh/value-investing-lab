@@ -1,0 +1,28 @@
+{
+  "as_of": "2026-11-06",
+  "px": 50.53,
+  "shares_mn": 639.826824,
+  "n": 3.151266,
+  "exit_pe": 22,
+  "exit_pe_source": "judgment_band_20_30_lower_mid",
+  "ni3": 19.7174,
+  "eps3": 3.081678,
+  "fv3_pe_only": 67.8,
+  "b20_research": 41.32,
+  "b22_research": 39.23,
+  "cash_conversion": "过",
+  "haircut_applied": 1.0,
+  "sensitivity_haircut_0_90": {
+    "fv3": 61.02,
+    "b20": 37.51
+  },
+  "reverse_DCF": "已废止/不作定价",
+  "B20_issued": false,
+  "premium": 0.2228,
+  "vs_prior_pe_only": {
+    "old_exit_pe": 20.11,
+    "old_fv3": 61.97,
+    "old_b20": 38.05,
+    "note": "废止中位直接主报；判断取值22"
+  }
+}

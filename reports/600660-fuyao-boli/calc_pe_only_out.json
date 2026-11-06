@@ -1,0 +1,88 @@
+{
+ "as_of": "2026-11-06 Asia/Shanghai",
+ "rule": "PE-only; cash-conversion=discount 0.88 then PE",
+ "n": 3.154004106776181,
+ "hurdle": 0.2,
+ "dps": 1.3,
+ "shares_yi": 26.09743532,
+ "pe_hist_core": {
+  "2022": 19.62,
+  "2023": 17.65,
+  "2024": 21.87,
+  "2025": 18.44
+ },
+ "pe_exit": 22.0,
+ "pe_ref_hist_median": 19.03,
+ "pe_exit_reason": "cost-moat mfr, no franchise pricing, expansion ongoing, OEM strong → band 20-25 pick 22",
+ "cash_conversion": "打折",
+ "discount": 0.88,
+ "discount_reason": "(OCF-D&A)/NI mean 0.883; expansion Capex/D&A~2.0; maintain-competitiveness Capex undisclosed → discount NI×0.88 before PE; not 不过 because OCF/NI 1.26 and weak-expansion Capex≈D&A",
+ "pf_hist_cross": {
+  "2023": 19.12,
+  "2024": 27.91,
+  "2025": 18.83
+ },
+ "pf_med_cross": 19.12,
+ "k_hist": {
+  "2023": 0.9066,
+  "2024": 0.7782,
+  "2025": 0.9641
+ },
+ "k_mean": 0.883,
+ "conv_hist": {
+  "2023": 1.355,
+  "2024": 1.142,
+  "2025": 1.295
+ },
+ "conv_mean": 1.26,
+ "base": {
+  "rev3": 555.109,
+  "ni3": 91.593,
+  "ni_use": 80.602,
+  "fv": 67.947,
+  "gate": 40.54,
+  "fv_pf_cross": 59.253,
+  "fv_rf25": 77.212,
+  "spread_pf": 1.147,
+  "spread_rf25": 1.136
+ },
+ "inputs": {
+  "rev0": 466.08,
+  "g": 0.06,
+  "m": 0.165,
+  "pe": 22.0,
+  "disc": 0.88,
+  "k": 0.883,
+  "pf": 19.12
+ },
+ "sens": {
+  "rev0": {
+   "minus10": -10.0,
+   "plus10": 10.0
+  },
+  "m": {
+   "minus10": -10.0,
+   "plus10": 10.0
+  },
+  "pe": {
+   "minus10": -10.0,
+   "plus10": 10.0
+  },
+  "disc": {
+   "minus10": -10.0,
+   "plus10": 10.0
+  },
+  "g": {
+   "minus10": -1.7,
+   "plus10": 1.7
+  }
+ },
+ "per_1pct_margin_fv": 4.12,
+ "vs_prior_undisc_gate_45.8": {
+  "new_gate": 40.54,
+  "change_pct": -11.4
+ },
+ "gate_fv_ratio": 0.597,
+ "price_A": 55.82,
+ "price_to_gate": 1.38
+}

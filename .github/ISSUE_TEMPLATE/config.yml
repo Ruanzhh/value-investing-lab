@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 先读仓库说明
+    url: https://github.com/ruanzh6/value-investing-lab/blob/main/README.md
+    about: 本仓不接受只问买卖建议的 issue。纠错、证伪、新公司候选和 skill 改进请用表单，并写上公司代码、文件路径和证据链接。

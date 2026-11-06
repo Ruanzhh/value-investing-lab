@@ -1,0 +1,42 @@
+name: 数据纠错
+description: 报告或结论卡里的事实、口径或计算和公开证据不一致
+title: "[数据纠错] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        只纠正可以复核的事实或计算。不要在这里询问该买还是该卖。
+        闸价是研究用数字，纠错需要指出哪一个已写出的数字错了，以及证据。
+  - type: input
+    id: ticker
+    attributes:
+      label: 公司代码
+      description: 六位代码，例如 600519。不是针对单一公司时填「不适用」，并在正文说明原因。
+      placeholder: "600519"
+    validations:
+      required: true
+  - type: input
+    id: path
+    attributes:
+      label: 引用文件路径
+      description: 仓库内相对路径，指向你认为写错的文件。
+      placeholder: reports/600519-guizhou-maotai/decision_card.md
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 证据链接
+      description: 公告、交易所、公司官网或其他可打开的来源。请写出链接，并说明它如何证明原文有误。
+      placeholder: |
+        https://...
+        原文写了什么，证据显示什么。
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: 建议改成什么
+      description: 只写证据能支持的改正。证据没给出的数字不要补。
+    validations:
+      required: true

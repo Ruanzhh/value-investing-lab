@@ -1,0 +1,418 @@
+old_id,old_lines,section,v3_master,v3_sub,v3_L4_names,head
+# 估值与买卖点规则 v2.5,L1-L3,# 估值与买卖点规则 v2.5,V§0,,,# 估值与买卖点规则 v2.5
+## 1. 情景（scenarios_risk 用）,L4-L10,## 1. 情景（scenarios_risk 用）,V§1,,,## 1. 情景（scenarios_risk 用）
+## 2. 评级与 hurdle（P2 grade_two_axis + P2b b_quality_tier · 20,L11-L16,## 2. 评级与 hurdle（P2 grade_two_axis + P2b b_quality,V§4,,,## 2. 评级与 hurdle（P2 grade_two_axis + P2b b_quality_tier · 2026-10-26；经验值/待回测）
+"### 2.1 quality_grade ∈ {A, B, C}",L17-L20,"### 2.1 quality_grade ∈ {A, B, C}",V§4,,,"### 2.1 quality_grade ∈ {A, B, C}"
+"### 2.1 quality_grade ∈ {A, B, C} 第1项",L21-L21,"### 2.1 quality_grade ∈ {A, B, C}",V§2,,,1. 老唐① 利润为真：满足（OCF/NI 健康、无重大造假/监管否决）。
+"### 2.1 quality_grade ∈ {A, B, C} 第2项",L22-L22,"### 2.1 quality_grade ∈ {A, B, C}",V§11,M4,moutai,2. 老唐② 利润可持续：满足，**或**仅「温和周期/批价波动/净利率中枢缓下移」而特许/品牌/牌照护城河仍在（茅台类）；**不得**因行业有一点周期就把特许股打成非 A。
+"### 2.1 quality_grade ∈ {A, B, C} 第3项",L23-L23,"### 2.1 quality_grade ∈ {A, B, C}",V§11,,,3. 老唐③ 维持竞争所需再投入低：满足，或轻资产高 ROIC 现金牛有条件满足（capex 不吞噬业主盈余）。
+"### 2.1 quality_grade ∈ {A, B, C} 第4项",L24-L24,"### 2.1 quality_grade ∈ {A, B, C}",V§11,M4,,4. 生意类型：franchise / 平台 / 受监管公用特许等「优质生意」主叙事；**不是**强周期商品、重资本扩产成长、投放驱动尚未证实的品牌作为主叙事。
+"### 2.1 quality_grade ∈ {A, B, C} 第5项",L25-L40,"### 2.1 quality_grade ∈ {A, B, C}",V§11,,,5. `four_quality` 企业+生意+管理层均为 `pass`（任一项 `edge` → 最高 B）。
+"### 2.1b b_tier ∈ {B+, B, B-}（仅 quality_grade=B；P2b · 2026-1",L41-L51,"### 2.1b b_tier ∈ {B+, B, B-}（仅 quality_grade=B；P2",V§4,,catl fuyao midea mindray proya yealink,"### 2.1b b_tier ∈ {B+, B, B-}（仅 quality_grade=B；P2b · 2026-10-26 t262u）"
+"### 2.2 confidence ∈ {确认, 暂定}",L52-L55,"### 2.2 confidence ∈ {确认, 暂定}",V§4,,,"### 2.2 confidence ∈ {确认, 暂定}"
+### 2.3 展示、字段、仓位、hurdle,L56-L74,### 2.3 展示、字段、仓位、hurdle,V§5,,focus moutai zte,### 2.3 展示、字段、仓位、hurdle
+## 3. 买点,L75-L77,## 3. 买点,V§5,,,## 3. 买点
+### 退出 PE · 合格窗硬清单（2026-10-26 进化试跑；经验值/待回测）,L78-L79,### 退出 PE · 合格窗硬清单（2026-10-26 进化试跑；经验值/待回测）,V§3,,moutai xingyu,### 退出 PE · 合格窗硬清单（2026-10-26 进化试跑；经验值/待回测）
+### 退出 PE · 合格窗硬清单（2026-10-26 进化试跑；经验值/待 第1项,L80-L82,### 退出 PE · 合格窗硬清单（2026-10-26 进化试跑；经验值/待回测）,V§3,,,1. 窗合格（结构可比 ≥4y，且两端各缩 0.5y 时 P50 变动 ≤10%）时：
+### 退出 PE · 合格窗硬清单（2026-10-26 进化试跑；经验值/待 第2项,L83-L83,### 退出 PE · 合格窗硬清单（2026-10-26 进化试跑；经验值/待回测）,V§3,,,"2. 熊 = min(window_P20, 基准)；牛 = min(window_P80, 30)；并保持熊 ≤ 基 ≤ 牛。"
+### 退出 PE · 合格窗硬清单（2026-10-26 进化试跑；经验值/待 第3项,L84-L84,### 退出 PE · 合格窗硬清单（2026-10-26 进化试跑；经验值/待回测）,V§3,,,3. 拒用合格窗，必须书面给出一手证据之一：利润规模与 PE 中枢同步断裂、亏损/利润塌陷、周期失真（含可核对数字）。禁止以「含高成长溢价」「现价 PE 已低」「年度 P50 波动
+### 退出 PE · 合格窗硬清单（2026-10-26 进化试跑；经验值/待 第4项,L85-L85,### 退出 PE · 合格窗硬清单（2026-10-26 进化试跑；经验值/待回测）,V§3,,,4. 决策卡 / valuation_decision 必须标注 Exit PE 路径标签：`窗口` | `中点下压` | `回退` | `触30帽`，拒窗时附 evidence 
+### 退出 PE · 合格窗硬清单（2026-10-26 进化试跑；经验值/待 第5项,L86-L91,### 退出 PE · 合格窗硬清单（2026-10-26 进化试跑；经验值/待回测）,V§3,,,"5. 「无倍数修复列」= min(主路径买点, 回退路径买点)；回退不更严须注明。"
+### 执行前二级检查（Marks / 三角闸；2026-10-26 经典学习）,L92-L93,### 执行前二级检查（Marks / 三角闸；2026-10-26 经典学习）,V§10,,,### 执行前二级检查（Marks / 三角闸；2026-10-26 经典学习）
+### 执行前二级检查（Marks / 三角闸；2026-10-26 经典学习） 第1项,L94-L94,### 执行前二级检查（Marks / 三角闸；2026-10-26 经典学习）,V§10,,,1. **共识已定价什么？** 用现价反推隐含 NI3/退出 PE/叙事（1 句）；禁止引入卖方目标价。
+### 执行前二级检查（Marks / 三角闸；2026-10-26 经典学习） 第2项,L95-L95,### 执行前二级检查（Marks / 三角闸；2026-10-26 经典学习）,V§10,,,2. **我与共识差在哪？** 须指向 scenario 或 risk_register 条目（量/价/份额/资本开支纪律/风险折价）。
+### 执行前二级检查（Marks / 三角闸；2026-10-26 经典学习） 第3项,L96-L98,### 执行前二级检查（Marks / 三角闸；2026-10-26 经典学习）,V§10,,,3. **若共识对了，现价是否仍贵？** 用熊 FV3 或脆弱比回答；不能只答「已低于 B20」。
+### 周期/商品类 · NI3 路径标签（Damodaran；2026-10-26 经典学习）,L99-L108,### 周期/商品类 · NI3 路径标签（Damodaran；2026-10-26 经典学习）,V§11,M4,,### 周期/商品类 · NI3 路径标签（Damodaran；2026-10-26 经典学习）
+### 证伪优先与认知偏差过滤（Munger / Marks；2026-10-26 进化重跑）,L109-L109,### 证伪优先与认知偏差过滤（Munger / Marks；2026-10-26 进化重跑）,V§11,,,### 证伪优先与认知偏差过滤（Munger / Marks；2026-10-26 进化重跑）
+### 证伪优先与认知偏差过滤（Munger / Marks；2026-10-2 第1项,L110-L110,### 证伪优先与认知偏差过滤（Munger / Marks；2026-10-26 进化重跑）,V§11,,,1. **Disconfirming line（强制）**：决策卡 / 拟试仓前须写 1 句「什么一手证据出现则基准 NI3 或进取闸失败？」（时点可核）。空 → 不执行、不 pr
+### 证伪优先与认知偏差过滤（Munger / Marks；2026-10-2 第2项,L111-L111,### 证伪优先与认知偏差过滤（Munger / Marks；2026-10-26 进化重跑）,V§11,,,2. **Lollapalooza 升级怀疑**：当「到价或近买 + TA 高/见底 + 产业叙事热闹（利用率回升/政策暖风）」同时满足 → 二级检查必须多答一句「市价作为社会证明
+### 证伪优先与认知偏差过滤（Munger / Marks；2026-10-2 第3项,L112-L112,### 证伪优先与认知偏差过滤（Munger / Marks；2026-10-26 进化重跑）,V§11,M4,,3. **周期价格夸大（Marks）**：模块 b 强/中周期票，若外部利用率/价格已回升，压力测试优先假设「价格已部分透支修复」；政策原文（产能预警、反内卷会议等）只进 risk
+### 证伪优先与认知偏差过滤（Munger / Marks；2026-10-2 第4项,L113-L114,### 证伪优先与认知偏差过滤（Munger / Marks；2026-10-26 进化重跑）,V§11,,,4. **外部意见激励偏差**：D13/产业综述作者有激励（流量、仓位、承销）→ 只挑战假设；数字进模型必须另有一手 source_id。卖方目标价继续零进入。
+### 能力圈声明 · 高于收益卖线侧倾 · 候补禁句（Buffett 1987 / Marks 2001；2026-1,L115-L115,### 能力圈声明 · 高于收益卖线侧倾 · 候补禁句（Buffett 1987 / Marks 2,V§7,,,### 能力圈声明 · 高于收益卖线侧倾 · 候补禁句（Buffett 1987 / Marks 2001；2026-10-26 进化 r3）
+### 能力圈声明 · 高于收益卖线侧倾 · 候补禁句（Buffett 1987 第1项,L116-L119,### 能力圈声明 · 高于收益卖线侧倾 · 候补禁句（Buffett 1987 / Marks 2,V§11,,,"1. **competence_tag（强制）**：∈ {`in_circle`, `edge`, `outside`}，写入 enterprise_analysis / valu"
+### 能力圈声明 · 高于收益卖线侧倾 · 候补禁句（Buffett 1987 第2项,L120-L120,### 能力圈声明 · 高于收益卖线侧倾 · 候补禁句（Buffett 1987 / Marks 2,V§7（编号保留·已并入他条，legacy 有指针）,,,2. （t388u：本指针删除，卖侧见 §5 return_sell）
+### 能力圈声明 · 高于收益卖线侧倾 · 候补禁句（Buffett 1987 第3项,L121-L122,### 能力圈声明 · 高于收益卖线侧倾 · 候补禁句（Buffett 1987 / Marks 2,V§11,M4,,3. **周期位置侧倾（Prepare，不预测拐点）**：模块 b 强/中，且「强需求叙事 + 产能/资本开支仍扩张 + 定价隐含永续高增」同时出现 → lean against（
+### 经济商誉筛选 · status_quo 估值（Buffett 1983 / Damodaran Control；,L123-L123,### 经济商誉筛选 · status_quo 估值（Buffett 1983 / Damodara,V§11,,,### 经济商誉筛选 · status_quo 估值（Buffett 1983 / Damodaran Control；2026-10-26 进化 r4）
+### 经济商誉筛选 · status_quo 估值（Buffett 1983  第1项,L124-L129,### 经济商誉筛选 · status_quo 估值（Buffett 1983 / Damodara,V§11,,moutai,"1. **economic_goodwill_tag（强制，模块 c）** ∈ {`franchise_pricing`, `durable_low_cost`, `regulat"
+### 经济商誉筛选 · status_quo 估值（Buffett 1983  第2项,L130-L130,### 经济商誉筛选 · status_quo 估值（Buffett 1983 / Damodara,V§11,,,2. **禁止伪证据**：客户喜欢、知名度、ESG/主题热、仅收入规模 ≠ 经济商誉。须指向「有形资本上的可持续超额回报」或明确标记 eroded。
+### 经济商誉筛选 · status_quo 估值（Buffett 1983  第3项,L131-L132,### 经济商誉筛选 · status_quo 估值（Buffett 1983 / Damodara,V§11,,,3. **valuation_basis=status_quo（强制）**：B20/NI3/退出假设 = 现任管理层与现有合同/治理下的中性路径。**禁止**把「若换管理层/治理改
+### 永久损失风险折价 · ni3_path 触票补标（Marks 2015 Risk Revisited Again,L133-L133,### 永久损失风险折价 · ni3_path 触票补标（Marks 2015 Risk Revis,V§10,,,### 永久损失风险折价 · ni3_path 触票补标（Marks 2015 Risk Revisited Again；2026-10-26 进化 r4）
+### 永久损失风险折价 · ni3_path 触票补标（Marks 2015  第1项,L134-L134,### 永久损失风险折价 · ni3_path 触票补标（Marks 2015 Risk Revis,V§10,,,1. **风险定义（执行闸）**：三角闸「风险是否已充分折价」所指 = **永久本金损失**可能性（基本面无法回到支撑估值的路径，或结构性质押/再融资逼卖），**不是**价格波动率
+### 永久损失风险折价 · ni3_path 触票补标（Marks 2015  第2项,L135-L135,### 永久损失风险折价 · ni3_path 触票补标（Marks 2015 Risk Revis,V§10,,,2. **强制检查句（拟试仓/到价卡）**：写清「何种一手路径会使基准 NI3 永久失效（而非暂时波动）？」空 → 不执行。
+### 永久损失风险折价 · ni3_path 触票补标（Marks 2015  第3项,L136-L136,### 永久损失风险折价 · ni3_path 触票补标（Marks 2015 Risk Revis,V§6,,,3. **脆弱触发**：若 bear_NI3/base_NI3 < 0.40，或 base_NI3≤0，或 B20 公式不可执行（=0）→ 卡上须有 `risk_in_price=
+### 永久损失风险折价 · ni3_path 触票补标（Marks 2015  第4项,L137-L142,### 永久损失风险折价 · ni3_path 触票补标（Marks 2015 Risk Revis,V§11,M4,putailai,4. **ni3_path_tag 触票补标（不改数）**：模块 b 强/中且字段空时，按已写 cycle_position 映射补标后才可闭环 self_check：  
+## 4. 仓位（熊市回报定档，经验值/待回测）,L143-L162,## 4. 仓位（熊市回报定档，经验值/待回测）,V§6,,catl fuyao gujing inovance midea mindray moutai yealink,## 4. 仓位（熊市回报定档，经验值/待回测）
+## 5. 收益卖 · return_sell（t388u 2026-10-30 Asia/Shanghai；取代旧价格,L163-L183,## 5. 收益卖 · return_sell（t388u 2026-10-30 Asia/Shan,V§7,,cjdl cmb focus zte,## 5. 收益卖 · return_sell（t388u 2026-10-30 Asia/Shanghai；取代旧价格卖点）· 组合只认置换（t320u）
+## 6. 展示项（永不作为触发）,L184-L186,## 6. 展示项（永不作为触发）,V§14,,,## 6. 展示项（永不作为触发）
+## 7. 自检（self_check）,L187-L187,## 7. 自检（self_check）,V§19,,,## 7. 自检（self_check）
+## 7. 自检（self_check） 第1项,L188-L189,## 7. 自检（self_check）,V§5,,,1. 无 Ke-then-hurdle；2. 每个风险只在 risk_register 指定的一处扣减；3. 基准 FV3 折现到今天（按 hurdle）≈ 市价 ±15% 时须写
+## 示例（CATL，未经本 workflow 运行）,L190-L192,## 示例（CATL，未经本 workflow 运行）,legacy-only（示例，无规范效力）,,,## 示例（CATL，未经本 workflow 运行）
+### 相对错价压力测试（Damodaran Relative Valuation；2026-10-26 进化 r5）,L193-L193,### 相对错价压力测试（Damodaran Relative Valuation；2026-10-,V§12,,,### 相对错价压力测试（Damodaran Relative Valuation；2026-10-26 进化 r5）
+### 相对错价压力测试（Damodaran Relative Valuatio 第1项,L194-L194,### 相对错价压力测试（Damodaran Relative Valuation；2026-10-,V§12,,,1. **定义**：`relative_mispricing_note`（可选，写入 enterprise_analysis / valuation_decision）= 同行或同
+### 相对错价压力测试（Damodaran Relative Valuatio 第2项,L195-L195,### 相对错价压力测试（Damodaran Relative Valuation；2026-10-,V§7,,,2. **硬禁令**：禁止用今日板块可比 PE、同行 PE、卖方目标 PE、「相对 XX 更便宜/ROE 更高应给溢价」替换或上修本股 Exit PE 窗/回退档/B20/收益卖线
+### 相对错价压力测试（Damodaran Relative Valuatio 第3项,L196-L196,### 相对错价压力测试（Damodaran Relative Valuation；2026-10-,V§12,,,3. **可比纪律**：同业≠可比；引用同行须控制周期位置、杠杆、会计口径；否则标注 `peer_not_comparable` 并停止相对结论。
+### 相对错价压力测试（Damodaran Relative Valuatio 第4项,L197-L198,### 相对错价压力测试（Damodaran Relative Valuation；2026-10-,V§12,,coal-example putailai,4. **煤/锂范例**：陕西煤业 vs 神华/兖矿/中煤、璞泰来 vs 恩捷/天赐——只进压力测试与卡上 peer_check；陕煤 ROE 高于神华不得推导更高退出倍数。
+### 买卖点严格锁 · 降价才买（Buffett 2008 / Marks 1992&1997；2026-10-26 ,L199-L199,### 买卖点严格锁 · 降价才买（Buffett 2008 / Marks 1992&1997；2,V§10,,,### 买卖点严格锁 · 降价才买（Buffett 2008 / Marks 1992&1997；2026-10-26 进化 r5）
+### 买卖点严格锁 · 降价才买（Buffett 2008 / Marks 1 第1项,L200-L200,### 买卖点严格锁 · 降价才买（Buffett 2008 / Marks 1992&1997；2,V§11,M4,,1. **strict_cycle_lock（周期/窗口票）**：当模块 b 强/中且已用 `normalized_midcycle`（或窗口 P50≤回退基而守窗），且现价相对 
+### 买卖点严格锁 · 降价才买（Buffett 2008 / Marks 1 第2项,L201-L201,### 买卖点严格锁 · 降价才买（Buffett 2008 / Marks 1992&1997；2,V§7,,,2. **marked_down 适用域**：Buffett「打折买优质」仅当收盘价 ≤ 有效 B20（或贴近带且见底候选）且执行路径开放（正式池 promote 或规则允许试仓）
+### 买卖点严格锁 · 降价才买（Buffett 2008 / Marks 1 第4项,L202-L203,### 买卖点严格锁 · 降价才买（Buffett 2008 / Marks 1992&1997；2,V§11,M4,,4. **商品近峰禁令（Conoco 课）**：动力煤/锂盐/设备订单等价格或利用率近阶段高位时，基准 NI3 不得年化峰利；安监/保供/长协制度只进 risk。
+### 优质挖掘 · 难受才可能优质 / look-through（Marks Dare to Be Great II ,L204-L204,### 优质挖掘 · 难受才可能优质 / look-through（Marks Dare to Be,V§11,,,### 优质挖掘 · 难受才可能优质 / look-through（Marks Dare to Be Great II / Buffett Owner's Manual；2026-
+### 优质挖掘 · 难受才可能优质 / look-through（Marks  第1项,L205-L205,### 优质挖掘 · 难受才可能优质 / look-through（Marks Dare to Be,V§11,,,1. **quality_screen_note（强制，模块 c / why_quality）**：须同时写 (a) 可核超额回报或单位成本优势的一手证据（对齐 economic_
+### 优质挖掘 · 难受才可能优质 / look-through（Marks  第2项,L206-L206,### 优质挖掘 · 难受才可能优质 / look-through（Marks Dare to Be,V§11,M2,,2. **禁止伪优质标签**：市占第一、主题热、专精特新/小巨人认定、工信部质量管理能力高等级（经验级→卓越级）名单、品牌知名度口号 ≠ 自动经济商誉。政策与认定只进 extern
+### 优质挖掘 · 难受才可能优质 / look-through（Marks  第3项,L207-L207,### 优质挖掘 · 难受才可能优质 / look-through（Marks Dare to Be,V§11,,,3. **look_through_progress**：优质筛选看每股经济进展（可分配现金/内在价值路径），禁止用「市值做大、股价强、营收规模」替代（Owner's Manual
+### 优质挖掘 · 难受才可能优质 / look-through（Marks  第4项,L208-L209,### 优质挖掘 · 难受才可能优质 / look-through（Marks Dare to Be,V§11,,,4. **dare_to_look_wrong 域（窄）**：仅当收盘≤有效 B20 **且**执行路径已开放（正式池 promote 或规则明确允许试仓）时，才允许「买得早、暂时
+"### 增长必须挣来 · NI3 分解（Damodaran Growth and Value, 2008；2026-10",L210-L210,"### 增长必须挣来 · NI3 分解（Damodaran Growth and Value, 20",V§11,,,"### 增长必须挣来 · NI3 分解（Damodaran Growth and Value, 2008；2026-10-26 进化 r6）"
+### 增长必须挣来 · NI3 分解（Damodaran Growth and 第1项,L211-L213,"### 增长必须挣来 · NI3 分解（Damodaran Growth and Value, 20",V§11,,,1. **growth_decomposition（强制，scenario_model / valuation_decision）**：基准 NI3 相对锚定年（最近完整年或中周期
+### 增长必须挣来 · NI3 分解（Damodaran Growth and 第2项,L214-L214,"### 增长必须挣来 · NI3 分解（Damodaran Growth and Value, 20",V§11,,,2. **硬禁令**：禁止把历史 EPS/归母 CAGR、卖方一致预期增速、或宏观「规上工业企业利润同比」直接写入基/牛 NI3。宏观利润只作压力测试背景。
+### 增长必须挣来 · NI3 分解（Damodaran Growth and 第3项,L215-L215,"### 增长必须挣来 · NI3 分解（Damodaran Growth and Value, 20",V§11,,,3. **价值毁灭检查**：若持续高再投资且增量 ROIC 明显低于资本成本 → 进取闸倾向失败；该增长**不得**抬 B20（增长可毁价值）。
+### 增长必须挣来 · NI3 分解（Damodaran Growth and 第4项,L216-L216,"### 增长必须挣来 · NI3 分解（Damodaran Growth and Value, 20",V§11,M4,,4. **与周期标签衔接**：模块 b 强/中时，分解结果不得推翻 `ni3_path_tag` / `strict_cycle_lock`；效率修复若来自周期价差回升，优先归入 
+### 增长必须挣来 · NI3 分解（Damodaran Growth and 第5项,L217-L218,"### 增长必须挣来 · NI3 分解（Damodaran Growth and Value, 20",V§11,,,5. Damodaran Prop4：历史高增长对未来预测力弱；高增长后更常接低增长——敏感性须列「效率耗尽后」情景。
+### 绝对优先 · 最不贵陷阱（Montier Absolute vs Relative / Tweedy；2026-,L219-L219,### 绝对优先 · 最不贵陷阱（Montier Absolute vs Relative / Tw,V§12,,,### 绝对优先 · 最不贵陷阱（Montier Absolute vs Relative / Tweedy；2026-10-26 进化 r7）
+### 绝对优先 · 最不贵陷阱（Montier Absolute vs Rel 第1项,L220-L220,### 绝对优先 · 最不贵陷阱（Montier Absolute vs Relative / Tw,V§12,,,1. **absolute_mos_gate（强制）**：相对便宜（同行/同链更低 PE·更高 ROE·更大折价）**永远不能**打开执行。可执行仍只看：收盘≤有效 B20（或贴近
+### 绝对优先 · 最不贵陷阱（Montier Absolute vs Rel 第2项,L221-L221,### 绝对优先 · 最不贵陷阱（Montier Absolute vs Relative / Tw,V§12,,,2. **least_bad_trap（链内最不贵）**：当同链或可比组在**绝对**意义上均无 margin of safety（多数溢价于本股 B20，或已 `return_b
+### 绝对优先 · 最不贵陷阱（Montier Absolute vs Rel 第3项,L222-L222,### 绝对优先 · 最不贵陷阱（Montier Absolute vs Relative / Tw,V§12,,,3. **Tweedy 屏线索 ≠ 抬 Exit PE**：行业内相对低 PE / 股价较前期大跌，只可作为「值得深挖低估」的线索（What Has Worked）；**禁止**据
+### 绝对优先 · 最不贵陷阱（Montier Absolute vs Rel 第4项,L223-L224,### 绝对优先 · 最不贵陷阱（Montier Absolute vs Relative / Tw,V§2,,,4. **会计可比压测（证监会造假专项对齐）**：若相对便宜依赖难核收入确认/关联交易/总额法嫌疑 → 标 `peer_not_comparable` 或 `accounting_
+### Fat pitch 耐心 · return_below_line · 行动偏见（Montier Seven La,L225-L225,### Fat pitch 耐心 · return_below_line · 行动偏见（Montie,V§11,,,### Fat pitch 耐心 · return_below_line · 行动偏见（Montier Seven Laws / 李录 Columbia 2010；2026-10-
+### Fat pitch 耐心 · return_below_line · 行 第1项,L226-L226,### Fat pitch 耐心 · return_below_line · 行动偏见（Montie,V§11,,,1. **fat_pitch_patience**：机会集在绝对上无 MOS（正式/候补多数 >B20 或已 near/above sell）时，默认=`等待/观察`（等价于持有现
+### Fat pitch 耐心 · return_below_line · 行 第3项,L227-L227,### Fat pitch 耐心 · return_below_line · 行动偏见（Montie,V§10,,,3. **downside_first（李录）**：拟试仓/到价卡须先写下行（永久损失/熊 NI3），再写上行；「先看涨后看跌」→ self_check fail。100% 所有者
+### Fat pitch 耐心 · return_below_line · 行 第5项,L228-L229,### Fat pitch 耐心 · return_below_line · 行动偏见（Montie,V§11,,,5. **不理解不做（Law7 对齐 competence）**：说不清商业模式与现金从哪来 → `competence_tag` 不得 `in_circle`；相对故事不能替代理
+### 护城河来源标签 · ROIC–WACC 持续性（Dorsey Little Book / Mauboussin ,L230-L230,### 护城河来源标签 · ROIC–WACC 持续性（Dorsey Little Book / M,V§11,,,### 护城河来源标签 · ROIC–WACC 持续性（Dorsey Little Book / Mauboussin Measuring the Moat；2026-10-26 
+### 护城河来源标签 · ROIC–WACC 持续性（Dorsey Littl 第1项,L231-L235,### 护城河来源标签 · ROIC–WACC 持续性（Dorsey Little Book / M,V§11,,,"1. **moat_source_tag（强制，模块 c；可多选主次）** ∈ {`intangible_pricing`, `switching_costs`, `network"
+### 护城河来源标签 · ROIC–WACC 持续性（Dorsey Littl 第2项,L236-L236,### 护城河来源标签 · ROIC–WACC 持续性（Dorsey Little Book / M,V§11,,,2. **伪护城河禁令（Dorsey Mistaken Moats）**：好产品、热赛道、高市占、强执行/明星管理层 **单独** ≠ 护城河。品牌若不能带来定价权或更高复购 → 
+### 护城河来源标签 · ROIC–WACC 持续性（Dorsey Littl 第3项,L237-L237,### 护城河来源标签 · ROIC–WACC 持续性（Dorsey Little Book / M,V§10,,,3. **ROIC–WACC 量级+久期（Mauboussin）**：优质筛选须同时看 (a) 正利差是否存在；(b) 能再投资多大规模；(c) 利差能维持多久。高 ROIC 但无
+### 护城河来源标签 · ROIC–WACC 持续性（Dorsey Littl 第4项,L238-L238,### 护城河来源标签 · ROIC–WACC 持续性（Dorsey Little Book / M,V§11,,,4. **行业≠命运**：行业整体毁价值仍可有创造价值的公司，反之亦然；禁止「赛道好→自动优质」。段永平：好赛道不会系统性掉进低毛利；低毛利多为差商业模式——对齐 competen
+### 护城河来源标签 · ROIC–WACC 持续性（Dorsey Littl 第5项,L239-L240,### 护城河来源标签 · ROIC–WACC 持续性（Dorsey Little Book / M,V§11,,,5. **与 I1 关系**：本条把 quality_screen_note 的「超额回报证据」具体化为护城河来源枚举；缺 `moat_source_tag` → 不得标 fran
+### 特殊情形套利闸 · 整组高估相对尺（Greenblatt Columbia Special Situations,L241-L241,### 特殊情形套利闸 · 整组高估相对尺（Greenblatt Columbia Special ,V§12,,,### 特殊情形套利闸 · 整组高估相对尺（Greenblatt Columbia Special Situations / Schloss OID；2026-10-26 进化 r
+### 特殊情形套利闸 · 整组高估相对尺（Greenblatt Columbi 第1项,L242-L242,### 特殊情形套利闸 · 整组高估相对尺（Greenblatt Columbia Special ,V§3,,,1. **special_situation_note（可选）**：分拆/重组/要约/折价子公司/净现金壳等只进深挖优先级与 falsifier；**禁止**用收购价值、收购倍数或
+### 特殊情形套利闸 · 整组高估相对尺（Greenblatt Columbi 第2项,L243-L243,### 特殊情形套利闸 · 整组高估相对尺（Greenblatt Columbia Special ,V§12,,,2. **relative_overvalued_trap（强制加固 J1）**：Greenblatt——相对估值的核心风险是整组都贵时拿贵的比更贵；「EV/EBIT 略低」≠ 便
+### 特殊情形套利闸 · 整组高估相对尺（Greenblatt Columbi 第3项,L244-L244,### 特殊情形套利闸 · 整组高估相对尺（Greenblatt Columbia Special ,V§10,,,3. **催化剂纪律**：特殊情形「有催化剂」是加分，不是免 MOS 通行证；无绝对安全边际时催化剂只缩短等待，不打开试仓。看见华尔街已定价的催化剂往往已晚（Greenblatt/
+### 特殊情形套利闸 · 整组高估相对尺（Greenblatt Columbi 第4项,L245-L246,### 特殊情形套利闸 · 整组高估相对尺（Greenblatt Columbia Special ,V§3,,,4. **ROIC 优先于 ROE 线索**：筛优质/错价时主看 ROIC（或 EBIT/(NWC+净设备)）与 EBIT/EV 作交叉，ROE 杠杆扭曲不得单独支撑「便宜好生意」
+### 现价隐含价值创造 · 估准交叉（Mauboussin / Greenblatt / 段永平浙大2025；2026,L247-L247,### 现价隐含价值创造 · 估准交叉（Mauboussin / Greenblatt / 段永平浙,V§14,,,### 现价隐含价值创造 · 估准交叉（Mauboussin / Greenblatt / 段永平浙大2025；2026-10-26 进化 r8）
+### 现价隐含价值创造 · 估准交叉（Mauboussin / Greenbl 第1项,L248-L248,### 现价隐含价值创造 · 估准交叉（Mauboussin / Greenblatt / 段永平浙,V§10,,,1. **price_implied_vc_note（强制，拟试仓/到价卡；对齐二级检查#1）**：用现价反推市场已为「稳态价值 + 未来价值创造」付了多少（一句话）；若隐含永续高
+### 现价隐含价值创造 · 估准交叉（Mauboussin / Greenbl 第2项,L249-L249,### 现价隐含价值创造 · 估准交叉（Mauboussin / Greenblatt / 段永平浙,V§14,,,2. **earnings_yield_crosscheck（可选敏感性）**：并列 EBIT/EV 或逆向 PE 现实性检查；仅作「贵/便宜」直觉校准，**不得**替换 Exit
+### 现价隐含价值创造 · 估准交叉（Mauboussin / Greenbl 第3项,L250-L250,### 现价隐含价值创造 · 估准交叉（Mauboussin / Greenblatt / 段永平浙,V§7,,,3. **不懂不碰（段永平）**：商业模式/文化/现金从哪来写不清 → `competence_tag` 不得 `in_circle`；禁止用信息差、主题热、短期赔率包装能力圈。好
+### 现价隐含价值创造 · 估准交叉（Mauboussin / Greenbl 第4项,L251-L251,### 现价隐含价值创造 · 估准交叉（Mauboussin / Greenblatt / 段永平浙,V§11,,,4. **慢与踩雷**：投资做得好的人节奏慢、不怕错过；本系统等价落地=`fat_pitch_patience`，不新增空仓命令，不改 B20。
+### 现价隐含价值创造 · 估准交叉（Mauboussin / Greenbl 第5项,L252-L253,### 现价隐含价值创造 · 估准交叉（Mauboussin / Greenblatt / 段永平浙,V§1,,,5. **宏观/固投/规范条件**：统计局固投、工增、工信部行业规范征求意见等只进 risk/压力测试背景，**禁止**上修基准 NI3/B20（对齐 I2/E1）。
+### Fisher 优质闸 · 管理层诚信与稀释（Common Stocks 15 Points / When to ,L254-L254,### Fisher 优质闸 · 管理层诚信与稀释（Common Stocks 15 Points ,V§11,,,### Fisher 优质闸 · 管理层诚信与稀释（Common Stocks 15 Points / When to Sell；2026-10-26 进化 r9）
+### Fisher 优质闸 · 管理层诚信与稀释（Common Stocks  第1项,L255-L258,### Fisher 优质闸 · 管理层诚信与稀释（Common Stocks 15 Points ,V§11,,,1. **fisher_quality_gate（强制加固 I1/K1）**：在已有 `moat_source_tag` 之外，优质筛选须额外过 Fisher 硬闸：
+### Fisher 优质闸 · 管理层诚信与稀释（Common Stocks  第2项,L259-L259,### Fisher 优质闸 · 管理层诚信与稀释（Common Stocks 15 Points ,V§11,,,2. **增长跑道 ≠ 护城河**：Points 1–2（市场潜力/产品线延展）只说明可投资规模，**不能**替代 `moat_source_tag`；无结构性优势时高增默认均值回
+### Fisher 优质闸 · 管理层诚信与稀释（Common Stocks  第3项,L260-L260,### Fisher 优质闸 · 管理层诚信与稀释（Common Stocks 15 Points ,V§4,,,3. **Scuttlebutt 定义**：一手披露、竞品/客户/渠道可核交叉、业绩说明会问答可计入；**卖方研报目标价/评级、市值管理话术、协会 TAM 叙事不计**为 scut
+### Fisher 优质闸 · 管理层诚信与稀释（Common Stocks  第4项,L261-L261,### Fisher 优质闸 · 管理层诚信与稀释（Common Stocks 15 Points ,V§7,,,4. **与卖出纪律交叉（Fisher Ch.6）**：仅当（a）买错、（b）公司不再满足买入标准、（c）显著更优标的经同等研究验证 才构成「基本面卖出」；**单纯 PE 变高、宏
+### Fisher 优质闸 · 管理层诚信与稀释（Common Stocks  第5项,L262-L263,### Fisher 优质闸 · 管理层诚信与稀释（Common Stocks 15 Points ,V§11,,,5. **与 K1 关系**：本条把 quality_screen 的「难受点」落到可核管理层/稀释/利润率闸；缺 fisher 相关难受点叙述时，franchise 标签应降级复
+### Greenwald 可靠度分层 · EPV 交叉（AV→EPV→Franchise；2026-10-26 进化 ,L264-L264,### Greenwald 可靠度分层 · EPV 交叉（AV→EPV→Franchise；2026,V§14,,,### Greenwald 可靠度分层 · EPV 交叉（AV→EPV→Franchise；2026-10-26 进化 r9）
+### Greenwald 可靠度分层 · EPV 交叉（AV→EPV→Fran 第1项,L265-L265,### Greenwald 可靠度分层 · EPV 交叉（AV→EPV→Franchise；2026,V§10,,,1. **epv_reliability_note（强制，拟试仓/到价卡）**：用一句话按可靠度分层写清：资产/重置成本线索 → 无增长盈利能力（现状可持续 EBIT/FCF 资本
+### Greenwald 可靠度分层 · EPV 交叉（AV→EPV→Fran 第2项,L266-L266,### Greenwald 可靠度分层 · EPV 交叉（AV→EPV→Franchise；2026,V§11,,,2. **无特许则增长不值钱**：若 `moat_source_tag=none_or_eroding` 或 EPV 直觉 ≤ 有形资产重置（无超额回报）→ **禁止**用收入/利
+### Greenwald 可靠度分层 · EPV 交叉（AV→EPV→Fran 第3项,L267-L267,### Greenwald 可靠度分层 · EPV 交叉（AV→EPV→Franchise；2026,V§3,,,3. **DCF/终值陷阱**：把「好信息（近端）+坏信息（远端终值）」混加会让坏信息主导；本系统 Exit PE×NI3 已是折中——**禁止**再叠卖方长期 CAGR、主题终局
+### Greenwald 可靠度分层 · EPV 交叉（AV→EPV→Fran 第4项,L268-L268,### Greenwald 可靠度分层 · EPV 交叉（AV→EPV→Franchise；2026,V§14,,,4. **与 K3 咬合**：`price_implied_vc_note` 写「市场已付多少未来创造」；`epv_reliability_note` 写「我们自己按可靠度分层认多
+### Greenwald 可靠度分层 · EPV 交叉（AV→EPV→Fran 第5项,L269-L270,### Greenwald 可靠度分层 · EPV 交叉（AV→EPV→Franchise；2026,V§14（随所在小节）,,,5. **搜素偏好提醒（Greenwald search）**：便宜/丑陋/冷门是深挖线索，不是执行通行证；仍须过 absolute_mos_gate。
+### 买卖点纪律加固 · 满价/剥夺感/激励扭曲（Klarman FAJ2010 / Munger Misjudgme,L271-L271,### 买卖点纪律加固 · 满价/剥夺感/激励扭曲（Klarman FAJ2010 / Munger,V§11,,,### 买卖点纪律加固 · 满价/剥夺感/激励扭曲（Klarman FAJ2010 / Munger Misjudgment / Fisher Ch.6 / Smith Funds
+### 买卖点纪律加固 · 满价/剥夺感/激励扭曲（Klarman FAJ201 第1项,L272-L272,### 买卖点纪律加固 · 满价/剥夺感/激励扭曲（Klarman FAJ2010 / Munger,V§10,,,1. **full_price_discipline（Klarman；t319u/t320u）**：有安全边际时，可从现金/他袖**置换入**；价格已反映价值、上行/下行比翻转后应
+### 买卖点纪律加固 · 满价/剥夺感/激励扭曲（Klarman FAJ201 第2项,L273-L273,### 买卖点纪律加固 · 满价/剥夺感/激励扭曲（Klarman FAJ2010 / Munger,V§11,,,2. **cash_default_patience**：无绝对 MOS 时保持现金/等待是过程正确（Klarman never fully invested if nothing
+### 买卖点纪律加固 · 满价/剥夺感/激励扭曲（Klarman FAJ201 第4项,L274-L274,### 买卖点纪律加固 · 满价/剥夺感/激励扭曲（Klarman FAJ2010 / Munger,V§7,,,4. **commitment_bias_exit（Munger consistency）**：公开/书面结论有锁脑倾向；击穿码或核心 falsifier 触发后须立刻改动作标签，
+### 买卖点纪律加固 · 满价/剥夺感/激励扭曲（Klarman FAJ201 第5项,L275-L275,### 买卖点纪律加固 · 满价/剥夺感/激励扭曲（Klarman FAJ2010 / Munger,V§11,,mindray,5. **incentive_caused_bias（Munger + IR）**：管理层激励、市值管理、券商佣金、政策喊话会导致偏乐观表述；业绩说明会指引与「全球前十/市值管理」
+### 买卖点纪律加固 · 满价/剥夺感/激励扭曲（Klarman FAJ201 第6项,L276-L277,### 买卖点纪律加固 · 满价/剥夺感/激励扭曲（Klarman FAJ2010 / Munger,V§11,,,6. **social_proof_ban**：同业都贵、指数成分、被动资金流入不是估准或买点依据（Munger social proof；Smith 指数动量批评）。
+### 两层体系 + 四优（t220u/t222u/t225u/t227u · 2026-10-26）,L278-L287,### 两层体系 + 四优（t220u/t222u/t225u/t227u · 2026-10-26,V§11,,,### 两层体系 + 四优（t220u/t222u/t225u/t227u · 2026-10-26）
+### 两层体系 + 四优（t220u/t222u/t225u/t227u ·  第1项,L288-L288,### 两层体系 + 四优（t220u/t222u/t225u/t227u · 2026-10-26,V§11,,,1. **four_quality_gate**：企业 / 生意 / 领导层 / 价格 各 `pass|fail|pending|edge`。升正式盯盘要求前三项过（+研究完成）；
+### 两层体系 + 四优（t220u/t222u/t225u/t227u ·  第2项,L289-L289,### 两层体系 + 四优（t220u/t222u/t225u/t227u · 2026-10-26,V§10,,,2. **便宜救不了平庸**：价格再低也不能弥补生意/管理层/企业质量不足；「到价」只是价格一维。
+### 两层体系 + 四优（t220u/t222u/t225u/t227u ·  第3项,L290-L290,### 两层体系 + 四优（t220u/t222u/t225u/t227u · 2026-10-26,V§11,,,"3. **强制标签**：正式池卡须写 `four_quality_gate`；候补 active 须写 `candidate_quality_gate={business,mana"
+### 两层体系 + 四优（t220u/t222u/t225u/t227u ·  第4项,L291-L291,### 两层体系 + 四优（t220u/t222u/t225u/t227u · 2026-10-26,V§10,,,4. **与既有闸咬合**：统摄 fisher_quality_gate / moat_source_tag / economic_goodwill_tag / absolute_
+### 两层体系 + 四优（t220u/t222u/t225u/t227u ·  第5项,L292-L292,### 两层体系 + 四优（t220u/t222u/t225u/t227u · 2026-10-26,V§11,,,5. **晋升路径**：候补研究完成（深估+复核）且企业确认过 → 升正式盯盘；**不要求**当时价格过闸。生意/领导层未过 → 归档，不得占 active 候补。
+### 两层体系 + 四优（t220u/t222u/t225u/t227u ·  第6项,L293-L294,### 两层体系 + 四优（t220u/t222u/t225u/t227u · 2026-10-26,V§11,,,6. **正式≠更贵的候补**：差别是研究完成度与早报执行名单，不是「现在更便宜」。
+### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 20261028；不改买点公,L295-L297,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10,,,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 20261028；不改买点公式）
+硬闸§1,L298-L298,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10,,,1. **TA 永不抬 B20**：技术面只服务分批/可达/贴近带试探；禁止把 B20/B22/收益卖线抬到估值区间之上。
+硬闸§2,L299-L299,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10,,,2. **到价·候补不执行**：`promote=false`（或非正式池）且收盘≤B20 → 动作**必须**含字面 `到价·候补不执行`，主因=未晋升/三角闸/事件闸。**禁止
+硬闸§3,L300-L300,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10,,,3. **正式到价**：正式池收盘≤B20 → 按分批执行（`置换：<资金袖>→<到价名>`，§42）；技术见底**不是**到价首笔前置。事件闸未清 → `到价·正式·事件闸不试仓
+硬闸§4,L301-L301,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10,,,"4. **贴近带**：相对 B20 溢价 ∈ (0%,5%] 且正式可执行路径开放时，须同时「技术见底候选」才可整笔试仓；未见底 → 动作含字面 `见底前不试仓`（`near_ba"
+硬闸§5,L302-L302,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§7,,,5. **return_below_line（t388u 取代 return_below_line）**：`base_revert_ann_pct` < `return_sell_
+硬闸§6,L303-L303,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§7（编号保留·已并入他条，legacy 有指针）,,,6. （t388u：return_below_line 退役，并入硬闸 5 / §5 return_sell；编号保留）
+硬闸§7,L304-L304,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,M4,,7. **strict_cycle_lock**：模块 b 强/中且中枢/守窗路径下，溢价≥100% 或已 return_below_line → 禁止为贴价放松 NI3/Exit
+硬闸§8,L305-L305,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§12,,,8. **相对/链内/屏选便宜**：永不单独打开执行、永不抬 B20/Exit PE——`absolute_mos_gate` / `least_bad_trap` / `rela
+硬闸§9,L306-L306,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10,,,9. **就地修卡**：触到缺标签（如 `ni3_path_tag`）或文案与本闸冲突的旧卡 → 就地改文案/补标，**不**整池重估、不发明买点。
+硬闸§10,L307-L307,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§3,,,10. **溢价字段**：只认 `premium_vs_B20_pct`；与 gap_* 冲突时改文案不改 B20（见 r10 premium_field_canon）。
+硬闸§11,L308-L308,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10（随所在小节）（编号保留·已并入他条，legacy 有指针）,,,11. （并入 §2/§3）
+硬闸§12,L309-L309,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10（随所在小节）（编号保留·已并入他条，legacy 有指针）,,,12. （并入 §8）
+硬闸§13,L310-L310,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,,,13. **质量 edge**：四优任一项 `edge` → 可留正式，但到价亦 `到价·正式·质量edge不试仓`（r11 quality_edge_resolution）。
+硬闸§14,L311-L311,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10（随所在小节）（编号保留·已并入他条，legacy 有指针）,,,14. （并入 §5）
+硬闸§15,L312-L312,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§12,,,15. **套利须有终点与对冲腿**（`arb_reality_check`）；声称对冲须写未对冲共享因子（`crowded_hedge_incomplete_check`）；价差
+硬闸§16,L313-L313,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§4,,,16. **升档触发（P1）**：纯回退轻资产、四优 edge、B 档暂定（B+/B/B-·暂定）且质量存疑、或事件闸名须写 `upgrade_triggers`（可证伪领先指标）
+硬闸§17,L314-L314,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§4,,,17. **评级双轴（P2/P2b）**：权威见 §2（展示串 `{b_tier|quality}·{confidence}`、B 必标 b_tier、禁光秃 `B-暂定`/`B·
+硬闸§18,L315-L315,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§2,,,18. **NI/FCF 双轨（P3）**：主执行 B20 与收益卖线只认 NI 轨；FCF 轨细则见「NI/FCF 双轨」节（gate=pass 且 ≤FCF_B20 >NI_B
+硬闸§19,L316-L316,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10,,,19. **重点≠试仓（t298u）**：重点 = (A·∨B+· ∧ premium_vs_B20_pct≤20) ∪ (B·∨B-· ∧ 收盘≤NI B20)，**权威定义见「
+硬闸§20,L317-L317,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,,,20. **资本配置证据（r13）**：无 IV 对照的自动驾驶回购/分红不得单独证管理层 pass；ToB 再投入叙事挡 A（最高 B+）。
+硬闸§21,L318-L318,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10（随所在小节）（编号保留·已并入他条，legacy 有指针）,,,21. （并入 §8）
+硬闸§22,L319-L319,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,M4,,22. **SES 让利致近端 NI 下滑（r14）**：禁止无独立证据改打 `peak_fade`；期权+高价回购净稀释进 accounting 质量（`scale_econom
+硬闸§23,L320-L320,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10（随所在小节）（编号保留·已并入他条，legacy 有指针）,,,23. （并入 §3）
+硬闸§24,L321-L321,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,,,24. **候补晋升卫生（r15）**：active 候补必须有 `candidate_quality_gate` 且生意+领导层均为 pass；任一项 fail → 立即 arc
+硬闸§25,L322-L322,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10（随所在小节）（编号保留·已并入他条，legacy 有指针）,,,25. （并入 §38）
+硬闸§26,L323-L323,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10（随所在小节）（编号保留·已并入他条，legacy 有指针）,,,26. （并入 §4/§5）
+硬闸§27,L324-L324,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,,,27. **能力受苦/再投入狩猎 · 护城河≠好产品（r16）**：特许候选须写「愿短期承压换长期份额/品牌」证据（`capacity_to_suffer_reinvest_hun
+硬闸§28,L325-L325,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10（随所在小节）（编号保留·已并入他条，legacy 有指针）,,,28. （并入 §8）
+硬闸§29,L326-L326,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,,,29. **回报空间估准 · 残差收益交叉 · EPV 先于增长特许（r16）**：franchise 名优先用分红+回购+可验证增长的**回报空间**交叉，禁止用高增长 PE 倍
+硬闸§30,L327-L327,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,,,30. **Five Ms 狩猎清单（r17）**：正式/候补狩猎须覆盖 Moat/Market/Management/More potential/Margin of safet
+硬闸§31,L328-L328,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,,,31. **期望反向读取 · 增长久期 · 财会33号（r17）**：从股价反推隐含驱动再判断期望（`expectations_reverse_read_discipline`）；
+硬闸§32,L329-L330,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,,,32. **叙事≠内在价值 · 不卖错（r17）**：主题叙事不得降 hurdle（`narrative_not_intrinsic_patience`）；收益卖线字面优先于「好生
+硬闸§33,L331-L331,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10,,,"33. **到价/贴近带必须写分批计划 + 正式仓升级计划（t304u/t306u/t307u/t308u）**：正式名到价或贴近带 (0%,5%] → 决策卡与 digest *"
+硬闸§34,L332-L332,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10（随所在小节）（编号保留·已并入他条，legacy 有指针）,,,34. （并入 §15）
+硬闸§35,L333-L333,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§7,,,35. **卖前先写退出 · 自核一手 · ROIC交叉不抬点（r18）**：拟试仓须有收益卖线字面+做错 premortem（`sell_level_before_buy_not
+硬闸§36,L334-L334,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10（随所在小节）（编号保留·已并入他条，legacy 有指针）,,,36. （并入 §5/§6/§33；无 MOS 默认等待 = `cash_patience_fiduciary`）
+硬闸§37,L335-L335,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,,,37. **可预测性优先 · 一票否决参数（r19 X1）**：四优「生意」pass 须附可预测性证据（长期定价权模式/轻资本/非研发二元）；研发二元或管线型（创新药/器械新品）→
+硬闸§38,L336-L336,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§12,,,38. **A/H·孪生价差统一口径（r19 X2 · 合并 r11/r12/r15/r18 四处 AH 条）**：价差=交易地栖息/情绪共振，套利受资本与噪声交易者风险约束、极端
+硬闸§39,L337-L337,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§2,,,39. **基率交叉 · 熊市中位硬闸 · 非经常性口径 · 现金转换当期判（r19 X3 + P-X4）**：NI3 基准隐含 3 年 CAGR >20%（全球大公司基率约前 2
+硬闸§40,L338-L338,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§8,,focus,40. **置换：不合格持仓→现金/更优（t319u S1 · t320u 文案）**：已持仓或正式名若 `four_quality_gate` 企业/生意/领导层任一项=`fai
+硬闸§41,L339-L339,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§7（编号保留·已并入他条，legacy 有指针）,,,41. （t388u：S2「公允附近溢价仓」并入 §5 return_sell——公允附近=base_revert_ann_pct 低，同一读数管；旧标签 `公允附近·可减仓`/`
+硬闸§42,L340-L340,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§8,,,42. **置换：资金袖→到价名（t319u S3 · t320u）**：当正式名到价且闸允许执行（收盘≤B20）→ 任何「开/加仓」**必须**写成置换，并**具名资金袖**：`
+硬闸§43,L341-L341,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§15,,,43. **现金门槛账本 · 成本盲 · 财报日复核（r20 Y1）**：现金袖期望与排序键只认 §52/§61。每个持仓袖须并列展示 `implied_3y=(FV0/px)^(
+硬闸§44,L342-L342,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10,,,44. **（并入 §46② · t386u）**：池内隐含期望差只用于排资金袖，永不决定是否置换入；目的地可执行四检（正式到价 ∧ 闸清 ∧ 档位余量含整手 ∧ 通道可执行，港股
+硬闸§45,L343-L343,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§9,,,45. **超档遗留标注 · 规模纪律代价 · 毛利/资产交叉（r20 Y3）**：持仓超出 §2.3/§4 档位上限（暂定=试仓；脆弱比<0.5=最多试仓）→ `over_tie
+硬闸§46,L344-L344,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§8,,,46. **置换总纲 · swap_spec_t386u（用户 t385u/t386u「你帮我定一下吧」2026-10-30 Asia/Shanghai 代定；合并原 §44 目的
+硬闸§47,L345-L348,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§9,,catl cmb gujing moutai,47. **默认计划仓位 · 超档出资 · planned_position_pct（r20 P-Y5 · 用户 2026-10-27 14:42 Asia/Shanghai 批准
+硬闸§48,L349-L349,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,midea,48. **账本诚实 · 含股息 · 期限匹配 · 乐观偏差注记（r21 Z1 · 仅展示，不新增触发、不改排序键）**：§43 账本每袖须并列 ① `fv0_source`∈{c
+硬闸§49,L350-L350,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§9,,,49. **超档修剪一致性审计 · 存量暂定升级队列（r21 Z2 · 研究/文案，不新增交易）**：任一置换计划把「超档/近硬顶」袖置换到**现金**（无具名可执行目的地）时，须
+硬闸§50,L351-L351,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§2,,,50. **财报日复核看扣非与单季（r21 Z3 · 加固 §39/§43 print_day_swap_review）**：持仓财报日复核须先读公司公告原文（交易所/巨潮），以*
+硬闸§51,L352-L352,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§0,,,51. **旧文案别名（r21 Z4 · t320u 收口）**：规则文件历史学习节中出现的「新资金…（不）买/加仓/摊薄」一律读作「从现金/他袖置换入…」；「卖出/减仓/退出」读
+硬闸§52,L353-L353,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§15,,,52. **现金门槛 = 现金实际收益率 · 闲置现金默认停泊（r21 P-Z5 · 用户 2026-10-27 t329u「你定吧」18:04 代定授权 + t330u/t331
+硬闸§53,L354-L355,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§9,,catl fuyao gujing haier midea mindray yili,53. **存量暂定上限 12.5%（t396u 改 10%，t400u 起改为 15%，见 §47 t400u 条） · legacy_tentative_cap（r21 P-Z
+硬闸§54,L356-L356,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§15,,,54. **S2 袖含股息高于现金门槛不单独置换到现金（r21 P-Z7 反向选项 · 用户 2026-10-27 t329u「你定吧」18:04 代定授权 + t330u/t33
+硬闸§55,L357-L357,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§2,,,55. **无形投入资本化交叉 · intangible_cap_cross（r22 AA1 · 用户 2026-10-27 t335u 18:37 Asia/Shanghai 批
+硬闸§56,L358-L358,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,,,56. **再投入挡A须写机制 · reinvestment_blocker_mechanism（r22 AA2 · 文案，不改档）**：`grade_reason` 中「再投入挡
+硬闸§57,L359-L359,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§12,,,57. **无形调整后的同业相对 · 会计政策可比性（r22 AA3 · 车道2 · 仅排研究/资金袖顺序）**：同业相对 ROE/PE 比较须并列 `rd_cap_ratio`（
+硬闸§58,L360-L363,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,haier,58. **组合层收口 · 存量上限复核日 · 股息核验 · 贴近带持仓具名资金袖（r22 AA4 · 文案/日期，不新增阈值）**：① §53 每个存量暂定上限名须写 `lega
+硬闸§62,L364-L364,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,62. **fallback FV0 账本纪律 · fv0_fallback_sort_discipline（r23 BB1 · 车道3+4 · 文案/排序标注，不改阈值数值）**
+硬闸§63,L365-L365,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,63. **账本股息核验扩展 · ledger_div_verification（r23 BB2 · 车道3 · 标注）**：凡 `implied_3y_total`（价格隐含+股
+硬闸§64,L366-L366,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§7,,,64. **持仓名看板动作置换字面 · holding_action_swap_literal（r23 BB3 · 车道4 · 文案）**：出现在持仓快照中的正式名，watchli
+硬闸§65,L367-L367,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§12,,,65. **相对笔记具名目的地须先可执行 · relative_note_destination_exec（r23 BB4 · 车道2+4）**：任何 `relative_misp
+硬闸§66,L368-L368,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§15,,,66. **闲置现金>10%须写停泊计划句 · idle_cash_parking_plan（r23 P-BB5 · 用户 2026-10-27 22:32 Asia/Shangh
+硬闸§67,L369-L370,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10（随所在小节）,,,67. **（并入 §46④ · t386u）**：原「双侧 fallback 时 10pp 仅研究」随 §46 改用保守口径（r_norerate/收敛较低值）而失去对象；fal
+硬闸§68,L371-L371,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§15,,,68. **计划后闲置现金停泊句 · post_trim_parking_plan（r24 CC1 · 车道4 · 文案硬闸，不自动下单）**：凡 swap-plan / 持仓账本
+硬闸§69,L372-L372,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,69. **候补管道空仓警示 · candidate_pipeline_nonempty（r24 CC2 · 车道1 · 研究卫生）**：若 `candidates.json` 中
+硬闸§70,L373-L373,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§15,,,70. **置换腿 FV0/§67 声明 · swap_leg_fv0_declaration（r24 CC3 · 车道3+4 · 计划层投影）**：swap-plan 中每一条引
+硬闸§71,L374-L374,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,,,71. **目的地稀缺·资金袖闲置注记 · destination_scarce_funding_idle（r24 CC4 · 车道1+4 · 文案）**：当存在 §54/S2「仅
+硬闸§72,L375-L375,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,72. **research_seed 必须落入 candidates 行 · research_seed_must_land_in_candidates（r25 DD1 · 车道
+硬闸§73,L376-L376,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§12,,,73. **相对错价笔记不得无绝对 MOS 暗示换入 · relative_mispricing_no_exec_without_absolute_mos（r25 DD2 · 车道
+硬闸§74,L377-L378,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,74. **research_seed 禁止作置换入腿 · research_seed_forbidden_as_swap_to（r25 DD3 · 车道1+4 · 计划层）**：
+硬闸§75,L379-L379,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,75. **相对笔记须盖 relative_exec_void 戳 · relative_exec_void_ledger_stamp（r26 EE1 · 车道2 · 文案卫生）*
+硬闸§76,L380-L380,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,76. **权重>5% 且 fallback FV0 须入重跑队列戳 · card_fv3_rebuild_queue_stamp（r26 EE2 · 升装原 P-CC5 · 车道
+硬闸§77,L381-L382,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,77. **资金袖闲置=对等合法 · funding_idle_equal_sleeve（r26 EE3 · 车道4 · 文案）**：当触及 §71 `destination_sc
+硬闸§78,L383-L383,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,78. **research_seed 深研优先级队列 · seed_deep_research_priority（r27 FF1 · 车道1 · 研究卫生）**：当 `candi
+硬闸§79,L384-L384,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§12,,,79. **AH/同业相对字段亦须作废戳 · ah_peer_note_requires_relative_exec_void（r27 FF2 · 车道2 · 文案卫生）**：决策
+硬闸§80,L385-L385,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,80. **FV3 重跑队列作业纪律 · fv3_rebuild_queue_ops（r27 FF3 · 车道3 · 流程，不改数）**：凡 §76 `card_fv3_rebui
+硬闸§81,L386-L386,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,81. **research_seed 进度触达 · seed_research_progress_touch（r28 GG1 · 车道1 · 研究卫生）**：当 §78 `see
+硬闸§82,L387-L387,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,82. **FV3 队列首名准备输入须可定位 · fv3_prep_inputs_locatable（r28 GG2 · 车道3 · 流程，不改数）**：§80 `fv3_queu
+硬闸§83,L388-L389,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§15,,,83. **修剪回收默认停泊 + P-DD5 触发戳 · trim_recovery_parks_default（r28 GG3 · 车道4 · 文案卫生）**：① 凡 swap-
+硬闸§84,L390-L390,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§12,,,84. **相对/AH 戳覆盖看板与双副本 · relative_void_watchlist_artifact_coverage（r29 HH1 · 车道2 · 文案卫生）**：
+硬闸§85,L391-L391,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,85. **FV3 次名亦须可定位准备 + 书面到期日 · fv3_next_prep_and_due_date（r29 HH2 · 车道3 · 流程，不改数）**：① §80 `
+硬闸§86,L392-L392,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§15,,,86. **资金袖闲置须并列现金停泊合法句 + P-DD5 嵌套触发 · funding_idle_park_ok_and_nested_pdd5（r29 HH3 · 车道4 · 
+硬闸§87,L393-L393,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,87. **种子闸草稿须可定位量化+回撤成因+持仓重叠 · seed_gate_quant_cause_overlap（r30 II1 · 车道1 · 流程，不改数）**：① §8
+硬闸§88,L394-L394,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§15,,,88. **现金袖停泊工具相对比价（唯一可执行相对比较）· parking_instrument_relative_check（r30 II2 · 车道2 · 现金袖，不改门槛数）
+硬闸§89,L395-L396,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§7,,,89. **准备包须含最新定期报告且期别名实相符 · prep_inputs_latest_periodic（r30 II3 · 车道3 · 流程，不改数）**：① `prep_i
+硬闸§90,L397-L398,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,90. **账本强制组合期望读数 · portfolio_implied_3y_total_ledger（r31 JJ1 · 车道3+4 · 组合收益，不改买点）**：① 持仓账本
+硬闸§91,L399-L400,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,91. **同需求驱动/同行业暴露合计标记 · correlated_demand_sleeve_flag（r31 JJ2 · 车道2+4 · 组合风险，不自动下单）**：① 同一
+硬闸§92,L401-L402,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,,,92. **种子晋升/正式到价须写组合边际影响 · portfolio_marginal_impact_required（r31 JJ3 · 车道1+4 · 流程）**：① 任一研
+硬闸§93,L403-L404,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,93. **禁止用组合叙事绕过单票绝对安全边际 · absolute_mos_no_portfolio_bypass（r31 JJ4 · 车道2+4 · 硬闸）**：① **禁止*
+硬闸§94,L405-L406,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,catl gujing,94. **压力情景相关上升标记 · stress_corr_sleeve（r32 KK1 · 车道4 · 组合风险，研究闸不自动下单）**：① 凡 §91 已标 `correla
+硬闸§95,L407-L408,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,95. **风险贡献可读字段（诚实启发式）· risk_contribution_heuristic_ledger（r32 KK2 · 车道3+4 · 半 Kelly 纪律，不发明
+硬闸§96,L409-L410,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§7,,,96. **现金期权价值与满仓机会成本并列注 · cash_optionality_vs_opportunity_cost（r32 KK3 · 车道1+4 · 现金袖，不改门槛数）
+硬闸§97,L411-L412,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§9,,,97. **因子/风格粗暴露合计标记 · factor_style_exposure_flag（r32 KK4 · 车道1+3 · 组合风险）**：① 账本对每只股权袖粗标 `st
+硬闸§98,L413-L414,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,98. **好股票≠好组合 + 摩擦侵蚀组合期望 · good_stock_ne_good_portfolio_and_friction（r32 KK5 · 车道1+4 · 置换纪
+硬闸§99,L415-L416,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,99. **组合读数 data_gap 诚实处理 · portfolio_data_gap_haircut（r33 LL1 · 车道3+组合 · 账本诚实，不改数）**：① 任一股
+硬闸§100,L417-L418,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§15,,,100. **资金袖/停泊相对笔记执行作废 · relative_funding_sleeve_exec_void（r33 LL2 · 车道2 · 相对错价）**：① 相对笔记若比
+硬闸§101,L419-L420,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,101. **组合缺口补救句 · gap_remediation_sentence_required（r33 LL3 · 车道4 · 置换纪律）**：① 当 `portfolio_
+硬闸§102,L421-L422,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,focus,102. **出池仍持仓的公允值维护 · exited_holding_fv_maintained（t351u 补片 P-t351u · 原拟 §99④，r34 预留编号 · 用户
+硬闸§103,L423-L424,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§7,,,103. **看板/晨报动作主句结果式起笔 · action_lead_result_phrasing（P-DD5 · 用户 2026-10-28 t352u 指示装入 · 文案卫
+硬闸§104,L425-L426,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,104. **计划执行后组合读数（收益+风险并列）· plan_pro_forma_portfolio_reading（r34 MM1 · 车道4+组合 · 置换纪律，不改腿）**
+硬闸§105,L427-L428,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,105. **种子管道需求驱动多样性 · seed_pipeline_driver_diversity（r34 MM2 · 车道1+组合 · 研究卫生，不降四优门）**：① 每个 
+硬闸§106,L429-L430,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,106. **被动参照尺并列（相对，不执行）· passive_yardstick_note（r34 MM3 · 车道2 · 相对错价/读数诚实）**：① `portfolio_l
+硬闸§107,L431-L432,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,gujing,107. **看板不得出现可自闭环的待办 · board_no_self_closable_todo（用户 2026-10-28 t352u）**：看板（Canvas「A股关注列表
+硬闸§108,L433-L434,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10,,gujing,108. （t386u：§46③ 已把「超限无去处→持有作资金袖、复核日再定」普适化；本条只保留暂缓腿记账格式）**到价最高隐含袖的上限修剪腿可暂缓至计划到期日 · trim_le
+硬闸§109,L435-L436,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§6,,haier tencent xingyu,109. **回报拆解与「估值不修复」控仓 · rerating_dependence_sizing（用户 2026-10-28 t352u 裁定，Asia/Shanghai；源：
+硬闸§110,L437-L438,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,tencent,110. **种子 monoculture 续补闭合 · seed_monoculture_remediation_closure（r35 NN1 · 车道1+组合 · 研究卫生）
+硬闸§111,L439-L440,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§12,,,111. **FCF并行观察与 NI_only 互斥 · fcf_parallel_ni_only_mutex（r35 NN2 · 车道2 · 相对/双轨文案硬闸）**：① `FC
+硬闸§112,L441-L442,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§2,,,112. **执行距离只认 NI + 应计/现金交叉注 · execution_distance_ni_only_accruals_cross（r35 NN3 · 车道3 · 估准
+硬闸§113,L443-L444,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,113. **计划/现货双缺口并引 · plan_spot_gap_dual_citation（r36 OO1 · 车道4+组合 · 置换纪律，不改腿）**：① 当 `portfo
+硬闸§114,L445-L446,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,114. **袖对目标拖累句（相对现金≠相对目标）· sleeve_target_drag_note（r36 OO2 · 车道2+3+4 · 组合读数诚实，不自动下单）**：① `
+硬闸§115,L447-L448,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,115. **时间止损到期动作句 · time_stop_expiry_action_required（r36 OO3 · 车道4 · 置换纪律）**：① 凡 swap-plan 
+硬闸§116,L449-L450,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,,,116. **目的地管道质量狩猎过程闸 · destination_pipeline_quality_hunt_process（r37 PP1 · 车道1+4 · 挖优质/管道，不
+硬闸§117,L451-L452,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§14,,zte,117. **低隐含袖公允诚实交叉（不改 B20）· low_implied_sleeve_fv_honesty_cross（r37 PP2 · 车道3 · 估准诚实）**：① 凡
+硬闸§118,L453-L454,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§15,,,118. **到期前无目的地仍收口 · pre_expiry_no_dest_still_close（r37 PP3 · 车道4 · 置换纪律）**：① 凡 swap-plan *
+硬闸§119,L455-L456,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,119. **缺口恶化无条件出腿诚实闸 · gap_worsening_exit_honesty_required（r38 QQ1 · 车道4+组合 · 置换纪律，不挡已授权收口）
+硬闸§120,L457-L458,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§12,,,120. **资金袖溢价×目的地折价双写 · funding_destination_dual_spread_note（r38 QQ2 · 车道2 · 相对错价，不抬 B20）**
+硬闸§121,L459-L460,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,tencent,121. **管道过程≠已填充 · 停滞声明 · pipeline_process_ne_fill_stall（r38 QQ3 · 车道1 · 研究卫生）**：① 当 §116 触
+硬闸§122,L461-L462,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§15,,,122. **停泊后重新部署就绪闸 · post_park_redeploy_readiness_required（r39 RR1 · 车道4+1 · 置换纪律）**：① 凡无条件
+硬闸§123,L463-L464,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§9,,gujing haier midea yili,123. **质量消费簇风险预算诚实闸 · quality_cluster_risk_budget_honesty（r39 RR2 · 车道4+组合 · 风险预算诚实，非仓位公式）
+硬闸§124,L465-L466,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,,,124. **低隐含增长消退假设诚实闸 · growth_fade_assumption_honesty（r39 RR3 · 车道3 · 估准诚实，不改 B20）**：① 触发同 
+硬闸§125,L467-L468,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,125. **时间止损收口后组合刷新 · 目的地空补救优先级 · 边际摩擦字段 · 现金双显 · post_time_stop_portfolio_refresh_required
+硬闸§126,L469-L470,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,126. **相对过闸≠组合缺口改善 · relative_pass_portfolio_gap_honesty（r40 SS2 · 车道2 · 相对错价，不抬 B20）**：① 
+硬闸§127,L471-L472,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,127. **低隐含预期反读 · 扣非/应计窗口 · 拖累pp账本归因 · expectations_reverse_read_drag_ledger（r40 SS3 · 车道3 
+硬闸§128,L473-L474,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13（编号保留·已并入他条，legacy 有指针）,,,128. （并入 §92④：种子组合适配 `portfolio_fit_note`；cleanup-20261029）
+硬闸§129,L475-L476,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§10（编号保留·已并入他条，legacy 有指针）,,,129. （并入 §42：到价须具名资金袖 `at_price_named_funding_required` / `funding_unnamed`；cleanup-202610
+硬闸§130,L477-L478,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,130. **同到期多腿合并缺口预演 · concurrent_time_stop_gap_premortem（r41 TT3 · 车道4 · 组合收益与风险强制）**：① 当 s
+硬闸§131,L479-L480,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,131. **大拖累 funding_idle 袖决策分叉 · drag_sleeve_decision_fork_required（r42 UU1 · 车道4 · 组合收益与风险
+硬闸§132,L481-L482,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§14,,,132. **隐含回报结构拆分 · implied_return_structure_split_required（r42 UU2 · 车道3 · 估准诚实，不改 B20）**：①
+硬闸§133,L483-L484,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,133. **正式观察≠缺口供给 · formal_observe_ne_gap_supply（r42 UU3 · 车道1+4 · 质量狩猎/置换纪律）**：① `status`/
+硬闸§134,L485-L486,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§11,,catl midea,134. **持有口径估值修复拆分 · hold_basis_rerating_split_required（r43 VV1 · 车道3 · 估准诚实，不改 B20）**：① 触发
+硬闸§135,L487-L488,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,135. **组合 PE 不变读数与补缺口所需回报 · portfolio_norerate_reading_and_gap_closure_hurdle（r43 VV2 · 车道
+硬闸§136,L489-L490,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§12,,catl focus midea,136. **相对价差双口径 · relative_spread_dual_basis_required（r43 VV3 · 车道2 · 置换/资金候选比价诚实，不改 B20）**
+硬闸§137,L491-L492,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,137. **候补/种子 PE 不变边际 · seed_norerate_accretion_vs_portfolio（r44 WW1 · 车道1+组合 · 挖优质/组合边际，不改
+硬闸§138,L493-L494,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§12,,,138. **财报后价格/价值拆分 · post_report_price_value_split（r44 WW2 · 车道2 · 相对错价诚实，不改 B20、不追涨杀跌）**：①
+硬闸§139,L495-L496,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,,139. **组合读数估算误差带 · portfolio_reading_estimate_band（r44 WW3 · 车道3+组合 · 估准诚实，不改 B20）**：① `po
+硬闸§140,L497-L498,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§13,,gujing,140. **分散资金来源账本 · diversifier_funding_source_ledger（r45 XX1 · 车道1+组合 · 组合层硬字段，不改 B20、不阻断到价
+硬闸§141,L499-L500,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§9,,cmb gujing haier midea moutai,141. **同簇单一补位与 PB-ROE 隐含要求回报交叉 · intra_cluster_slot_and_pbroe_cross（r45 XX2 · 车道2 · 相对错价，不
+硬闸§142,L501-L502,### 执行硬闸（权威收口 · cleanup-20261026 / 20261027 / 2026,V§9,,,142. **交易后簇越线 · post_trade_cluster_crossing（r45 XX3 · 车道4 · 置换纪律，不改 B20/§53 天花板/股数）**：① 触发
+### 到价/贴近带强制分批计划（t304u · 2026-10-27）,L503-L503,### 到价/贴近带强制分批计划（t304u · 2026-10-27）,V§10,,,### 到价/贴近带强制分批计划（t304u · 2026-10-27）
+### 到价/贴近带强制分批计划（t304u · 2026-10-27） 第1项,L504-L504,### 到价/贴近带强制分批计划（t304u · 2026-10-27）,V§10,,,"1. **强制触发**：正式池 `premium_vs_B20_pct≤0`（到价）或贴近带 (0%,5%] → 决策卡「分批计划」节 + digest/早报动作旁注 **不得空缺"
+### 到价/贴近带强制分批计划（t304u · 2026-10-27） 第2项,L505-L505,### 到价/贴近带强制分批计划（t304u · 2026-10-27）,V§10,,,2. **计划内容最低集**：仓位封顶（试仓/半首批/满额）· T1 触发（到价确认或贴近带+见底）· T2（回第一关键支撑 **或** 自 T1 再跌≥5%，先到）· T3（可达
+### 到价/贴近带强制分批计划（t304u · 2026-10-27） 第3项,L506-L506,### 到价/贴近带强制分批计划（t304u · 2026-10-27）,V§10,,,3. **闸门与计划分离**：`formal_event_gate` / `quality_edge` / 确信=暂定封顶 / `到价·候补不执行` 只挡下单，**仍须写出「闸清后
+### 到价/贴近带强制分批计划（t304u · 2026-10-27） 第4项,L507-L507,### 到价/贴近带强制分批计划（t304u · 2026-10-27）,V§10,,,4. **TA 边界**：分批只服务择时；禁止把触发价抬到估值 B20/B22 之上；见底只约束贴近带整笔试仓，**不是**到价 T1 前置。
+### 到价/贴近带强制分批计划（t304u · 2026-10-27） 第6项,L508-L515,### 到价/贴近带强制分批计划（t304u · 2026-10-27）,V§10,,,6. **正式仓升级计划（t306u · 定日硬闸 t307u · 现数先判 t308u · 2026-10-27；扩展本节，不另起层）**：凡第1条触发的正式名，决策卡与 dig
+### 到价/贴近带强制分批计划（t304u · 2026-10-27） 第7项,L516-L517,### 到价/贴近带强制分批计划（t304u · 2026-10-27）,V§7,,,7. **升级计划边界**：零改 B20/B22/收益卖线；TA 永不抬 B20、TA 不触发升级；NI 主轨；`cash_quality_gate` 非 pass（pending
+### 链内相对 / 价差笔记永不执行（Pabrai checklist · Gatev pairs · Bakshi ,L518-L520,### 链内相对 / 价差笔记永不执行（Pabrai checklist · Gatev pairs,V§12,,,### 链内相对 / 价差笔记永不执行（Pabrai checklist · Gatev pairs · Bakshi bullet-proof；2026-10-26 进化 r10
+### 溢价字段唯一口径 · 会计/披露不抬 Exit PE（Thorp 估准 · 监管披露；2026-10-26 进化,L521-L523,### 溢价字段唯一口径 · 会计/披露不抬 Exit PE（Thorp 估准 · 监管披露；202,V§3,,,### 溢价字段唯一口径 · 会计/披露不抬 Exit PE（Thorp 估准 · 监管披露；2026-10-26 进化 r10）
+### 到价文案主因锁 · 正式事件闸（Klarman/执行硬闸补钉 · Einhorn 纪律；2026-10-26 进,L524-L524,### 到价文案主因锁 · 正式事件闸（Klarman/执行硬闸补钉 · Einhorn 纪律；20,V§10,,,### 到价文案主因锁 · 正式事件闸（Klarman/执行硬闸补钉 · Einhorn 纪律；2026-10-26 进化 r10）
+### 到价文案主因锁 · 正式事件闸（Klarman/执行硬闸补钉 · Ein 第3项,L525-L526,### 到价文案主因锁 · 正式事件闸（Klarman/执行硬闸补钉 · Einhorn 纪律；20,V§6,,,3. **sizing_discipline（Thorp Kelly 薄吸收）**：即使正式到价，仓位仍受熊市年化/脆弱比/**确信=暂定封顶试仓**；**禁止**因「到价好久了/
+### 三腿凳 · Power 类型 · 质量 edge 处理（Akre Google Talk / Helmer 7 ,L527-L527,### 三腿凳 · Power 类型 · 质量 edge 处理（Akre Google Talk /,V§11,,,### 三腿凳 · Power 类型 · 质量 edge 处理（Akre Google Talk / Helmer 7 Powers / Sleep Nomad；2026-10-2
+### 三腿凳 · Power 类型 · 质量 edge 处理（Akre Goo 第1项,L528-L528,### 三腿凳 · Power 类型 · 质量 edge 处理（Akre Google Talk /,V§11,,inovance,1. **quality_edge_resolution（强制，车道1）**：`four_quality_gate` 中企业/生意/领导层任一项=`edge`（非 pass、非 f
+### 三腿凳 · Power 类型 · 质量 edge 处理（Akre Goo 第2项,L529-L529,### 三腿凳 · Power 类型 · 质量 edge 处理（Akre Google Talk /,V§2,,,2. **three_legged_stool（Akre）**：优质 = 高回报生意（ROE/FCF 回报于所有者资本，卡内一手）+ 有技能且诚信、把小股东当伙伴的经营者 + **
+### 三腿凳 · Power 类型 · 质量 edge 处理（Akre Goo 第3项,L530-L530,### 三腿凳 · Power 类型 · 质量 edge 处理（Akre Google Talk /,V§11,M2,,3. **power_type_tag（Helmer，可选但触卡补）**：`moat_source_tag` 须能落到 7 Powers 之一（规模经济/网络经济/反定位/转换成本
+### 三腿凳 · Power 类型 · 质量 edge 处理（Akre Goo 第4项,L531-L532,### 三腿凳 · Power 类型 · 质量 edge 处理（Akre Google Talk /,V§11,M3,,4. **scale_economics_shared_note（Sleep，可选）**：`durable_low_cost` 证据可加「规模节省是否回馈客户」与 robustne
+### 套利真伪闸 · A/H 价差 · 做空约束（Mitchell–Pulvino JF2001 / Xiong–Yu,L533-L535,### 套利真伪闸 · A/H 价差 · 做空约束（Mitchell–Pulvino JF2001 ,V§12,,,### 套利真伪闸 · A/H 价差 · 做空约束（Mitchell–Pulvino JF2001 / Xiong–Yu AER2011 / 港交所 AH 数据；2026-10-2
+### 卖出纪律 · 18–24 月前视 · 减持供给（Druckenmiller NBIM 2024 / Sleep ,L536-L538,### 卖出纪律 · 18–24 月前视 · 减持供给（Druckenmiller NBIM 202,V§10,,,### 卖出纪律 · 18–24 月前视 · 减持供给（Druckenmiller NBIM 2024 / Sleep Nomad / 证监会减持办法；2026-10-26 进化 
+### 半导体设备 · 质量与周期双标（Helmer power + SEMI 数据 + 北方华创 H1 2026；20,L539-L539,### 半导体设备 · 质量与周期双标（Helmer power + SEMI 数据 + 北方华创 ,V§11,M9,naura,### 半导体设备 · 质量与周期双标（Helmer power + SEMI 数据 + 北方华创 H1 2026；2026-10-26 进化 r11）
+### 半导体设备 · 质量与周期双标（Helmer power + SEMI  第1项,L540-L540,### 半导体设备 · 质量与周期双标（Helmer power + SEMI 数据 + 北方华创 ,V§11,M9,naura,1. **semi_equip_dual_tag（强制，车道1+4）**：正式池半导体设备名（北方华创/中微/拓荆/华海清科/盛美）须同时写 `moat_source_tag`(p
+### 半导体设备 · 质量与周期双标（Helmer power + SEMI  第2项,L541-L541,### 半导体设备 · 质量与周期双标（Helmer power + SEMI 数据 + 北方华创 ,V§11,,naura,2. **利润质量钉**：营收增速显著高于归母增速、毛利率下滑、开发支出（资本化研发）快速累积、存货高企（北方华创 H1’26：营收 +24.90%、归母 +5.05%、毛利率 4
+### 半导体设备 · 质量与周期双标（Helmer power + SEMI  第3项,L542-L543,### 半导体设备 · 质量与周期双标（Helmer power + SEMI 数据 + 北方华创 ,V§12,,,3. **组内相对**：华海清科 +617% vs 拓荆 +842% 之类「组内较不贵」= `least_bad_trap`，永不执行。
+### 领先指标升档触发（P1 leading_indicator_upgrade · 2026-10-26 t251u,L544-L546,### 领先指标升档触发（P1 leading_indicator_upgrade · 2026-1,V§4,,,### 领先指标升档触发（P1 leading_indicator_upgrade · 2026-10-26 t251u「优化」）
+### 领先指标升档触发（P1 leading_indicator_upgrad 第1项,L547-L552,### 领先指标升档触发（P1 leading_indicator_upgrade · 2026-1,V§4,,xingyu,1. **适用对象**：正式名若满足任一 → 须写 `upgrade_triggers`：
+### 领先指标升档触发（P1 leading_indicator_upgrad 第2项,L553-L554,### 领先指标升档触发（P1 leading_indicator_upgrade · 2026-1,V§4,,,2. **upgrade_triggers（强制）**：2–4 条可证伪领先指标，各含 metric / threshold / lookback（如连续两季）/ effect（例
+### 领先指标升档触发（P1 leading_indicator_upgrad 第3项,L555-L556,### 领先指标升档触发（P1 leading_indicator_upgrade · 2026-1,V§10,,,3. **双向复核规范（bidirectional_review_norm）**：独立复核在触发达成时**可以升**退出 PE / 清除 edge（不仅可砍）。仍：TA 永不抬 B
+### 评级双轴 P2/P2b（t258u/t262u · 2026-10-26）,L557-L559,### 评级双轴 P2/P2b（t258u/t262u · 2026-10-26）,V§4,,,### 评级双轴 P2/P2b（t258u/t262u · 2026-10-26）
+### 看板「重点」门控（t298u · 2026-10-27；取代 t266u/t267u）,L560-L560,### 看板「重点」门控（t298u · 2026-10-27；取代 t266u/t267u）,V§10,,,### 看板「重点」门控（t298u · 2026-10-27；取代 t266u/t267u）
+### 看板「重点」门控（t298u · 2026-10-27；取代 t266u 第1项,L561-L563,### 看板「重点」门控（t298u · 2026-10-27；取代 t266u/t267u）,V§10,,,1. **定义（权威）**：重点 =  
+### 看板「重点」门控（t298u · 2026-10-27；取代 t266u 第2项,L564-L564,### 看板「重点」门控（t298u · 2026-10-27；取代 t266u/t267u）,V§10,,,2. **排除**：A/B+ 溢价>20% 不进重点；B/B- 只要仍高于 NI B20（含贴近带 0&lt;d≤5%、近价≤20%）→ **不进重点**（正式池与「全部」及价格分
+### 看板「重点」门控（t298u · 2026-10-27；取代 t266u 第3项,L565-L565,### 看板「重点」门控（t298u · 2026-10-27；取代 t266u/t267u）,V§10,,,3. **废止**：t266u/t267u「B·/B-· 永不进重点」；t259u「到价+贴近带+近价(+A 与质量edge 更远也钉进)」仍不定义重点。价格分段（到价/贴近带/近
+### 看板「重点」门控（t298u · 2026-10-27；取代 t266u 第4项,L566-L566,### 看板「重点」门控（t298u · 2026-10-27；取代 t266u/t267u）,V§10,,xingyu,4. **语义**：重点≠试仓（见 focus_gate_not_trial）。B/B- 因到价进重点后，仍须绝对 MOS + 无 edge/事件闸才可试仓（例：星宇到价进重点，Q
+### 看板「重点」门控（t298u · 2026-10-27；取代 t266u 第5项,L567-L568,### 看板「重点」门控（t298u · 2026-10-27；取代 t266u/t267u）,V§7,,,5. **不改数**：本规则只改看板重点桶与 digest「重点」口径；零改 B20/B22/收益卖线；不 demote/归档 B/B-；不发明买点。
+### 特许 vs 中周期再投入 · 品牌≠知名度（Li Lu Columbia 2010 / 张磊「价值」/ Chri,L569-L569,### 特许 vs 中周期再投入 · 品牌≠知名度（Li Lu Columbia 2010 / 张磊,V§11,,,### 特许 vs 中周期再投入 · 品牌≠知名度（Li Lu Columbia 2010 / 张磊「价值」/ Chris Mayer 100-baggers / Pat Dors
+### 特许 vs 中周期再投入 · 品牌≠知名度（Li Lu Columbia 第1项,L570-L570,### 特许 vs 中周期再投入 · 品牌≠知名度（Li Lu Columbia 2010 / 张磊,V§11,M4,catl cmb haier midea moutai,1. **franchise_vs_midcycle_reinvestment_bar（强制，车道1）**：四优前三全 pass **不足以**自动升 A。老唐③「维持竞争力再投入
+### 特许 vs 中周期再投入 · 品牌≠知名度（Li Lu Columbia 第2项,L571-L571,### 特许 vs 中周期再投入 · 品牌≠知名度（Li Lu Columbia 2010 / 张磊,V§11,M2,proya yili,2. **brand_vs_awareness_gate（触品牌名补）**：`economic_goodwill_tag=franchise_pricing` 须有可核**定价权/
+### 特许 vs 中周期再投入 · 品牌≠知名度（Li Lu Columbia 第3项,L572-L572,### 特许 vs 中周期再投入 · 品牌≠知名度（Li Lu Columbia 2010 / 张磊,V§11,M2b,aier,3. **platform_unit_econ_note（连锁/诊所/耗材触卡）**：爱尔类平台扩张须写单院/同店单位经济与商誉爬坡风险一句；爱博/惠泰类耗材转换成本须写集采/AS
+### 特许 vs 中周期再投入 · 品牌≠知名度（Li Lu Columbia 第4项,L573-L574,### 特许 vs 中周期再投入 · 品牌≠知名度（Li Lu Columbia 2010 / 张磊,V§11,,,4. **reinvestment_runway_vs_A（Dorsey）**：高 ROIC + 长再投入跑道可支撑 B+ 与正式留存，**但**再投入本身证明老唐③未全过 → 挡
+### A/H 溢价=折现率差 · 非收敛套利（Carpenter–Whitelaw–Zou NYU 2024 / r1,L575-L577,### A/H 溢价=折现率差 · 非收敛套利（Carpenter–Whitelaw–Zou NYU,V§12,,,### A/H 溢价=折现率差 · 非收敛套利（Carpenter–Whitelaw–Zou NYU 2024 / r11 arb_reality_check；2026-10-26
+### 应计盈余交叉 · hurdle_reval 不改数 · OCF 压测（Penman residual earni,L578-L578,### 应计盈余交叉 · hurdle_reval 不改数 · OCF 压测（Penman resi,V§2,,,### 应计盈余交叉 · hurdle_reval 不改数 · OCF 压测（Penman residual earnings / r10 premium_field_canon；
+### 应计盈余交叉 · hurdle_reval 不改数 · OCF 压测（P 第1项,L579-L579,### 应计盈余交叉 · hurdle_reval 不改数 · OCF 压测（Penman resi,V§14,,,1. **residual_earnings_crosscheck（可选交叉，车道3）**：有限预测窗下，Penman 证据倾向应计盈余/剩余收益锚优于纯 DCF；本系统主路径仍=
+### 应计盈余交叉 · hurdle_reval 不改数 · OCF 压测（P 第2项,L580-L580,### 应计盈余交叉 · hurdle_reval 不改数 · OCF 压测（Penman resi,V§10,,inovance,2. **ocf_vs_accrual_stress（拟试仓/到价或汇川类触卡）**：营收增速 ≫ 归母、扣非弱于归母、OCF/NI 显著偏离、9M 每股 OCF 走弱 → 强制 
+### 应计盈余交叉 · hurdle_reval 不改数 · OCF 压测（P 第3项,L581-L582,### 应计盈余交叉 · hurdle_reval 不改数 · OCF 压测（Penman resi,V§5,,cmb moutai,3. **hurdle_reval_pending_discipline（强制，A 名）**：`hurdle_reval_pending=true`（茅台/招行等）只表示 hurd
+### NI/FCF 双轨（P3 fcf_ni_dual_track · 2026-10-27 t280u/t282u；,L583-L584,### NI/FCF 双轨（P3 fcf_ni_dual_track · 2026-10-27 t2,V§2,,,### NI/FCF 双轨（P3 fcf_ni_dual_track · 2026-10-27 t280u/t282u；经验值/待回测；装载当轮不改既有 NI B20 数字）
+### NI/FCF 双轨（P3 fcf_ni_dual_track · 202 第1项,L585-L585,### NI/FCF 双轨（P3 fcf_ni_dual_track · 2026-10-27 t2,V§2,,,1. **NI 轨（主执行）**：公式不变——基准 FV3 = NI3 × 本股窗口退出 PE + 超额净现金；B20/B22 = FV3/(1+h)^3。看板/digest/`p
+### NI/FCF 双轨（P3 fcf_ni_dual_track · 202 第2项,L586-L586,### NI/FCF 双轨（P3 fcf_ni_dual_track · 2026-10-27 t2,V§2,,,2. **FCF 轨**：严格 FCF₃（扣维持性 capex、必要 ΔNWC、占款扭曲、一次性）× **PE_fcf = 统一 20**（用户 **2026-10-28 t354
+### NI/FCF 双轨（P3 fcf_ni_dual_track · 202 第3项,L587-L587,### NI/FCF 双轨（P3 fcf_ni_dual_track · 2026-10-27 t2,V§2,,,3. **cash_quality_gate**：OCF/NI 稳定、maint capex 可估、占款不扭曲、无重大未调一次性、与 accounting_ni_quality 同
+### NI/FCF 双轨（P3 fcf_ni_dual_track · 202 第4项,L588-L588,### NI/FCF 双轨（P3 fcf_ni_dual_track · 2026-10-27 t2,V§10,,,4. **并行语义（t282u）**：gate=pass 且收盘≤FCF_B20 但 >NI_B20 → 动作=`FCF到价·并行观察`（须再确认才试仓，**不**自动试仓）。仍受
+### NI/FCF 双轨（P3 fcf_ni_dual_track · 202 第5项,L589-L589,### NI/FCF 双轨（P3 fcf_ni_dual_track · 2026-10-27 t2,V§2,,,5. **分歧闸**：`div_pct=|NI_B20−FCF_B20|/NI_B20`；阈值 **20%**。超阈 → 必写 `fcf_ni_divergence_note` +
+### NI/FCF 双轨（P3 fcf_ni_dual_track · 202 第6项,L590-L590,### NI/FCF 双轨（P3 fcf_ni_dual_track · 2026-10-27 t2,V§7,,,6. **硬禁**：TA 不抬任一轨；不发明 digest 买点；FCF 轨不得覆盖 watchlist `buy_b20`；银行 PB–ROE 不套 FCF 主公式（看板写「银行
+### NI/FCF 双轨（P3 fcf_ni_dual_track · 202 第7项,L591-L591,### NI/FCF 双轨（P3 fcf_ni_dual_track · 2026-10-27 t2,V§2,,haier midea,7. **推广**：先美的/海尔样板 → 其他 A/B+ → 其余；不强制给 B/B- 填 FCF 执行轨。
+### NI/FCF 双轨（P3 fcf_ni_dual_track · 202 第8项,L592-L593,### NI/FCF 双轨（P3 fcf_ni_dual_track · 2026-10-27 t2,V§5,M5/M7,,8. **看板**：列 `FCF_B20`；gate=pass 显示数字；gate≠pass 显示「数字 仅参考」；银行写「银行不适用」；分歧 >20% 前缀 ※；`—`=尚未估（
+### 资本配置序列 · 每股价值分母（Gayner Markel 2025 / Thorndike Outsiders,L594-L594,### 资本配置序列 · 每股价值分母（Gayner Markel 2025 / Thorndike,V§11,,,### 资本配置序列 · 每股价值分母（Gayner Markel 2025 / Thorndike Outsiders；2026-10-27 进化 r13）
+### 资本配置序列 · 每股价值分母（Gayner Markel 2025 / 第1项,L595-L595,### 资本配置序列 · 每股价值分母（Gayner Markel 2025 / Thorndike,V§11,M3,,1. **capital_allocation_sequence_note（触管理层/ToB扩张/回购分红卡补，车道1）**：领导层质量证据须能落到资本配置序列，而非口号。Gayn
+### 资本配置序列 · 每股价值分母（Gayner Markel 2025 / 第2项,L596-L596,### 资本配置序列 · 每股价值分母（Gayner Markel 2025 / Thorndike,V§11,,midea,2. **autobuyback_without_iv_ban**：回购/高分红若无书面「现价 vs 内在价值」对照，不得单独作为四优管理层 pass 的充分证据；可记 `mana
+### 资本配置序列 · 每股价值分母（Gayner Markel 2025 / 第3项,L597-L598,### 资本配置序列 · 每股价值分母（Gayner Markel 2025 / Thorndike,V§11,M4,midea,3. **tob_reinvestment_vs_A（加固 franchise_vs_midcycle）**：ToC 现金牛养 ToB 再投入（美的 ToB/库卡/新能源叙事）→ 
+### 价格隐含期望 · FCF pending 非软买点（Mauboussin Expectations Invest,L599-L599,### 价格隐含期望 · FCF pending 非软买点（Mauboussin Expectati,V§2,,,### 价格隐含期望 · FCF pending 非软买点（Mauboussin Expectations Investing / Chanos 会计质量 / P3；2026-10
+### 价格隐含期望 · FCF pending 非软买点（Mauboussin 第1项,L600-L600,### 价格隐含期望 · FCF pending 非软买点（Mauboussin Expectati,V§14,,,1. **price_implied_expectations_note（强制加固 price_implied_vc_note，车道3）**：拟试仓/到价/重点近价卡须用现价反推市
+### 价格隐含期望 · FCF pending 非软买点（Mauboussin 第2项,L601-L601,### 价格隐含期望 · FCF pending 非软买点（Mauboussin Expectati,V§2,,haier midea,2. **fcf_pending_not_soft_buy（强制加固 P3，车道3+4）**：`cash_quality_gate=pending|fail` → FCF_B20 
+### 价格隐含期望 · FCF pending 非软买点（Mauboussin 第3项,L602-L602,### 价格隐含期望 · FCF pending 非软买点（Mauboussin Expectati,V§2,,,3. **adjusted_ni_red_flag（Chanos；触卡补 accounting_ni_quality_note）**：扣非≪归母、汇兑/衍生品把经常性与非经常性拆乱
+### 价格隐含期望 · FCF pending 非软买点（Mauboussin 第4项,L603-L604,### 价格隐含期望 · FCF pending 非软买点（Mauboussin Expectati,V§13,,,4. **earnings_vs_cash_gap**：Expectations Investing 强调盈利–现金流缺口；与 Penman/r12 residual_earnin
+### 重点≠试仓 · 满价修剪纪律（Bloomstran Semper / 重点门控 / return_below_l,L605-L607,### 重点≠试仓 · 满价修剪纪律（Bloomstran Semper / 重点门控 / retu,V§11,,cmb moutai,### 重点≠试仓 · 满价修剪纪律（Bloomstran Semper / 重点门控 / return_below_line；2026-10-27 进化 r13）
+### 相对屏≠买点 · 特殊情形易错价（Greenblatt MIB / Tweedy What Has Worked,L608-L608,### 相对屏≠买点 · 特殊情形易错价（Greenblatt MIB / Tweedy What ,V§12,,,### 相对屏≠买点 · 特殊情形易错价（Greenblatt MIB / Tweedy What Has Worked；2026-10-27 进化 r14）
+### 相对屏≠买点 · 特殊情形易错价（Greenblatt MIB / Tw 第1项,L609-L609,### 相对屏≠买点 · 特殊情形易错价（Greenblatt MIB / Tweedy What ,V§12,,,1. **peer_history_screen_not_b20（强制加固 absolute_mos_gate / Tweedy 屏，车道2）**：文案或笔记出现「相对同业更低 P
+### 相对屏≠买点 · 特殊情形易错价（Greenblatt MIB / Tw 第2项,L610-L610,### 相对屏≠买点 · 特殊情形易错价（Greenblatt MIB / Tweedy What ,V§12,,,2. **special_situation_mispricing_hunt（强制加固 arb_reality_check，车道2）**：分拆/换股/再融资配套股/长期停牌复牌等「
+### 相对屏≠买点 · 特殊情形易错价（Greenblatt MIB / Tw 第3项,L611-L612,### 相对屏≠买点 · 特殊情形易错价（Greenblatt MIB / Tweedy What ,V§3,,xingyu,3. **refi_dilution_stress_only（车道2+4）**：储架定增/小额快速/统一市价定增等再融资便利（证监会征求意见、上交所一揽子）只进稀释与供给**结构压
+### 规模节省回馈 vs 近端 NI 下滑 · 期权回购净稀释（Nick Sleep Nomad / Akre；202,L613-L613,### 规模节省回馈 vs 近端 NI 下滑 · 期权回购净稀释（Nick Sleep Nomad ,V§11,,,### 规模节省回馈 vs 近端 NI 下滑 · 期权回购净稀释（Nick Sleep Nomad / Akre；2026-10-27 进化 r14）
+### 规模节省回馈 vs 近端 NI 下滑 · 期权回购净稀释（Nick Sl 第1项,L614-L614,### 规模节省回馈 vs 近端 NI 下滑 · 期权回购净稀释（Nick Sleep Nomad ,V§11,M3,catl,1. **scale_economics_shared_vs_ni_dip（强制加固 scale_economics_shared_note / durable_low_cost，
+### 规模节省回馈 vs 近端 NI 下滑 · 期权回购净稀释（Nick Sl 第2项,L615-L615,### 规模节省回馈 vs 近端 NI 下滑 · 期权回购净稀释（Nick Sleep Nomad ,V§3,,,2. **option_buyback_net_dilution（触股权激励/回购卡补 accounting_ni_quality_note，车道3）**：Akre——期权行权价显
+### 规模节省回馈 vs 近端 NI 下滑 · 期权回购净稀释（Nick Sl 第3项,L616-L617,### 规模节省回馈 vs 近端 NI 下滑 · 期权回购净稀释（Nick Sleep Nomad ,V§11,M4,,3. **invisible_reinvestment_not_peak**：营销/渠道/换电网络/价格给回等「可见费用或不可见让利」压近端 NI，若论点是建设 SES/网络 → 
+### 观察名单等绝对价 · 按下行定试仓宽度（John Huber Base Hit/Saber；2026-10-27,L618-L618,### 观察名单等绝对价 · 按下行定试仓宽度（John Huber Base Hit/Saber；,V§10,,,### 观察名单等绝对价 · 按下行定试仓宽度（John Huber Base Hit/Saber；2026-10-27 进化 r14）
+### 观察名单等绝对价 · 按下行定试仓宽度（John Huber Base  第2项,L619-L620,### 观察名单等绝对价 · 按下行定试仓宽度（John Huber Base Hit/Saber；,V§10,,,2. **size_by_downside_not_upside（触拟试仓卡补，车道4）**：试仓/加仓理由须有一句下行宽度（熊市年化、脆弱比、击穿码距离或结果区间宽度）；**禁止
+### 候补晋升卫生 · 特许现金牛 vs 中周期龙头狩猎（Rochon/Giverny · Fundsmith · M,L621-L621,### 候补晋升卫生 · 特许现金牛 vs 中周期龙头狩猎（Rochon/Giverny · Fun,V§11,,,### 候补晋升卫生 · 特许现金牛 vs 中周期龙头狩猎（Rochon/Giverny · Fundsmith · Marathon capital cycle；2026-10-
+### 候补晋升卫生 · 特许现金牛 vs 中周期龙头狩猎（Rochon/Giv 第1项,L622-L622,### 候补晋升卫生 · 特许现金牛 vs 中周期龙头狩猎（Rochon/Giverny · Fun,V§11,,,1. **candidate_active_requires_biz_mgmt_pass（强制加固 t225u 候补闸，车道1）**：`candidates.json` 中 `st
+### 候补晋升卫生 · 特许现金牛 vs 中周期龙头狩猎（Rochon/Giv 第2项,L623-L623,### 候补晋升卫生 · 特许现金牛 vs 中周期龙头狩猎（Rochon/Giverny · Fun,V§11,M4,catl haier midea,2. **franchise_cash_cow_vs_midcycle_leader_hunt（加固 Q1/P2b，车道1）**：狩猎正式池/候补时区分两类：(a) franchi
+### 候补晋升卫生 · 特许现金牛 vs 中周期龙头狩猎（Rochon/Giv 第3项,L624-L625,### 候补晋升卫生 · 特许现金牛 vs 中周期龙头狩猎（Rochon/Giverny · Fun,V§13,,,3. **compounder_seed_not_b20**：Fundsmith/Giverny「先选非凡生意再估合理价」只指导研究队列排序；**禁止**跳过 absolute_m
+### A/H 溢价非催化剂 · 分拆/残值狩猎不抬 B20（HKEX A-H 结构 · Greenblatt spec,L626-L628,### A/H 溢价非催化剂 · 分拆/残值狩猎不抬 B20（HKEX A-H 结构 · Green,V§12,,,### A/H 溢价非催化剂 · 分拆/残值狩猎不抬 B20（HKEX A-H 结构 · Greenblatt special situations；2026-10-27 进化 r
+### 贴近带未见底不试仓 · return_below_line 不加仓摊薄（Chris Davis / Fundsm,L629-L631,### 贴近带未见底不试仓 · return_below_line 不加仓摊薄（Chris Davi,V§10,,,### 贴近带未见底不试仓 · return_below_line 不加仓摊薄（Chris Davis / Fundsmith 卖出纪律 · Huber 等绝对价；2026-10-
+### 能力受苦与再投入狩猎 · 护城河≠好产品（Russo capacity to suffer · Dorsey m,L632-L632,### 能力受苦与再投入狩猎 · 护城河≠好产品（Russo capacity to suffer ,V§11,,,### 能力受苦与再投入狩猎 · 护城河≠好产品（Russo capacity to suffer · Dorsey moats · Baillie Gifford outlier
+### 能力受苦与再投入狩猎 · 护城河≠好产品（Russo capacity  第1项,L633-L633,### 能力受苦与再投入狩猎 · 护城河≠好产品（Russo capacity to suffer ,V§11,,,1. **capacity_to_suffer_reinvest_hunt（加固 four_quality / capital_allocation / franchise 狩猎，
+### 能力受苦与再投入狩猎 · 护城河≠好产品（Russo capacity  第2项,L634-L634,### 能力受苦与再投入狩猎 · 护城河≠好产品（Russo capacity to suffer ,V§11,,,2. **moat_not_great_product（加固 moat_source_tag / Q1，车道1）**：Dorsey——最常见误判是把「好产品/好体验」当成护城河。护
+### 能力受苦与再投入狩猎 · 护城河≠好产品（Russo capacity  第3项,L635-L636,### 能力受苦与再投入狩猎 · 护城河≠好产品（Russo capacity to suffer ,V§11,,,3. **founder_scale_micromanage_liability + premortem_signal_weight（加固 fisher_quality / 领导层
+### 纯相对价值屏 · 便宜或有根本原因（Asness Fact/Fiction Value · AQR value ,L637-L637,### 纯相对价值屏 · 便宜或有根本原因（Asness Fact/Fiction Value · ,V§12,,,### 纯相对价值屏 · 便宜或有根本原因（Asness Fact/Fiction Value · AQR value spread；2026-10-27 进化 r16）
+### 纯相对价值屏 · 便宜或有根本原因（Asness Fact/Fictio 第1项,L638-L638,### 纯相对价值屏 · 便宜或有根本原因（Asness Fact/Fiction Value · ,V§12,,,1. **pure_value_screen_not_b20（加固 S1 / absolute_mos / least_bad，车道2）**：Asness 定义的「纯价值」= 价格
+### 纯相对价值屏 · 便宜或有根本原因（Asness Fact/Fictio 第2项,L639-L639,### 纯相对价值屏 · 便宜或有根本原因（Asness Fact/Fiction Value · ,V§12,,,2. **cheap_for_a_reason_check（强制，车道2）**：当相对价值价差极端（组内或历史分位很便宜）时，必须写一句「是否因基本面更差而被折价」的核对（Asne
+### 纯相对价值屏 · 便宜或有根本原因（Asness Fact/Fictio 第3项,L640-L641,### 纯相对价值屏 · 便宜或有根本原因（Asness Fact/Fiction Value · ,V§12,,,3. **multi_measure_relative_only**：相对笔记优先用 ≥2 个价值度量（如 PE/PB/EV-sales 或 OCF yield）的方向一致性；单一
+### 回报空间估准 · 残差收益交叉 · EPV 先于增长特许（Greenwald EPV · CFA/Penman ,L642-L642,### 回报空间估准 · 残差收益交叉 · EPV 先于增长特许（Greenwald EPV · C,V§11,,,### 回报空间估准 · 残差收益交叉 · EPV 先于增长特许（Greenwald EPV · CFA/Penman residual income · P3；2026-10-2
+### 回报空间估准 · 残差收益交叉 · EPV 先于增长特许（Greenwa 第1项,L643-L643,### 回报空间估准 · 残差收益交叉 · EPV 先于增长特许（Greenwald EPV · C,V§14,,,1. **returns_space_not_growth_pe（加固估准 / 现价隐含 / franchise，车道3）**：Greenwald——有壁垒的成长股用「分红+回购+
+### 回报空间估准 · 残差收益交叉 · EPV 先于增长特许（Greenwa 第2项,L644-L644,### 回报空间估准 · 残差收益交叉 · EPV 先于增长特许（Greenwald EPV · C,V§2,,,2. **residual_income_equity_charge_cross（加固 Penman/r12 应计交叉 / accounting_ni_quality，车道3）**
+### 回报空间估准 · 残差收益交叉 · EPV 先于增长特许（Greenwa 第3项,L645-L646,### 回报空间估准 · 残差收益交叉 · EPV 先于增长特许（Greenwald EPV · C,V§11,,,3. **epv_before_franchise_growth（加固 Greenwald 可靠度分层，车道3）**：无可持续壁垒时，增长先按 EPV/维持性盈利（零增长）估值；只
+### Five Ms 狩猎清单 · 结构支撑长期 · EBIT 默认（Tracy Britt Cool KP · Ca,L647-L647,### Five Ms 狩猎清单 · 结构支撑长期 · EBIT 默认（Tracy Britt Co,V§11,,,### Five Ms 狩猎清单 · 结构支撑长期 · EBIT 默认（Tracy Britt Cool KP · Cambric 5Ms；2026-10-27 进化 r17）
+### Five Ms 狩猎清单 · 结构支撑长期 · EBIT 默认（Trac 第1项,L648-L648,### Five Ms 狩猎清单 · 结构支撑长期 · EBIT 默认（Tracy Britt Co,V§11,,,1. **five_ms_hunt_checklist（强制加固 four_quality / candidate 狩猎，车道1）**：正式/候补狩猎笔记须覆盖 Five Ms 五
+### Five Ms 狩猎清单 · 结构支撑长期 · EBIT 默认（Trac 第2项,L649-L649,### Five Ms 狩猎清单 · 结构支撑长期 · EBIT 默认（Tracy Britt Co,V§11,,,2. **structure_for_long_term_not_slogan（加固 fisher_quality / 领导层，车道1）**：口头「长期」不够；须问激励与资本结构是
+### Five Ms 狩猎清单 · 结构支撑长期 · EBIT 默认（Trac 第3项,L650-L650,### Five Ms 狩猎清单 · 结构支撑长期 · EBIT 默认（Tracy Britt Co,V§11,M4,,3. **short_and_long_both_required（加固 capacity_to_suffer，车道1）**：只盯长期战略而丢掉近端基本盘会反噬（Pampered 
+### Five Ms 狩猎清单 · 结构支撑长期 · EBIT 默认（Trac 第4项,L651-L652,### Five Ms 狩猎清单 · 结构支撑长期 · EBIT 默认（Tracy Britt Co,V§11,,,4. **ebit_not_ebitda_default_for_capital（加固 accounting_ni_quality / P3 现金质量，车道3）**：多数工业/制造
+### 期望反向读取 · 增长久期高估 · 财会33号交叉（Mauboussin Expectations Invest,L653-L653,### 期望反向读取 · 增长久期高估 · 财会33号交叉（Mauboussin Expectati,V§11,,,### 期望反向读取 · 增长久期高估 · 财会33号交叉（Mauboussin Expectations Investing · Sekera 久期 · 财会〔2025〕33号；
+### 期望反向读取 · 增长久期高估 · 财会33号交叉（Mauboussin 第1项,L654-L654,### 期望反向读取 · 增长久期高估 · 财会33号交叉（Mauboussin Expectati,V§14,,,1. **expectations_reverse_read_discipline（强制加固 price_implied_expectations_note，车道3）**：Maub
+### 期望反向读取 · 增长久期高估 · 财会33号交叉（Mauboussin 第2项,L655-L655,### 期望反向读取 · 增长久期高估 · 财会33号交叉（Mauboussin Expectati,V§11,M4,,2. **growth_duration_overestimation_flag（加固严格周期 / return_below_line，车道3+4）**：Sekera——短端基本面
+### 期望反向读取 · 增长久期高估 · 财会33号交叉（Mauboussin 第3项,L656-L656,### 期望反向读取 · 增长久期高估 · 财会33号交叉（Mauboussin Expectati,V§14,,,3. **mof_2025_33_accounting_cross（加固 accounting_ni_quality / residual_income，车道3）**：财会〔202
+### 期望反向读取 · 增长久期高估 · 财会33号交叉（Mauboussin 第4项,L657-L658,### 期望反向读取 · 增长久期高估 · 财会33号交叉（Mauboussin Expectati,V§10,,,4. **excel_false_precision_overlay（Teskey；加固估准笔记，车道3）**：模型会把可控外因素写成确定性；正式复核须保留判断覆盖与下行情景，**
+### 护城河低估篮重组 · 叙事≠内在价值 · 最难是不卖错（Sekera Wide Moat Focus · Cla,L659-L660,### 护城河低估篮重组 · 叙事≠内在价值 · 最难是不卖错（Sekera Wide Moat F,V§11,,,### 护城河低估篮重组 · 叙事≠内在价值 · 最难是不卖错（Sekera Wide Moat Focus · Clay Finck TIP · Teskey 过建/下行；202
+### 护城河低估篮重组 · 叙事≠内在价值 · 最难是不卖错（Sekera W 第1项,L661-L662,### 护城河低估篮重组 · 叙事≠内在价值 · 最难是不卖错（Sekera Wide Moat F,V§11,,,1. **pricing_power_from_moat_not_b20（Sekera；加固 moat_source，车道1+4）**：宽/窄护城河更可能具备成本转嫁的定价权，长期
+### 套利持久性 · 拥挤对冲不完整 · AH结构非收敛（Aurum Arb · Convert Arb 2005 ·,L663-L666,### 套利持久性 · 拥挤对冲不完整 · AH结构非收敛（Aurum Arb · Convert ,V§12,,,### 套利持久性 · 拥挤对冲不完整 · AH结构非收敛（Aurum Arb · Convert Arb 2005 · HSAHP；2026-10-27 进化 r18）
+### 估准：卖前先写退出 · Kelly/下行定宽 · 会计应计交叉（Klarman GS · Thorp · Hub,L667-L667,### 估准：卖前先写退出 · Kelly/下行定宽 · 会计应计交叉（Klarman GS · T,V§2,,,### 估准：卖前先写退出 · Kelly/下行定宽 · 会计应计交叉（Klarman GS · Thorp · Huber ROIC；2026-10-27 进化 r18）
+### 估准：卖前先写退出 · Kelly/下行定宽 · 会计应计交叉（Klar 第1项,L668-L668,### 估准：卖前先写退出 · Kelly/下行定宽 · 会计应计交叉（Klarman GS · T,V§10,,,1. **sell_level_before_buy_note（t388u 改字面）**：拟试仓/到价卡须有一句「与货基打平价=`cash_breakeven_price`（§5）
+### 估准：卖前先写退出 · Kelly/下行定宽 · 会计应计交叉（Klar 第2项,L669-L669,### 估准：卖前先写退出 · Kelly/下行定宽 · 会计应计交叉（Klarman GS · T,V§11,,,2. **edge_verify_not_crowd_poll（Thorp；加固 competence / accounting，车道3）**：估准与执行须自己核一手路径（披露/订
+### 估准：卖前先写退出 · Kelly/下行定宽 · 会计应计交叉（Klar 第3项,L670-L670,### 估准：卖前先写退出 · Kelly/下行定宽 · 会计应计交叉（Klarman GS · T,V§11,,,3. **roic_quality_vs_hold_horizon（Huber；加固 returns_space / quality_screen，车道3）**：短持有期（1–2y
+### 估准：卖前先写退出 · Kelly/下行定宽 · 会计应计交叉（Klar 第4项,L671-L672,### 估准：卖前先写退出 · Kelly/下行定宽 · 会计应计交叉（Klarman GS · T,V§14,,,4. **earnings_yield_cross_not_b20（Huber/Klarman；可选交叉）**：可用税前盈利收益率/逆向 PE 作贵贱直觉校准；目标感约「双位数盈利
+### 买卖点：卖早于最后一镍 · 现金耐心 · 近价亦写分批（Klarman · Huber downside siz,L673-L675,### 买卖点：卖早于最后一镍 · 现金耐心 · 近价亦写分批（Klarman · Huber do,V§11,,,### 买卖点：卖早于最后一镍 · 现金耐心 · 近价亦写分批（Klarman · Huber downside size · t304u；2026-10-27 进化 r18）
+### 可预测性优先挖优质 · 一票否决参数 · 四要素交叉（Kantesaria Good Investing 访谈 ,L676-L676,### 可预测性优先挖优质 · 一票否决参数 · 四要素交叉（Kantesaria Good Inv,V§11,,,### 可预测性优先挖优质 · 一票否决参数 · 四要素交叉（Kantesaria Good Investing 访谈 · Tillinghast RWH017 访谈；2026-1
+### 可预测性优先挖优质 · 一票否决参数 · 四要素交叉（Kantesari 第1项,L677-L677,### 可预测性优先挖优质 · 一票否决参数 · 四要素交叉（Kantesaria Good Inv,V§4,,,1. **predictability_first_quality（加固 四优门「优质生意」证据 + A1–A7，车道1）**：Kantesaria——池子小（全球约 50 家）、
+### 可预测性优先挖优质 · 一票否决参数 · 四要素交叉（Kantesari 第2项,L678-L678,### 可预测性优先挖优质 · 一票否决参数 · 四要素交叉（Kantesaria Good Inv,V§11,,,2. **one_strike_param_edge（Kantesaria；加固 Fisher 稀释/并购 + 管理层门，车道1）**：即使其他维度皆优，「靠每年连续并购增长」「股
+### 可预测性优先挖优质 · 一票否决参数 · 四要素交叉（Kantesari 第3项,L679-L679,### 可预测性优先挖优质 · 一票否决参数 · 四要素交叉（Kantesaria Good Inv,V§4,,,3. **four_elements_cross（Tillinghast；A1–A7 证据交叉，车道1+3）**：价值四要素=盈利性/寿命/增长/确定性；「除非近 10 年几乎每年
+### 可预测性优先挖优质 · 一票否决参数 · 四要素交叉（Kantesari 第4项,L680-L681,### 可预测性优先挖优质 · 一票否决参数 · 四要素交叉（Kantesaria Good Inv,V§10,,xingyu,4. **next_print_worry_test（Kantesaria；加固 事件闸，车道1）**：「若你担心下一份财报，它就不够可预测」——带季度事件闸的名字（如星宇）在闸清
+### A/H·孪生价差统一口径 ah_canon（Froot–Dabora JFE1999 · Shleifer–Vi,L682-L682,### A/H·孪生价差统一口径 ah_canon（Froot–Dabora JFE1999 · S,V§12,,,### A/H·孪生价差统一口径 ah_canon（Froot–Dabora JFE1999 · Shleifer–Vishny JF1997；2026-10-27 进化 r19）
+### A/H·孪生价差统一口径 ah_canon（Froot–Dabora J 第1项,L683-L683,### A/H·孪生价差统一口径 ah_canon（Froot–Dabora JFE1999 · S,V§12,,tencent,1. **ah_canon（合并 r11 O2 / r12 折现率差 / r15 ah_premium_not_catalyst / r18 W1-3，车道2；剪枝）**：同一现金
+### A/H·孪生价差统一口径 ah_canon（Froot–Dabora J 第2项,L684-L684,### A/H·孪生价差统一口径 ah_canon（Froot–Dabora JFE1999 · S,V§12,,,2. **limits_of_arbitrage_extremes（Shleifer–Vishny，车道2）**：现实套利需资本且有风险，由少数专业者用他人资金执行；价格偏离越极端
+### A/H·孪生价差统一口径 ah_canon（Froot–Dabora J 第3项,L685-L686,### A/H·孪生价差统一口径 ah_canon（Froot–Dabora JFE1999 · S,V§12,,,3. **noise_horizon_note（Shleifer–Vishny，车道2）**：短窗 α/波动比低、长窗高 → 相对收敛最多是持有期的被动顺风，不进买点、不进 F/T
+### 估准：基率外部视角 · 非经常性口径 · 现金转换当期判（Mauboussin Base Rate Book 2,L687-L687,### 估准：基率外部视角 · 非经常性口径 · 现金转换当期判（Mauboussin Base R,V§2,,catl fuyao,### 估准：基率外部视角 · 非经常性口径 · 现金转换当期判（Mauboussin Base Rate Book 2016 · 证监会公告〔2023〕65号 · 宁德/福耀 2
+### 估准：基率外部视角 · 非经常性口径 · 现金转换当期判（Maubous 第1项,L688-L688,### 估准：基率外部视角 · 非经常性口径 · 现金转换当期判（Mauboussin Base R,V§14,,,1. **ni3_base_rate_cross（Mauboussin；加固 expectations_reverse_read / growth_earned，车道3）**：全球
+### 估准：基率外部视角 · 非经常性口径 · 现金转换当期判（Maubous 第1b项,L689-L696,### 估准：基率外部视角 · 非经常性口径 · 现金转换当期判（Mauboussin Base R,V§14,,,1b. **bear_ni3_le_base_rate_median（r19 P-X4 · 硬闸；取代原 >30%「须写回到中位路径说明」软句）**：
+### 估准：基率外部视角 · 非经常性口径 · 现金转换当期判（Maubous 第2项,L697-L697,### 估准：基率外部视角 · 非经常性口径 · 现金转换当期判（Mauboussin Base R,V§2,,catl fuyao,2. **nonrecurring_reclass_check（证监会〔2023〕65号；加固 accounting_ni_quality，车道3）**：非经常性损益按「经济性质 
+### 估准：基率外部视角 · 非经常性口径 · 现金转换当期判（Maubous 第3项,L698-L699,### 估准：基率外部视角 · 非经常性口径 · 现金转换当期判（Mauboussin Base R,V§2,,,3. **fcf_conversion_now（加固 P3 cash_quality_gate + t308u「手头可判即当期判」，车道3）**：季报已给 OCF 与购建长期资产现
+### 组合置换动作带（t319u 机制 + t320u 观念）,L700-L702,### 组合置换动作带（t319u 机制 + t320u 观念）,V§13,,,### 组合置换动作带（t319u 机制 + t320u 观念）
+### 现金门槛账本 · 池内相对只排资金袖 · 超档遗留（Akepanidtaworn–Di Mascio–Imas–,L703-L704,### 现金门槛账本 · 池内相对只排资金袖 · 超档遗留（Akepanidtaworn–Di Ma,V§9,,catl fuyao gujing mindray tencent,### 现金门槛账本 · 池内相对只排资金袖 · 超档遗留（Akepanidtaworn–Di Mascio–Imas–Schmidt JF2023 / Imas MiB 2026
+### 现金门槛账本 · 池内相对只排资金袖 · 超档遗留（Akepanidta 第1项,L705-L705,### 现金门槛账本 · 池内相对只排资金袖 · 超档遗留（Akepanidtaworn–Di Ma,V§13,,,1. **Y1 cash_hurdle_ledger（车道4）**：现金袖期望（数值口径已由 §52/§61 取代原中债 10Y）；账本列：袖 · 权重 · implied_3y 
+### 现金门槛账本 · 池内相对只排资金袖 · 超档遗留（Akepanidta 第2项,L706-L706,### 现金门槛账本 · 池内相对只排资金袖 · 超档遗留（Akepanidtaworn–Di Ma,V§12,,,2. **Y2 pool_relative_for_funding_only + destination_executability（车道2+4）**：与 r10 链内相对永不执行
+### 现金门槛账本 · 池内相对只排资金袖 · 超档遗留（Akepanidta 第3项,L707-L707,### 现金门槛账本 · 池内相对只排资金袖 · 超档遗留（Akepanidtaworn–Di Ma,V§6,,gujing,3. **Y3 over_tier_legacy_flag + sizing_cost_note + gp_assets_cross（车道1+4）**：超档只标注；古井类「到价但超
+### 现金门槛账本 · 池内相对只排资金袖 · 超档遗留（Akepanidta 第4项,L708-L708,### 现金门槛账本 · 池内相对只排资金袖 · 超档遗留（Akepanidtaworn–Di Ma,V§12,,,4. **摩擦注记（不设阈值）**：卖方印花税 0.05%（2023-08-28 起减半）；股息红利差别化个税（持股≤1 月全额、1 月–1 年减半计入、>1 年免）→ 置换会重置
+### 现金门槛账本 · 池内相对只排资金袖 · 超档遗留（Akepanidta 第5项,L709-L709,### 现金门槛账本 · 池内相对只排资金袖 · 超档遗留（Akepanidtaworn–Di Ma,V§9,,tencent,5. **已授权（2026-10-27 14:42 Asia/Shanghai）**：P-Y4 `swap_spread_gate` → 硬闸 §46；P-Y5 `planned_
+### 现金门槛账本 · 池内相对只排资金袖 · 超档遗留（Akepanidta 第6项,L710-L711,### 现金门槛账本 · 池内相对只排资金袖 · 超档遗留（Akepanidtaworn–Di Ma,V§7,,,6. **与硬闸关系**：冲突服从 §5/§6/§40–§42；本节对应 §43–§47。零改 B20/B22/收益卖线。
+### 账本诚实 · 超档一致性 · 财报日看扣非（Chan–Karceski–Lakonishok JF2003 / ,L712-L713,### 账本诚实 · 超档一致性 · 财报日看扣非（Chan–Karceski–Lakonishok,V§9,,catl focus fuyao gujing mindray,### 账本诚实 · 超档一致性 · 财报日看扣非（Chan–Karceski–Lakonishok JF2003 / Easton–Sommers JAR2007 / Flyvb
+### 账本诚实 · 超档一致性 · 财报日看扣非（Chan–Karceski– 第1项,L714-L714,### 账本诚实 · 超档一致性 · 财报日看扣非（Chan–Karceski–Lakonishok,V§11,,,1. **Z1（车道3）**：账本并列 fv0_source / implied_3y_total / r_bear / forecast_optimism_note（§48）。外
+### 账本诚实 · 超档一致性 · 财报日看扣非（Chan–Karceski– 第2项,L715-L715,### 账本诚实 · 超档一致性 · 财报日看扣非（Chan–Karceski–Lakonishok,V§9,,,2. **Z2（车道4+1）**：超档修剪一致性审计 + 存量升级队列（§49）；P-Z6 交用户裁决。外证：邱国鹭——估值/品质/时机三要素，「数月亮不数星星」，格局决定结局；R
+### 账本诚实 · 超档一致性 · 财报日看扣非（Chan–Karceski– 第3项,L716-L716,### 账本诚实 · 超档一致性 · 财报日看扣非（Chan–Karceski–Lakonishok,V§2,,focus,3. **Z3（车道4）**：财报日看单季扣非（§50）。外证：分众 2026Q3（深交所 2026-10-28 披露）：前三季归母 +5.55%，但单季扣非 −15.77%、单季
+### 账本诚实 · 超档一致性 · 财报日看扣非（Chan–Karceski– 第4项,L717-L717,### 账本诚实 · 超档一致性 · 财报日看扣非（Chan–Karceski–Lakonishok,V§0,,,4. **Z4**：旧文案别名（§51）。
+### 账本诚实 · 超档一致性 · 财报日看扣非（Chan–Karceski– 第5项,L718-L718,### 账本诚实 · 超档一致性 · 财报日看扣非（Chan–Karceski–Lakonishok,V§15,,,5. **已授权（用户 2026-10-27 t329u「你定吧」18:04 代定授权 + t330u/t331u/t332u 修订（Asia/Shanghai））**：P-Z5 
+### 账本诚实 · 超档一致性 · 财报日看扣非（Chan–Karceski– 第6项,L719-L720,### 账本诚实 · 超档一致性 · 财报日看扣非（Chan–Karceski–Lakonishok,V§7,,,6. **与硬闸关系**：本节对应 §48–§54；冲突服从 §5/§6/§40–§47。零改 B20/B22/收益卖线/FCF_B20。
+### 无形投入资本化交叉 · 再投入挡A机制 · 会计可比性（Lev–Sougiannis JAE1996 / Li–,L721-L722,### 无形投入资本化交叉 · 再投入挡A机制 · 会计可比性（Lev–Sougiannis JAE,V§11,,hengrui mindray proya,### 无形投入资本化交叉 · 再投入挡A机制 · 会计可比性（Lev–Sougiannis JAE1996 / Li–Hall ROIW2019(BEA WP2016-5) / 
+### 无形投入资本化交叉 · 再投入挡A机制 · 会计可比性（Lev–Soug 第1项,L723-L723,### 无形投入资本化交叉 · 再投入挡A机制 · 会计可比性（Lev–Sougiannis JAE,V§4,,haier hengrui midea mindray proya zte,1. **AA1（车道3+1）**：§55 `intangible_cap_cross`。2026-10-27 六名结果（脚本 `（内部文稿未发布）
+### 无形投入资本化交叉 · 再投入挡A机制 · 会计可比性（Lev–Soug 第2项,L724-L724,### 无形投入资本化交叉 · 再投入挡A机制 · 会计可比性（Lev–Sougiannis JAE,V§11,,hengrui mindray,2. **AA2（车道1）**：§56 再投入挡A须写机制。迈瑞调整后 10 年均 ROIC_gross 25.7%（原 29.4%）——研发再投入回报远高于资本成本，「再投入」本
+### 无形投入资本化交叉 · 再投入挡A机制 · 会计可比性（Lev–Soug 第3项,L725-L725,### 无形投入资本化交叉 · 再投入挡A机制 · 会计可比性（Lev–Sougiannis JAE,V§12,,haier hengrui midea,3. **AA3（车道2）**：§57 无形调整后的同业相对。海尔/美的 PE 比 0.62（原始）→0.68（调整后），但调整后 ROE 差从 3.0pp 扩到 4.9pp——海
+### 无形投入资本化交叉 · 再投入挡A机制 · 会计可比性（Lev–Soug 第4项,L726-L726,### 无形投入资本化交叉 · 再投入挡A机制 · 会计可比性（Lev–Sougiannis JAE,V§13,,haier midea,4. **AA4（组合层）**：§58 存量上限复核日 · 股息核验 · 贴近带持仓具名资金袖。美的 2025 年每 10 股派 43 元（中期 5 元 + 年末 38 元）≈5.
+### 无形投入资本化交叉 · 再投入挡A机制 · 会计可比性（Lev–Soug 第5项,L727-L727,### 无形投入资本化交叉 · 再投入挡A机制 · 会计可比性（Lev–Sougiannis JAE,V§4,,,5. **已授权（用户 2026-10-27 20:26 Asia/Shanghai）**：P-AA5 → §59；P-AA6 → §60；P-AA7 → §61。
+### 无形投入资本化交叉 · 再投入挡A机制 · 会计可比性（Lev–Soug 第6项,L728-L729,### 无形投入资本化交叉 · 再投入挡A机制 · 会计可比性（Lev–Sougiannis JAE,V§7,,,6. **与硬闸关系**：本节对应 §55–§58；冲突服从 §5/§6/§37/§40–§54。零改 B20/B22/收益卖线/FCF_B20。
+§59,L730-L730,## §59 A7 双口径 + 贴线注记（P-AA5，用户 2026-10-27 20:26 批准；,V§4,,,## §59 A7 双口径 + 贴线注记（P-AA5，用户 2026-10-27 20:26 批准；§2.1 A7 引用本条）
+## §59 A7 双口径 + 贴线注记（P-AA5，用户 2026-10-27 第1项,L731-L731,## §59 A7 双口径 + 贴线注记（P-AA5，用户 2026-10-27 20:26 批准；,V§4,,,1. A7 pass 须同时满足：报表加权 ROE（ROEJQ）**和** §55 调整后 ROE 均在近 10 年中 ≥8 年 >12%。任一口径不过 → A7 fail。
+## §59 A7 双口径 + 贴线注记（P-AA5，用户 2026-10-27 第2项,L732-L732,## §59 A7 双口径 + 贴线注记（P-AA5，用户 2026-10-27 20:26 批准；,V§4,,,2. 贴线：调整后第 8 高年份 <13%（距线 1pp 内）→ 强制标 `a7_margin_thin`（贴线），升档复核须加做压力口径（品牌 λ=50%、品牌 3 年）；注记不
+## §59 A7 双口径 + 贴线注记（P-AA5，用户 2026-10-27 第3项,L733-L733,## §59 A7 双口径 + 贴线注记（P-AA5，用户 2026-10-27 20:26 批准；,V§4,,haier hengrui,3. 首批：海尔 600690、恒瑞 600276 标贴线；六名 A7 结论均不变，无改档。
+## §59 A7 双口径 + 贴线注记（P-AA5，用户 2026-10-27 第4项,L734-L735,## §59 A7 双口径 + 贴线注记（P-AA5，用户 2026-10-27 20:26 批准；,V§7,,,4. 零改 B20/B22/收益卖线/FCF_B20/NI 主买点公式。
+§60,L736-L736,## §60 财报日研发削减警示（P-AA6，用户 2026-10-27 20:26 批准）,V§2,,,## §60 财报日研发削减警示（P-AA6，用户 2026-10-27 20:26 批准）
+## §60 财报日研发削减警示（P-AA6，用户 2026-10-27 20: 第1项,L737-L737,## §60 财报日研发削减警示（P-AA6，用户 2026-10-27 20:26 批准）,V§2,,,1. 持仓或正式名在 §50 财报日复核时，若「研发投入同比下降」且「§55 调整后归母比报表低 ≥20%」→ 标 `rd_cut_flatters_earnings`，§50 结
+## §60 财报日研发削减警示（P-AA6，用户 2026-10-27 20: 第2项,L738-L739,## §60 财报日研发削减警示（P-AA6，用户 2026-10-27 20:26 批准）,V§2（随所在小节）,,zte,2. 首批：仅中兴 000063 命中（2025 调整后 vs 报表约 −40%）；swap-plan v3 L2 已计划置换 200→0（截至 2026-10-27 尚未成交），
+§61,L740-L740,## §61 前瞻现金门槛排序键 = 默认停泊收益率（P-AA7，用户 2026-10-27 20:,V§15,,,## §61 前瞻现金门槛排序键 = 默认停泊收益率（P-AA7，用户 2026-10-27 20:26 批准；现金门槛唯一口径，§42/§43/§48/§52/§54 引用本条）
+## §61 前瞻现金门槛排序键 = 默认停泊收益率（P-AA7，用户 2026 第1项,L741-L741,## §61 前瞻现金门槛排序键 = 默认停泊收益率（P-AA7，用户 2026-10-27 20:,V§15,,,1. §43 账本排序键与 §54「是否高于现金」判断，改用默认停泊工具 511990 华宝添益 7 日年化（2026-10-26 为 1.003%），不用活期 0.05%。
+## §61 前瞻现金门槛排序键 = 默认停泊收益率（P-AA7，用户 2026 第2项,L742-L742,## §61 前瞻现金门槛排序键 = 默认停泊收益率（P-AA7，用户 2026-10-27 20:,V§15,,,2. 活期 0.05% 继续并列展示为闲置现金实际收益率，仅用于确定不会停泊的那部分现金。
+## §61 前瞻现金门槛排序键 = 默认停泊收益率（P-AA7，用户 2026 第3项,L743-L744,## §61 前瞻现金门槛排序键 = 默认停泊收益率（P-AA7，用户 2026-10-27 20:,V§15（随所在小节）,,midea zte,3. 今日影响：无（美的含股息 6.7% 高于两者，中兴 −6.2% 低于两者）；swap-plan v3 不改。
+### 进化 r23–r45 出处索引（cleanup-20261029 合并 23 个出处指针小节；硬闸 §62–§1,L745-L768,### 进化 r23–r45 出处索引（cleanup-20261029 合并 23 个出处指针小节,V§13/V§0 出处索引（legacy-only）,,,### 进化 r23–r45 出处索引（cleanup-20261029 合并 23 个出处指针小节；硬闸 §62–§142 全文为权威）

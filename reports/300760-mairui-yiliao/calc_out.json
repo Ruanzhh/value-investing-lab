@@ -1,0 +1,87 @@
+{
+  "as_of": "2026-11-06",
+  "ticker": "300760",
+  "name": "迈瑞医疗",
+  "price": 184.09,
+  "price_note": "2026-11-05 收盘 184.09（Yahoo/公开转述）；估值日 2026-11-06，开盘前沿用；旧卡盘中约185.08",
+  "shares_yi": 12.11799431,
+  "n_years": 3.154,
+  "fy3": "2029-12-31",
+  "dps_min3": 4.38,
+  "hurdle": 0.2,
+  "pricing_track": "PE_ONLY",
+  "fcf_pricing_track": false,
+  "dual_track_min_forbidden": true,
+  "excess_net_cash_yi": 190.0,
+  "excess_net_cash_ps": 15.68,
+  "excess_net_cash_source": "2026-09-30 三季报：货币资金193.60亿−有息负债约3亿（未加交易性金融资产约4.98亿）；按最近报告日数值保持到FY3，加进FV_PE",
+  "screen_triad": {
+    "profit_true": "过",
+    "profit_sustainable": "打折",
+    "cash_conversion": "过",
+    "cash_conversion_evidence": "多年OCF≥归母；FCF(OCF−购建)/NI 2021–2025中位约0.95；维持性购建相对净利不大；净利可近似业主盈余，故PE轨不对NI3再打折",
+    "ni3_haircut_for_cash_conversion": 1.0,
+    "quality_triad_note": "生意质量：被需要=过；难替代=打折（IVD局部）；价格不受管制=不过（国内）。质量三性影响深刻理解与买点启用，不替代筛选三性。"
+  },
+  "base": {
+    "rev0_yi": 350.0,
+    "ni0_yi": 82.0,
+    "rev_cagr": 0.07,
+    "net_margin": 0.245,
+    "rev3_yi": 428.77,
+    "ni3_yi": 105.05,
+    "exit_pe": 22.0,
+    "exit_pe_band": [
+      20,
+      30
+    ],
+    "exit_pe_rationale": "主报22∈[20,30]偏下。质量：被需要过，难替代打折、国内价格管制不过→护城河偏弱，落20–25下沿，不宜中上沿。周期：国内弱复苏未确认、底部偏中位修复前夜，非过热→不得用扩张期高倍数抬主报，也不得把去库压力期低倍数机械当稳态锚。定价权：国内管制主扣已在净利率24.5%，同一风险只扣一次→退出倍数不再叠到地板20；轻资本/现金转化过关支持略高于地板。历史年末低位约26–28x仅参照交叉，不得直接主报；本轮不因「贴近历史低位」抬倍数。",
+    "exit_pe_vs_history_cross_only": "自身年末低位约26–28x曾被讨论；仅交叉，不得主报。",
+    "fv3_pe_ops": 190.7,
+    "fv3_pe": 206.4,
+    "net_cash_added_ps": 15.68,
+    "note": "无FCF定价轨；旧FCF并列仅作历史对照不进入headline；本轮为退出倍数回流重审，数值与上一版PE单轨相同"
+  },
+  "B20": 123.9,
+  "B20_PE": 123.9,
+  "discount_factor_20": 1.777205505860352,
+  "premium_vs_B20": 0.486,
+  "vs_prior_pe_only_206_4_123_9": {
+    "prior_FV3": 206.4,
+    "prior_B20": 123.9,
+    "prior_exit_pe": 22.0,
+    "new_FV3": 206.4,
+    "new_B20": 123.9,
+    "new_exit_pe": 22.0,
+    "delta_FV3": 0.0,
+    "delta_B20": 0.0,
+    "reason": "退出倍数按质量/周期重审后仍取22；NI3/净现金/n/DPS/h/股本未改 → 合理价与闸价不变；变动=理由回流非假设改数"
+  },
+  "vs_old_gate_118_5": {
+    "old_B20_headline": 118.5,
+    "old_track": "FCF取更稳妥侧（双轨取低）",
+    "new_B20": 123.9,
+    "new_track": "PE单轨（退出倍数按20–30质量/周期判断）",
+    "delta": 5.4,
+    "delta_pct": 0.0456,
+    "note": "相对更早FCF取低闸价的对照仍保留；本轮相对上一版PE单轨无数值变动"
+  },
+  "legacy_fcf_parallel_display_only": {
+    "fv3_fcf_was": 196.9,
+    "B20_FCF_was": 118.5,
+    "note": "仅展示旧对照；本轮禁止作定价轨或取低"
+  },
+  "sensitivity_pm10_on_fv3": {
+    "rev_via_ni3": 0.0924,
+    "ni3": 0.0924,
+    "exit_pe": 0.0924,
+    "net_cash": 0.0076,
+    "shares": -0.084
+  },
+  "B20_issued": false,
+  "gate_block_reason": "缺用户本人原话授权的独立复核/挑刺；生意质量三性未满分（难替代打折、国内价格管制不过）；单位经济缺平均单线试剂产出与续约率。自查不算独立挑刺。",
+  "buy_point_enabled": false,
+  "V20_LIVE_INHERIT": true,
+  "round": "exit_pe_reflow_20261106",
+  "disclaimer": "个人研究，非投资建议"
+}

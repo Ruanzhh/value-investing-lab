@@ -1,0 +1,628 @@
+                                                                      Hikvision 2026 Q3 Report
+
+Stock Exchange Code：002415                          Abbreviation of Securities：Hikvision
+No：2026-029
+
+
+                 Hangzhou Hikvision Digital Technology Co., Ltd.
+
+                                2026 3rd Quarter Report
+
+
+The Company and all members of the Board of Directors guarantee that the
+
+information disclosed is true, accurate and complete without false records, misleading
+
+statements or material omissions.
+
+
+Important Content Notes:
+
+1. The Board of Directors, directors, and senior management of Hangzhou Hikvision
+
+   Digital Technology Co., Ltd. (hereinafter referred to as the "Company") hereby
+
+   guarantee that the information presented in this report shall be together be wholly
+
+   liable for the truthfulness, accuracy and completeness of its contents and free of
+
+   any false records, misleading statements or material omissions, and will undertake
+
+   individual and joint legal liabilities.
+
+2. Hu Yangzhong, the Company's legal representative, Jin Yan, the person in charge
+
+   of the accounting work, and Zhan Junhua, the person in charge of accounting
+
+   institution (accounting supervisor) hereby declare and warrant that the financial
+
+   information in this report is authentic, accurate, and complete.
+
+3. Whether the 3rd quarter financial accounting report has been audited
+
+   □Yes √ No
+                                                                                                                                                                    Hikvision 2026 Q3 Report
+
+I.    Key Financial Data
+
+1. Key Accounting Data and Financial Indicators
+
+Whether the Company performed a retroactive adjustment or restatement of the previous accounting data
+□ Yes √ No
+
+
+                                                                                           YoY Change between 2026 Q3                                                 YoY Change between 2026
+                                                                 2026 Q3                                                              2026 Q1~Q3
+                                                                                                    and 2025 Q3                                                       Q1~Q3 and 2025 Q1~Q3
+Revenue (RMB)                                                        27,221,794,841.81                             13.71%                    74,044,332,688.88                          12.60%
+Net profit attributable to shareholders of the
+                                                                        5,015,680,795.76                           36.97%                    12,911,386,245.87                          38.55%
+Company (RMB)
+Net profit attributable to shareholders of the
+Company excluding non-recurring gains and                               4,983,679,645.18                           43.13%                    12,695,628,331.08                          41.52%
+losses (RMB)
+Net cash flows from operating activities (RMB)                      —                                    —                                       7,213,412,301.86                       -47.34%
+Basic earnings per share (RMB/share)                                              0.547                            37.09%                                  1.409                        38.95%
+Diluted earnings per share (RMB/share)                                            0.547                            37.09%                                  1.409                        38.95%
+Weighted average ROE                                                              5.89%                             1.33%                                14.99%                           3.56%
+                                                                                                                                                   Change(%) between December 31, 2025 and
+                                                            On September 30, 2026                            On December 31, 2025
+                                                                                                                                                               September 30, 2026
+Total assets (RMB)                                                         141,391,040,510.18                               138,049,655,334.62                                            2.42%
+Net assets attributable to shareholders of the
+                                                                            84,274,813,591.35                                83,348,185,885.62                                            1.11%
+Company (RMB)
+
+
+
+The total share capital of the Company as of the previous trading day of the financial report disclosure:
+The total share capital of the Company as of the previous trading day of the financial report disclosure (share)                                                                  9,164,871,550
+
+Fully diluted earnings per share calculated using the latest share capital:
+Fully diluted earnings per share (RMB/share) calculated with the latest share capital                                                                                                    1.409
+                                                                                                          Hikvision 2026 Q3 Report
+
+
+
+2. Items and Amounts of Non-recurring Gains and Losses
+
+√ Applicable □ Inapplicable
+                                                                                                                          Unit：RMB
+
+                                   Item                                  Amount occurred in the current        January 1, 2026–
+                                                                           reporting period (2026 Q3)         September 30, 2026
+
+Profit or loss from disposal of non-current assets (including the
+                                                                                            159,487.61                      76,385.49
+write-off for the impairment provision of assets)
+
+Government subsidies included in the current profit and loss
+(excluding the government subsidy closely related to regular course
+of business of the Company and government subsidy based on                               34,025,554.55                 163,526,815.55
+standard quota or quantitative continuous application according to
+the state industrial policy)
+
+Apart from the effective hedging activities related to the Company's
+normal business operations, the fair value changes in financial
+assets and financial liabilities held by non-financial enterprises, as                    4,098,647.61                  71,236,875.51
+well as the gains or losses from the disposal of these financial
+assets and liabilities.
+
+Profit or loss on debt restructuring                                                       -180,358.83                  18,342,623.28
+
+Other non-operating income and expenditures except the items
+                                                                                         10,139,949.99                  49,784,753.75
+mentioned above
+
+Less: Impact of income tax                                                               10,615,800.05                  46,222,066.97
+
+        Impact of the minority interests (after tax)                                      5,626,330.30                  40,987,471.82
+
+Total                                                                                    32,001,150.58                 215,757,914.79
+
+
+
+Details of other profit and loss items that meet the definition of non-recurring profit and loss:
+□ Applicable √ Inapplicable
+The Company does not have other specific conditions of profit and loss items that meet the definition of
+non-recurring profit and loss.
+
+
+Explanations on classifying any non-recurring gain/loss item mentioned in the <Explanatory Announcement No. 1
+on Information Disclosure for Companies Offering Their Securities to the Public—Non-recurring Gains and
+Losses> as recurring gain/loss item.
+□ Applicable √ Inapplicable
+The Company does not classify any non-recurring gain/loss item mentioned in the <Explanatory Announcement
+No. 1 on Information Disclosure for Companies Offering Their Securities to the Public—Non-recurring Gains and
+Losses> as recurring gain/loss item.
+
+
+3. Information and Explanation about Variations in Key Accounting Data and Financial Indicators
+                                                                                                       Hikvision 2026 Q3 Report
+
+√Applicable □Inapplicable
+           Item                2026 Q1 ~ 2026 Q3        2025 Q1 ~ 2025 Q3       YoY Change                     Note of changes
+
+ Net profits attributable
+ to shareholders of the            12,911,386,245.87        9,319,124,728.48             38.55%
+ Company (RMB)                                                                                    Mainly due to year-on-year growth
+ Net profits attributable                                                                         in revenue and an increase in gross
+ to shareholders of the                                                                           profit margin compared to the
+ Company excluding                 12,695,628,331.08        8,970,971,794.87             41.52% same period last year.
+ non-recurring gains and
+ losses (RMB)
+ Basic earnings per share                                                                         Mainly due to the increase in net
+                                                1.409                   1.014            38.95%
+ (RMB/share)                                                                                      profit attributable to shareholders
+ Diluted earnings per                                                                             of the Company compared to the
+                                                1.409                   1.014            38.95%
+ share (RMB/share)                                                                                same period last year.
+ Net cash flows from                                                                              Mainly due to increased
+ operating activities               7,213,412,301.86       13,697,028,509.05            -47.34% procurement and inventory
+ （RMB）                                                                                            expenditure.
+
+
+
+
+II. The Use of Raised Funds
+□ Applicable √ Inapplicable
+The Company did not use any raised funds during the reporting period.
+
+
+III. Shareholder Information
+
+1. Total Number of Common Shareholders and Preferred Shareholders with Resumed Voting Rights and
+
+Information about Top 10 Shareholders
+                                                                                                                               Unit: Share
+                                                                   Total number of preferred shareholders (if any)
+Total number of common shareholders at the
+                                                          345,842 whose voting rights have been recovered at the end                 0
+end of the reporting period
+                                                                   of the reporting period
+
+                            Particulars about top 10 shareholders (Excludes shares lent through refinancing)
+
+                                                                                                The number         Pledged, marked or
+                                                                    Share-holdin   Total shares of common                   frozen
+                                                      Nature of
+              Name of shareholder                                   g percentage    held at the shares held
+                                                     shareholder
+                                                                        (%)        period-end with trading         Status       Amount
+                                                                                                restrictions
+                                            Domestic
+China Electronics Technology HIK Group Co.,
+                                            State-owned                   37.28% 3,416,996,509                 -
+Ltd.
+                                            corporation
+                                            Overseas
+Gong Hongjia                                                              10.50%    962,504,814                - Pledged 266,950,000
+                                            individual
+Hangzhou Weixun Equity Investment           Domestic
+                                                                           4.92%    450,795,176                - Pledged        6,000,000
+Partnership (Limited Partnership)           non-state-owne
+                                                                                                         Hikvision 2026 Q3 Report
+
+                                                 d
+                                                 corporation
+                                                 Domestic
+CETC Investment Holdings Co., Ltd.               State-owned                 2.71%    248,366,268              -     -                 -
+                                                 corporation
+                                                 Domestic
+Hangzhou Pukang Equity Investment                non-state-owne
+                                                                             1.99%    182,510,174              - Pledged     54,760,000
+Partnership (Limited Partnership)                d
+                                                 corporation
+                                                 Domestic
+The 52nd Research Institute at China Electronics
+                                                 State-owned                 1.97%    180,775,044              - Pledged     90,000,000
+Technology Group Co. Ltd.
+                                                 corporation
+                                                 Domestic
+Hu Yangzhong                                                                 1.70%    155,996,477 116,997,358        -                 -
+                                                 Individual
+China Life Insurance Co., Ltd. - Traditional -
+                                                 Other                       1.39%    127,584,360              -     -                 -
+Ordinary Insurance Product - 005L-CT001 SH
+Shanghai Perseverance Asset Management
+Partnership (Limited Partnership) -
+                                                 Other                       0.84%     77,000,000              -     -                 -
+Perseverance Adjacent Mountain 1 Yuanwang
+Fund
+                                                 Overseas
+Hong Kong Central Clearing Co. Ltd.                                          0.83%     76,362,573              -     -                 -
+                                                 corporation
+       Particulars about shares held by the Top 10 common shareholders holding shares that are not subject to trading restriction(s)
+                          (Excludes loaned shares through refinancing and lock-up shares of senior executives)
+                                                      Number of common shares                    Type and number of shares
+                Name of shareholder                   without trading restrictions
+                                                        held at the period-end                 Type                      Number
+
+China Electronics Technology HIK Group Co.,
+                                                                     3,416,996,509     RMB common shares                   3,416,996,509
+Ltd.
+Gong Hongjia                                                           962,504,814     RMB common shares                    962,504,814
+Hangzhou Weixun Equity Investment
+                                                                       450,795,176     RMB common shares                    450,795,176
+Partnership (Limited Partnership)
+CETC Investment Holdings Co., Ltd                                      248,366,268     RMB common shares                    248,366,268
+Hangzhou Pukang Equity Investment
+                                                                       182,510,174     RMB common shares                    182,510,174
+Partnership (Limited Partnership)
+The 52nd Research Institute at China Electronics
+                                                                       180,775,044     RMB common shares                    180,775,044
+Technology Group Co. Ltd
+China Life Insurance Co., Ltd. - Traditional -
+                                                                       127,584,360     RMB common shares                    127,584,360
+Ordinary Insurance Product - 005L-CT001 SH
+Shanghai Perseverance Asset Management
+Partnership (Limited Partnership) -
+                                                                        77,000,000     RMB common shares                     77,000,000
+Perseverance Adjacent Mountain 1 Yuanwang
+Fund
+Hong Kong Central Clearing Co. Ltd.                                     76,362,573     RMB common shares                     76,362,573
+Shanghai Chongyang Strategic Investment Co.,
+                                                                        61,821,071     RMB common shares                     61,821,071
+Ltd. - Chongyang Strategic Intelligence Fund
+                                                    In the aforementioned shareholders, China Electronics Technology HIK Group Co.,
+Explanation on associated relationship and          Ltd., CETC Investment Holdings Co., Ltd., and The 52nd Research Institute at
+concerted actions among above shareholders          China Electronics Technology Group Co., Ltd. are acting in concert. Mr. Gong
+                                                    Hongjia, and Hangzhou Pukang Equity Investment Partnership (Limited
+                                                                                            Hikvision 2026 Q3 Report
+
+                                          Partnership) are acting in concert. Hu Yangzhong and Hangzhou Weixun Equity
+                                          Investment Partnership (Limited Partnership) are acting in concert. Except for
+                                          these, the Company does not know whether the other shareholders are related
+                                          parties or whether they are acting-in-concert parties in accordance with the
+                                          Administration of the Takeover of Listed Companies Procedures.
+
+
+
+Situation of shareholders holding more than 5% of the shares, the top 10 shareholders, and the top 10 shareholders
+of common shares without trading restrictions participating in the lending of shares in the refinancing business
+□Applicable √Inapplicable
+
+
+Changes of the top 10 shareholders and the top 10 shareholders that are not subject to trading restriction compared
+with the previous period due to refinancing, lending/repayment issues
+□ Applicable √ Inapplicable
+
+2. Total Number of Preferred Shareholders and Information about Top 10 Preferred Shareholders
+
+□ Applicable √ Inapplicable
+
+
+
+IV. Other Significant Events
+
+□Applicable √Inapplicable
+                                                                          Hikvision 2026 Q3 Report
+
+V. Quarterly Financial Reports
+
+1. Financial Statements
+
+1.1 Consolidated balance sheet
+                                                                                        Unit: RMB
+
+                         Item                September 30, 2026            December 31, 2025
+Current Assets:
+    Cash and bank balances                            37,083,532,987.38            46,508,328,658.44
+    Derivative financial assets                           29,129,845.54                 4,792,243.40
+    Notes receivable                                   2,762,472,687.58             3,051,356,562.64
+    Accounts receivable                               28,366,330,714.39            29,812,378,945.77
+    Receivables for financing                          2,424,159,625.91             2,430,030,662.65
+    Prepayments                                          880,956,917.04               856,749,328.34
+    Other receivables                                    496,244,566.85               442,502,788.34
+    Inventories                                       33,334,042,945.46            20,472,193,858.80
+    Contract assets                                      966,541,219.01               974,450,159.71
+    Non-current assets due within one year               402,854,361.94               603,989,194.29
+    Other current assets                               2,979,517,240.29             1,251,688,100.54
+Total Current Assets                                 109,725,783,111.39           106,408,460,502.92
+Non-current Assets:
+   Long-term receivables                                 161,685,427.87               225,857,779.77
+   Long-term equity investment                         1,566,986,324.01             1,669,074,600.75
+   Other non-current financial assets                    672,806,550.52               589,955,315.74
+   Fixed assets                                       19,780,461,334.73            20,176,914,451.95
+   Construction in progress                            2,241,414,829.98              1,914,110,895.67
+   Right-of-use assets                                   495,322,919.16               442,495,841.87
+   Intangible assets                                   1,772,786,002.11             1,830,074,205.02
+   Goodwill                                              307,081,066.52               311,187,727.01
+   Long-term deferred expenses                           123,432,964.86               148,029,527.26
+   Deferred tax assets                                 2,698,039,565.65             2,435,622,521.84
+   Other non-current assets                            1,845,240,413.38             1,897,871,964.82
+Total Non-current Assets                              31,665,257,398.79            31,641,194,831.70
+Total Assets                                         141,391,040,510.18           138,049,655,334.62
+Current Liabilities:
+
+  Short-term borrowings                                3,111,656,466.64             2,685,866,236.94
+
+  Derivative financial liabilities                         4,360,207.36                11,299,401.25
+
+  Notes payable                                          563,915,511.73               783,778,534.95
+
+  Accounts payable                                    21,161,507,372.33            19,843,949,575.87
+                                                                                       Hikvision 2026 Q3 Report
+
+                         Item                             September 30, 2026            December 31, 2025
+
+  Contract liabilities                                              5,274,420,860.66             4,200,490,873.07
+
+  Payroll payable                                                   7,154,850,433.10             6,937,517,142.35
+
+  Taxes payable                                                     2,899,012,541.04             1,794,091,503.07
+
+  Other payables                                                    3,220,932,723.26             3,384,020,094.93
+
+       Including: dividends payable                                    19,272,333.21                27,964,450.23
+
+  Non-current liabilities due within one year                       1,090,536,778.14             3,939,271,129.61
+
+  Other current liabilities                                           811,638,017.51               415,430,882.40
+
+Total Current Liabilities                                          45,292,830,911.77            43,995,715,374.44
+
+Non-current Liabilities:
+
+   Long-term borrowings                                               864,920,073.94             1,210,564,814.39
+
+   Lease liabilities                                                  313,976,611.51               299,390,966.16
+
+   Long-term payables                                                   9,749,569.60                 9,749,569.60
+
+   Provisions                                                         109,204,101.28               118,435,375.21
+
+   Deferred income                                                    874,460,553.71               863,263,662.53
+
+   Deferred tax liabilities                                            97,838,538.26               114,583,208.90
+
+   Other non-current liabilities                                      282,217,254.55               221,089,008.80
+
+Total Non-current liabilities                                       2,552,366,702.85             2,837,076,605.59
+
+Total Liabilities                                                  47,845,197,614.62            46,832,791,980.03
+
+Owners’ Equity
+
+  Share capital                                                     9,164,871,550.00             9,164,871,550.00
+
+  Capital reserves                                                  4,413,883,143.01             4,385,374,479.22
+
+  Other comprehensive income                                         (75,549,372.10)                23,384,816.83
+
+  Surplus reserves                                                  4,715,460,312.00             4,715,460,312.00
+
+  Retained earnings                                                66,056,147,958.44            65,059,094,727.57
+  Total owners' equity attributable to owner of
+                                                                   84,274,813,591.35            83,348,185,885.62
+  the Company
+  Minority equity                                                   9,271,029,304.21             7,868,677,468.97
+
+Total Owners' Equity                                               93,545,842,895.56            91,216,863,354.59
+
+Total Liabilities and Owners' Equity                              141,391,040,510.18           138,049,655,334.62
+
+Legal Representative: Hu Yangzhong
+Person in Charge of the Accounting work: Jin Yan
+Person in Charge of Accounting Institution: Zhan Junhua
+                                                                                  Hikvision 2026 Q3 Report
+
+1.2 Consolidated income statement from the beginning of the year to the end of the reporting period
+
+                                                                                                   Unit: RMB
+                          Item                          2026 Q1~Q3                    2025 Q1~Q3
+
+I. Revenue                                                  74,044,332,688.88              65,757,782,457.01
+
+II．Total Operating Costs                                    59,188,922,629.18              55,686,958,076.14
+
+  Less: Cost of sales and services                          37,296,459,322.48              35,925,957,434.61
+
+        Business taxes and surcharges                         650,724,444.39                  580,526,397.79
+
+        Selling expenses                                     9,015,091,949.96               8,848,755,711.92
+
+        Administrative expenses                              2,369,513,819.17               2,228,082,915.85
+
+        Research and development (R&D) expenses              9,346,283,132.75               8,738,019,947.93
+
+        Financial expenses                                    510,849,960.43                (634,384,331.96)
+
+          Including：Interest expenses                         116,685,989.12                  153,576,328.82
+
+                      Interest income                         470,269,397.35                  392,986,285.68
+
+ Add: Other income                                           2,067,807,246.50               2,077,470,226.71
+
+      Investment income (loss"-")                             772,713,474.59                  142,210,131.47
+       Including: Investment gains (losses) in
+      associated enterprise and joint-venture                 710,608,634.70                  171,642,463.57
+      enterprise
+      Gains on derecognition of financial assets
+                                                                              -                     89,740.00
+      measured at amortized cost
+      Gains (loss"-") from changes in fair values              44,053,287.73                 (26,762,278.99)
+
+      Credit impairment losses ("-")                         (572,260,387.91)               (346,820,752.43)
+
+      Impairment losses ("-") of assets                      (336,617,774.63)               (318,298,549.51)
+
+      Asset disposal income (loss"-")                                718,740.45                19,524,387.58
+
+III. Operating Profit (loss"-")                             16,831,824,646.43              11,618,147,545.70
+
+  Add: Non-operating income                                    72,225,953.24                   53,542,089.72
+
+  Less: Non-operating expenses                                 27,903,667.03                   12,125,089.21
+
+IV. Total Profit (loss"-")                                  16,876,146,932.64              11,659,564,546.21
+
+       Less: Income tax expenses                             2,162,263,053.19               1,405,797,200.10
+
+V. Net Profit (loss"-")                                     14,713,883,879.45              10,253,767,346.11
+
+       5.1 Classification by operation continuity
+
+       (a) Net profit (loss) on continuous operation        14,713,883,879.45              10,253,767,346.11
+
+       (b) Net profit (loss) on terminated operation                          -                             -
+
+       5.2 Classification by attribution of ownership
+
+       (a) Net profit attributable to owners of
+                                                            12,911,386,245.87               9,319,124,728.48
+           parent company
+       (b) Profit or loss attributable to minority
+                                                             1,802,497,633.58                 934,642,617.63
+           shareholders
+                                                                                                 Hikvision 2026 Q3 Report
+
+                         Item                                    2026 Q1~Q3                          2025 Q1~Q3
+VI. Other Comprehensive Income, Net of Income
+                                                                      (150,363,152.91)                       213,152,756.92
+Tax
+  Other comprehensive income attributable to
+                                                                       (98,934,188.93)                       139,659,957.61
+  owners of the Company, net of tax
+  (I) Items that will not be reclassified subsequently
+                                                                                      -                                       -
+  to profit or loss
+  (II) Other comprehensive income to be
+                                                                       (98,934,188.93)                       139,659,957.61
+  reclassified to profit or loss in subsequent periods
+       1. Exchange differences arising on conversion
+        of financial statements denominated in                         (98,934,188.93)                       139,659,957.61
+        foreign currencies
+  Other comprehensive income attributable to
+                                                                       (51,428,963.98)                        73,492,799.31
+  minority interests, net of tax
+VII. Total Comprehensive Income                                      14,563,520,726.54                    10,466,920,103.03
+  Total comprehensive income attributable to
+                                                                     12,812,452,056.94                     9,458,784,686.09
+  owners of the parent company
+  Total comprehensive income attributable to
+                                                                      1,751,068,669.60                     1,008,135,416.94
+  minority shareholders
+VIII. Earnings Per Share
+
+   (I) Basic earnings per share                                                   1.409                                1.014
+
+  (II) Diluted earnings per share                                                 1.409                                1.014
+Legal Representative: Hu Yangzhong
+Person in Charge of the Accounting work: Jin Yan
+Person in Charge of Accounting Institution: Zhan Junhua
+
+
+
+1.3 Consolidated cash flow statement from the beginning of the year to the end of the reporting period
+
+                                                                                                                  Unit: RMB
+                                  Item                                  2026 Q1~Q3                    2025 Q1~Q3
+I. Cash Flows from Operating Activities:
+
+     Cash received from sale of goods or rendering of services             83,576,384,345.09            78,369,270,196.90
+
+     Receipts of tax refunds                                                  4,079,167,094.43           3,236,882,063.37
+
+     Other cash receipts relating to operating activities                     1,104,760,791.75           1,186,697,756.92
+
+   Sub-total of cash inflows from operating activities                     88,760,312,231.27            82,792,850,017.19
+
+     Cash payments for goods purchased and services received               53,956,517,437.52            43,989,344,135.13
+
+     Cash paid to and on behalf of employees                               15,871,601,533.09            15,020,772,578.45
+
+     Payments of various types of taxes                                       6,226,510,841.24           4,871,467,136.41
+
+     Other cash payments relating to operating activities                     5,492,270,117.56           5,214,237,658.15
+
+   Sub-total of cash outflows from operating activities                    81,546,899,929.41            69,095,821,508.14
+
+Net Cash Flows from Operating Activities                                      7,213,412,301.86          13,697,028,509.05
+
+II. Cash Flows from Investing Activities:
+
+      Cash receipts from recovery of investments                           11,787,927,956.10             3,485,922,506.33
+
+      Cash receipts from investment income                                     868,483,095.83              94,952,951.57
+                                                                                            Hikvision 2026 Q3 Report
+
+                               Item                                  2026 Q1~Q3                  2025 Q1~Q3
+      Net cash receipts from disposals of fixed assets, intangible
+                                                                           29,332,415.76              116,817,690.29
+      assets and other long-term assets
+      Other cash receipts relating to investing activities                 36,478,155.76               83,324,543.71
+
+   Sub-total of cash inflows from investing activities                 12,722,221,623.45            3,781,017,691.90
+
+      Cash paid to acquire investments                                 11,865,713,160.22            3,526,776,934.84
+       Cash payments to acquire or construct fixed assets,
+                                                                        2,232,313,718.70            3,084,953,932.55
+intangible assets and other long-term assets
+   Sub-total of cash outflows from investing activities                14,098,026,878.92            6,611,730,867.39
+
+Net Cash Flows from Investing Activities                               (1,375,805,255.47)          (2,830,713,175.49)
+
+III. Cash Flows from Financing Activities:
+
+      Cash receipts from borrowings                                     2,577,517,277.08            2,958,594,145.25
+
+    Sub-total of cash inflows from financing activities                 2,577,517,277.08            2,958,594,145.25
+
+      Cash repayments of borrowings                                     5,189,960,000.00            3,214,101,612.10
+      Cash payments for distribution of dividends or profits or
+                                                                       12,352,346,973.98            8,446,049,990.60
+      settlement of interest expenses
+      Other cash payments relating to financing activities                246,064,794.79            1,891,269,646.27
+
+     Sub-total of cash outflows from financing activities              17,788,371,768.77           13,551,421,248.97
+
+Net Cash Flows from Financing Activities                              (15,210,854,491.69)         (10,592,827,103.72)
+IV. Effect of Foreign Exchange Rate Changes on Cash and
+                                                                        (229,706,797.44)               47,525,893.69
+Cash Equivalents
+V. Net Increase (Decrease) in Cash and Cash Equivalents                (9,602,954,242.74)             321,014,123.53
+
+      Add: Opening balance of Cash and Cash Equivalents                46,204,338,694.43           36,053,042,380.29
+
+VI. Closing Balance of Cash and Cash Equivalents                       36,601,384,451.69           36,374,056,503.82
+
+Legal Representative: Hu Yangzhong
+Person in Charge of the Accounting work: Jin Yan
+Person in Charge of Accounting Institution: Zhan Junhua
+
+
+
+2. Adjustments to financial report at the beginning of the year relating to the initial adoption of the new
+
+accounting standards or interpretation of standards since 2026.
+
+□Applicable √Inapplicable
+
+
+
+
+3. Audit Report
+
+Whether audit has been performed on the 2026 3rd quarter financial report
+□ Yes √ No
+The Company’s 2026 3rd quarter financial report has not been audited.
+                                                                                   Hikvision 2026 Q3 Report
+
+
+
+
+                                    HANGZHOU HIKVISION DIGITAL TECHNOLOGY CO., LTD.
+
+                                                                                        Board of Directors
+
+                                                                                          October 17, 2026
+
+
+
+
+Note:
+This document is a translated version of the Chinese version 2026 3rd Quarter Report (“2026 年第三季度报告”),
+and the published announcements in the Chinese version shall prevail. The complete published Chinese 2026 3rd
+Quarter Report may be obtained at www.cninfo.com.cn.
+

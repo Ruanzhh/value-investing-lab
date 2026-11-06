@@ -1,0 +1,38 @@
+name: 新公司候选
+description: 提议下一份值得深估的公司，并给出公开材料
+title: "[新公司候选] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        候选需要能开始做研究的公开材料。不要只问这只股票能不能买。
+  - type: input
+    id: ticker
+    attributes:
+      label: 公司代码
+      description: 六位代码。还不确定时填「待查」，并在正文写上公司全称和交易所。
+      placeholder: "600660"
+    validations:
+      required: true
+  - type: input
+    id: path
+    attributes:
+      label: 引用文件路径
+      description: 若本仓已有相关笔记，写相对路径。若还没有，填「不适用」，并说明为什么现有十二家里没有可对照的文件。
+      placeholder: 不适用
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 证据链接
+      description: 至少给出最近一份定期报告或公司官网投资者页面的链接。
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么值得研究
+      description: 用生意质量说明，不要用目标价代替理由。
+    validations:
+      required: true

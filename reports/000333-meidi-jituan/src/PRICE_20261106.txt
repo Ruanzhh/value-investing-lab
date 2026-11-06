@@ -1,0 +1,12 @@
+valuation_date: 2026-11-06 Asia/Shanghai
+# A股当日未开盘；取最近交易日收盘
+last_close_date: 2026-11-05
+close: 88.12
+sources:
+  - Investing.com historical (cn.investing.com/equities/midea-group-a-historical-data) 2026-11-05 close 88.12
+  - 金融界 summary.jrj.com.cn/stock/sz/000333 同日 88.12
+  - 爱股网 igu888 同日 88.12
+note: 旧目录 PRICE_20261105.txt 写 86.58，与上述三源 88.12 冲突；本轮以三源一致的 88.12 为准并更正。
+shares_total_yi: 76.30
+shares_source: 中财网/行情 总股本约 76.30 亿股（沿用旧快照；未另见股本大变公告）
+mkt_cap_yi: 6723.6  # 88.12*76.30

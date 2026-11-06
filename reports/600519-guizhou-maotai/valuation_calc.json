@@ -1,0 +1,101 @@
+{
+  "as_of": "2026-11-06",
+  "updated": "2026-11-06T16:00+08:00",
+  "reval_tag": "exitpe_judgment_integer_26",
+  "price": 1452.0,
+  "price_date": "2026-11-05",
+  "price_note": "as-of 2026-11-06 Asia/Shanghai pre-open; last close 2026-11-05 15:00",
+  "price_sources": [
+    "tencent_qt",
+    "sina_hq"
+  ],
+  "shares_yi": 12.50081601,
+  "fy3": "2029-12-31",
+  "n_years": 3.151266,
+  "n_days": 1151,
+  "ni3_yi_base": 960.0,
+  "exit_pe_base": 26.0,
+  "exit_pe_source": "主报按20～30判断带取整数26：质量偏25–30、周期筑底不取28–30；旧26.155来自结构窗中点下压，三位小数像统计中位/窗算法，已废止作主报；结构窗P50≈30.31与轻资产回退≈22仅参照",
+  "excess_cash_yi": 1496.05,
+  "excess_cash_note": "Q3'26 主口径；净拆出×80%对齐超额净现金定义（见excess_cash_q3）；div_cash_double_count_minor（闸价已叠n×DPS，未再扣三年派息）；FY3资产负债项保持最近报告日不变（V§5 D15）",
+  "add_excess_cash": true,
+  "fv3_base": 2116.35,
+  "dps_min3": 27.624,
+  "dps_min3_note": "FY23-25 年度派息单笔最小=FY2024 年报派息 27.624（每10股276.24）；沿用门槛常数口径",
+  "A20_TR": 1240.43,
+  "A18_TR": 1307.9,
+  "hurdle_h": 0.2,
+  "method": "PE_only_same_FY",
+  "forbidden_tracks_not_used": [
+    "owner_earnings_RI",
+    "FCFE_Gordon",
+    "dual_track_min"
+  ],
+  "screen_cash_conversion": "pass",
+  "buy_point_enabled": false,
+  "vs_old_gate_1227": {
+    "old": 1227.49,
+    "prev_A20_with_pe_26155": 1247.13,
+    "new_A20": 1240.43,
+    "new_A18": 1307.9,
+    "delta_vs_1247": -6.7,
+    "delta_pct_vs_1247": -0.54,
+    "primary_reason": "exit_pe_from_26.155_window_midpoint_to_judgment_integer_26"
+  },
+  "sensitivity_L1_pct_of_fv3": {
+    "NI3_plus10": 9.44,
+    "NI3_minus10": -9.44,
+    "PE_plus10": 9.44,
+    "PE_minus10": -9.44,
+    "EXC_plus10": 0.56,
+    "EXC_minus10": -0.56
+  },
+  "cross_reminders": {
+    "exit_15_20_25x_multiple_vs_price": [
+      0.88,
+      1.14,
+      1.4
+    ],
+    "earnings_yield_fy25_pct": 4.54,
+    "base_expected_cagr_pct_if_fv3_hits": 12.9,
+    "base_TR_cagr_pct_approx": 14.35,
+    "implied_ni3_at_pe_base": 640.6
+  },
+  "contract_price_latest": {
+    "value": 1369,
+    "date": "2026-07-18"
+  },
+  "channel_batch_approx": {
+    "loose": 1680,
+    "case": 1710,
+    "as_of": "2026-11-04",
+    "source": "酒业参考报"
+  },
+  "channel_buffer_yuan": [
+    310,
+    340
+  ],
+  "prev_dir": "（未发布的更早工作目录）",
+  "user_facing_policy": "base_line_only_no_bear_bull_to_user; research_gate_number_no_draft_label; primary_A20_h20; exit_pe_judgment_26",
+  "hurdle_primary_pending_user": false,
+  "hurdle_note": "用户拍板主报A20档(h=20%)；退出PE改判断取整26后闸价重算≈1240；A18≈1308仅对照",
+  "div_cash_double_count_minor": true,
+  "screen_cash_conversion_note": "FY2025 OCF/NI≈0.75财务公司噪声；近三年累计≈0.91；9M'26≈1.30；D&A vs capex轻；营运资本不吸血 → 过",
+  "buy_point_note": "未启用：简约路径+交叉未齐；公开信息已尽不因未披露内部硬数卡住；不标草稿",
+  "hurdle_primary": "A20_TR",
+  "hurdle_primary_value": 1240.43,
+  "exit_pe_method": "judgment_band_20_30_integer",
+  "exit_pe_refs_only": {
+    "window_p50_2021plus": 30.31,
+    "light_asset_fallback": 22,
+    "legacy_midpoint_compression": 26.155,
+    "note": "参照不进主报推导；与判断重合故保留取位"
+  },
+  "exit_pe_review_20261106": {
+    "keep_primary": false,
+    "changed_to": 26.0,
+    "reason": "三位小数26.155像旧窗算法主报；判断带应取约26整数；重算闸价",
+    "A20_new": 1240.43
+  },
+  "exit_pe_legacy_discarded": 26.155
+}

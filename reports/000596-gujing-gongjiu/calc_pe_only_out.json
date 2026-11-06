@@ -1,0 +1,136 @@
+{
+ "as_of": "2026-11-06 Asia/Shanghai",
+ "rule": "PE-only; exit PE judged in 20-30 by business quality (hist median reference only)",
+ "px": 105.01,
+ "shares_yi": 5.286,
+ "n": 3.1512662559890487,
+ "fy3": "2029-12-31",
+ "hurdle": 0.2,
+ "dps_min3": 4.4,
+ "pe_hist_same_fy": {
+  "2016": 27.02,
+  "2017": 29.25,
+  "2018": 15.91,
+  "2019": 32.15,
+  "2020": 74.85,
+  "2021": 57.36,
+  "2022": 45.23,
+  "2023": 27.04,
+  "2024": 16.43,
+  "2025": 20.2
+ },
+ "pe_exit_median": 28.145,
+ "pe_exit_main": 23.0,
+ "trim_medians": [
+  29.25,
+  29.25
+ ],
+ "trim_ok": true,
+ "P20": 16.43,
+ "P80": 45.23,
+ "pe_min_snap": 15.91,
+ "excess_cash_yi": 53.1123,
+ "xc_ps": 10.047729852440408,
+ "NI3_base": 34.2,
+ "rev3_base": 180.0,
+ "net_margin_base": 0.19,
+ "FV3_pe": 158.856,
+ "B20": 97.236,
+ "B22": 92.3,
+ "gate_fv_ratio": 0.612,
+ "cross_only": {
+  "pe_ri": 20.83333333333333,
+  "FV3_ri": 144.838,
+  "spread_pe_over_ri": 1.097,
+  "FV3_rf25": 171.796,
+  "spread_pe_over_rf25": 0.925,
+  "FV3_rf30": 204.145
+ },
+ "conv_ocf_ni": {
+  "2021": 2.286,
+  "2022": 0.989,
+  "2023": 0.98,
+  "2024": 0.857,
+  "2025": 0.549
+ },
+ "k_cross_proxy": {
+  "2021": 2.035,
+  "2022": 0.734,
+  "2023": 0.805,
+  "2024": 0.712,
+  "2025": 0.323
+ },
+ "sens_fv_pct": {
+  "NI3": {
+   "minus10": -9.4,
+   "plus10": 9.4
+  },
+  "pe_exit": {
+   "minus10": -9.4,
+   "plus10": 9.4
+  },
+  "excess_cash": {
+   "minus10": -0.6,
+   "plus10": 0.6
+  },
+  "rev3": {
+   "minus10": -9.4,
+   "plus10": 9.4
+  },
+  "net_margin": {
+   "minus10": -9.4,
+   "plus10": 9.4
+  }
+ },
+ "sens_gate": {
+  "NI3": {
+   "minus10": 88.86,
+   "plus10": 105.61
+  },
+  "pe_exit": {
+   "minus10": 88.86,
+   "plus10": 105.61
+  },
+  "excess_cash": {
+   "minus10": 96.67,
+   "plus10": 97.8
+  },
+  "rev3": {
+   "minus10": 88.86,
+   "plus10": 105.61
+  },
+  "net_margin": {
+   "minus10": 88.86,
+   "plus10": 105.61
+  }
+ },
+ "vs_old_dual_track_gate_89.3": {
+  "new_gate": 97.236,
+  "change_pct": 8.9
+ },
+ "flip_from_px": {
+  "15": 1.152,
+  "20": 1.46,
+  "25": 1.768
+ },
+ "flip_from_b20": {
+  "15": 1.244,
+  "20": 1.577,
+  "25": 1.909
+ },
+ "ttm_ni": 18.49,
+ "pe_ttm": 30.02,
+ "earn_yield": 0.0333,
+ "pe_exit_reason": "区域白酒龙头+轻资本现金转化周期修正后过→不低于20；难替代第3/省外退缩/去库修复/费用粘性→不得用增长期中位28.1，也难顶25–30强护城河上沿；取弱护城河区域周期带20–25之中位附近23",
+ "pe_hist_median_ref_only": 28.145,
+ "gate_vs_prior_pe116_pct": -16.2,
+ "gate_vs_r2_893_pct": 8.9,
+ "note_pe_exit": "主报已改为 pe_exit_main=23；pe_exit_median 仅历史参照",
+ "old_r2": {
+  "FV3_headline_ri": 145,
+  "B20_ri": 89.3,
+  "FV3_pe_side": 192,
+  "B20_pe_side": 115.9,
+  "NI3": 34.2
+ }
+}

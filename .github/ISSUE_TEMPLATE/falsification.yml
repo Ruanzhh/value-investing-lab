@@ -1,0 +1,39 @@
+name: 证伪信号
+description: 提出可以推翻某份研究结论的公开信号
+title: "[证伪信号] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        证伪信号是「如果出现什么事实，这份结论就站不住」。
+        请指向具体文件和证据。不要只写看多或看空。
+  - type: input
+    id: ticker
+    attributes:
+      label: 公司代码
+      description: 六位代码。不是针对单一公司时填「不适用」，并在正文说明原因。
+      placeholder: "000333"
+    validations:
+      required: true
+  - type: input
+    id: path
+    attributes:
+      label: 引用文件路径
+      description: 被这个信号挑战的研报、结论卡或技能规则路径。
+      placeholder: reports/000333-meidi-jituan/research_report.md
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 证据链接
+      description: 已经发生的事实，或你用来定义信号的公开来源。
+    validations:
+      required: true
+  - type: textarea
+    id: signal
+    attributes:
+      label: 信号本身
+      description: 写清观察什么、出现到什么程度就算打脸、它动摇的是哪一句结论。
+    validations:
+      required: true
