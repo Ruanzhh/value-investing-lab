@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="title desc">
+  <title id="title">价值投资实验室 · 看懂生意，算清价值</title>
+  <desc id="desc">深蓝色研究刊物封面，右侧以事实、假设、价值三层卡片呈现研究方法。</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#101e30"/>
+      <stop offset="1" stop-color="#080f1b"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#c6d6e8" stroke-opacity=".045"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="400" rx="16" fill="url(#background)"/>
+  <rect width="1280" height="400" rx="16" fill="url(#grid)"/>
+  <path d="M0 399H1280" stroke="#d5b77b" stroke-opacity=".65" stroke-width="2"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <path d="M56 44l12 24 12-24" fill="none" stroke="#d5b77b" stroke-width="3"/>
+    <text x="96" y="63" fill="#d5b77b" font-size="15" font-weight="600" letter-spacing="4">VALUE INVESTING LAB</text>
+    <text x="56" y="149" fill="#f3f5f7" font-size="57" font-weight="700" letter-spacing="3">看懂生意。</text>
+    <text x="56" y="222" fill="#f3f5f7" font-size="57" font-weight="700" letter-spacing="3">算清价值。</text>
+    <text x="59" y="273" fill="#aab9ca" font-size="19" letter-spacing="2">用证据形成判断，让判断接受挑战。</text>
+    <path d="M60 318H90" stroke="#8bd9bd" stroke-width="2"/>
+    <text x="105" y="324" fill="#8bd9bd" font-size="12" font-weight="600" letter-spacing="2.5">BUSINESS · EVIDENCE · VALUE</text>
+    <g transform="translate(720 44)">
+      <rect width="450" height="104" rx="9" fill="#142437" stroke="#2c4158"/>
+      <text x="24" y="30" fill="#8bd9bd" font-size="11" letter-spacing="2">01 / EVIDENCE</text>
+      <text x="24" y="65" fill="#edf1f5" font-size="23" font-weight="600">事实有出处</text>
+      <text x="24" y="86" fill="#94a6bb" font-size="12">财报 · 公告 · 经营与竞争</text>
+      <path d="M362 46l10 10 23-23" fill="none" stroke="#8bd9bd" stroke-width="2"/>
+      <path d="M399 65h22m-22 9h14" stroke="#496779" stroke-width="2"/>
+      <path d="M224 104v16" stroke="#52756f" stroke-width="1.5"/>
+      <rect x="22" y="120" width="450" height="92" rx="9" fill="#142131" stroke="#35465a"/>
+      <text x="46" y="149" fill="#c6d3e1" font-size="11" letter-spacing="2">02 / ASSUMPTIONS</text>
+      <text x="46" y="184" fill="#edf1f5" font-size="23" font-weight="600">假设可质疑</text>
+      <path d="M376 151h54m-54 16h54m-54 16h54" stroke="#496175" stroke-width="1.5"/>
+      <circle cx="390" cy="151" r="4" fill="#142131" stroke="#c6d3e1" stroke-width="1.5"/>
+      <circle cx="416" cy="167" r="4" fill="#142131" stroke="#c6d3e1" stroke-width="1.5"/>
+      <circle cx="400" cy="183" r="4" fill="#142131" stroke="#c6d3e1" stroke-width="1.5"/>
+      <path d="M246 212v16" stroke="#786c53" stroke-width="1.5"/>
+      <rect x="44" y="228" width="450" height="92" rx="9" fill="#1e242a" stroke="#766749"/>
+      <text x="68" y="257" fill="#d5b77b" font-size="11" letter-spacing="2">03 / VALUATION</text>
+      <text x="68" y="292" fill="#f1e8d5" font-size="23" font-weight="600">结论能复算</text>
+      <path d="M399 265h33m-33 14h33" stroke="#d5b77b" stroke-width="3"/>
+      <circle cx="416" cy="272" r="26" fill="none" stroke="#d5b77b" stroke-opacity=".25"/>
+    </g>
+  </g>
+</svg>
