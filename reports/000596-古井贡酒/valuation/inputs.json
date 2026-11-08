@@ -1,0 +1,464 @@
+{
+  "schema": "gujing-valuation-v1",
+  "research_date": "2026-11-07",
+  "terminal_date": "2029-11-07",
+  "currency": "CNY",
+  "units": "财务金额为亿元；股份为亿股；每股金额为元",
+  "return_definition": "IRR_of_probability_weighted_per_share_cashflows",
+  "target_return": 0.18,
+  "shares": 5.286,
+  "a_shares": 4.086,
+  "b_shares": 1.2,
+  "market": {
+    "date": "2026-11-06",
+    "a_price": 105.01,
+    "b_price_hkd": 54.81,
+    "cny_per_hkd": 0.85712
+  },
+  "tax_fees": {
+    "a_buy": 0.0003,
+    "a_sell": 0.0008,
+    "a_dividend_tax": 0,
+    "b_buy": 0.002,
+    "b_sell": 0.0025,
+    "b_dividend_tax": 0.1,
+    "capital_gains_tax": 0,
+    "note": "A按境内个人持股超过一年示例；用户身份未知。B仅用10%股息税与费用假设作条件比较，非个税认定。"
+  },
+  "liquidity": {
+    "cash_equivalents": 112.3525974456,
+    "trading_financial": 4.2225290186,
+    "nci_cash_estimate": 4,
+    "operating_reserve": 35,
+    "sep30_to_research_net_change_assumption": 0,
+    "excess_cash_aftertax_yield": 0.012,
+    "reserve_aftertax_yield": 0.012,
+    "other_assets_added": 0
+  },
+  "initial_dividend": {
+    "date": "2026-12-31",
+    "per_share": 1,
+    "status": "董事会预案未获股东会通过；模型假定获批，支付日期为假设"
+  },
+  "cashflow_year_ends": [
+    "2027-11-07",
+    "2028-11-07",
+    "2029-11-07"
+  ],
+  "annual_dividend_dates": [
+    "2027-07-17",
+    "2028-07-17",
+    "2029-07-17"
+  ],
+  "fy2026_profit_estimate": 24.5,
+  "fy2026_total_payout_assumption": 0.65,
+  "business_cases": {
+    "decline": {
+      "name": "竞争性衰退",
+      "revenue_start": 153,
+      "volume_growth": [
+        -0.08,
+        -0.04,
+        -0.02
+      ],
+      "mix_price_growth": [
+        -0.04,
+        -0.03,
+        -0.02
+      ],
+      "gross_margin": [
+        0.75,
+        0.745,
+        0.74
+      ],
+      "selling_ratio": [
+        0.35,
+        0.35,
+        0.35
+      ],
+      "admin_ratio": [
+        0.08,
+        0.08,
+        0.08
+      ],
+      "surtax_ratio": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "rd_ratio": [
+        0.005,
+        0.005,
+        0.005
+      ],
+      "interest_cost_ratio": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "nci_profit_ratio": [
+        0.002,
+        0.002,
+        0.002
+      ],
+      "da": [
+        8,
+        8,
+        8
+      ],
+      "maintenance": [
+        5,
+        5,
+        5
+      ],
+      "growth_capex": [
+        1,
+        1,
+        1
+      ],
+      "nwc_increase": [
+        10,
+        8,
+        5
+      ],
+      "payout": 0.45
+    },
+    "stagnation": {
+      "name": "低位徘徊",
+      "revenue_start": 153,
+      "volume_growth": [
+        0,
+        0.02,
+        0.02
+      ],
+      "mix_price_growth": [
+        -0.03,
+        -0.005,
+        0
+      ],
+      "gross_margin": [
+        0.78,
+        0.78,
+        0.78
+      ],
+      "selling_ratio": [
+        0.34,
+        0.335,
+        0.33
+      ],
+      "admin_ratio": [
+        0.07,
+        0.07,
+        0.07
+      ],
+      "surtax_ratio": [
+        0.17,
+        0.17,
+        0.17
+      ],
+      "rd_ratio": [
+        0.005,
+        0.005,
+        0.005
+      ],
+      "interest_cost_ratio": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "nci_profit_ratio": [
+        0.003,
+        0.003,
+        0.003
+      ],
+      "da": [
+        8.5,
+        8.5,
+        8.5
+      ],
+      "maintenance": [
+        5.5,
+        5.5,
+        5.5
+      ],
+      "growth_capex": [
+        2.5,
+        2.5,
+        2.5
+      ],
+      "nwc_increase": [
+        6,
+        4,
+        3
+      ],
+      "payout": 0.6
+    },
+    "recovery": {
+      "name": "温和修复",
+      "revenue_start": 153,
+      "volume_growth": [
+        0.04,
+        0.05,
+        0.06
+      ],
+      "mix_price_growth": [
+        -0.02,
+        0.005,
+        0.015
+      ],
+      "gross_margin": [
+        0.79,
+        0.795,
+        0.8
+      ],
+      "selling_ratio": [
+        0.33,
+        0.315,
+        0.3
+      ],
+      "admin_ratio": [
+        0.065,
+        0.065,
+        0.065
+      ],
+      "surtax_ratio": [
+        0.17,
+        0.17,
+        0.17
+      ],
+      "rd_ratio": [
+        0.005,
+        0.005,
+        0.005
+      ],
+      "interest_cost_ratio": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "nci_profit_ratio": [
+        0.003,
+        0.003,
+        0.003
+      ],
+      "da": [
+        8.5,
+        8.5,
+        8.5
+      ],
+      "maintenance": [
+        5.5,
+        5.5,
+        5.5
+      ],
+      "growth_capex": [
+        2.5,
+        2.5,
+        3
+      ],
+      "nwc_increase": [
+        5,
+        4,
+        4
+      ],
+      "payout": 0.65
+    },
+    "strong": {
+      "name": "份额与结构修复",
+      "revenue_start": 153,
+      "volume_growth": [
+        0.1,
+        0.1,
+        0.09
+      ],
+      "mix_price_growth": [
+        0.02,
+        0.02,
+        0.02
+      ],
+      "gross_margin": [
+        0.8,
+        0.805,
+        0.81
+      ],
+      "selling_ratio": [
+        0.31,
+        0.285,
+        0.27
+      ],
+      "admin_ratio": [
+        0.065,
+        0.063,
+        0.06
+      ],
+      "surtax_ratio": [
+        0.17,
+        0.17,
+        0.17
+      ],
+      "rd_ratio": [
+        0.005,
+        0.005,
+        0.005
+      ],
+      "interest_cost_ratio": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "nci_profit_ratio": [
+        0.004,
+        0.004,
+        0.004
+      ],
+      "da": [
+        9,
+        9.5,
+        10
+      ],
+      "maintenance": [
+        5.5,
+        6,
+        6.5
+      ],
+      "growth_capex": [
+        3.5,
+        4,
+        4.5
+      ],
+      "nwc_increase": [
+        6,
+        8,
+        8
+      ],
+      "payout": 0.65
+    }
+  },
+  "joint_scenarios": [
+    {
+      "id": "D",
+      "business": "decline",
+      "weight": 0.15,
+      "pe": 12,
+      "pe_range": [
+        10,
+        14
+      ]
+    },
+    {
+      "id": "S",
+      "business": "stagnation",
+      "weight": 0.25,
+      "pe": 16,
+      "pe_range": [
+        14,
+        18
+      ]
+    },
+    {
+      "id": "R_low",
+      "business": "recovery",
+      "weight": 0.2,
+      "pe": 16,
+      "pe_range": [
+        14,
+        18
+      ]
+    },
+    {
+      "id": "R",
+      "business": "recovery",
+      "weight": 0.2,
+      "pe": 20,
+      "pe_range": [
+        18,
+        22
+      ]
+    },
+    {
+      "id": "U_low",
+      "business": "strong",
+      "weight": 0.1,
+      "pe": 18,
+      "pe_range": [
+        16,
+        20
+      ]
+    },
+    {
+      "id": "U",
+      "business": "strong",
+      "weight": 0.1,
+      "pe": 24,
+      "pe_range": [
+        22,
+        26
+      ]
+    }
+  ],
+  "historical_facts": {
+    "revenue_2023": 202.5352659802,
+    "revenue_2024": 235.7792806599,
+    "revenue_2025": 188.3198259124,
+    "np_2023": 45.891640528,
+    "np_2024": 55.172510731,
+    "np_2025": 35.4910853034,
+    "cfo_2023": 44.9620603442,
+    "cfo_2024": 47.2765287385,
+    "cfo_2025": 19.47212977,
+    "capex_2024": 24.274031468,
+    "capex_2025": 16.6312567279,
+    "restricted_net_release_2024": 5.8923455449,
+    "restricted_net_release_2025": -9.922421389,
+    "h1_2026_revenue": 101.3139592711,
+    "h1_2026_np": 21.6437992817,
+    "h1_2026_cfo": 15.425351376,
+    "h1_2026_release": 4.2992728105,
+    "h1_2026_interest": 2.4074085152,
+    "ytd_2026_revenue": 127.7010729748,
+    "ytd_2026_np": 22.5982924531,
+    "ytd_2026_adjusted_np": 22.3679837013,
+    "ytd_2026_cfo": 21.2094010846,
+    "ytd_2026_capex": 5.8144121964,
+    "ytd_2026_interest": 3.2387024674,
+    "q3_2026_revenue": 26.3871137037,
+    "q3_2026_np": 0.9544931714,
+    "q4_2025_revenue": 24.0734185833,
+    "q4_2025_np": -4.1109483313,
+    "ytd_2026_selling": 43.2608883016,
+    "h1_2026_selling": 30.7250553443,
+    "q3_cash": 117.3346645155,
+    "q3_cash_equivalents": 112.3525974456,
+    "q3_trading_financial": 4.2225290186,
+    "q3_current_other_assets": 3.1466273763,
+    "q3_nci_equity": 10.9451012469,
+    "q3_debt_and_lease": 5.5346603001,
+    "q3_contract_liabilities": 9.5806233487,
+    "h1_guarantee_deposits": 17.6062800575,
+    "h1_warranty_deposits": 2.4693004151,
+    "q3_inventory": 110.2435244984,
+    "h1_inventory": 107.9517310625,
+    "fy2025_inventory": 107.3979467682,
+    "h1_basewine_wip": 99.7955064345,
+    "fy2025_basewine_wip": 93.4736097025,
+    "h1_finished_goods_gross": 6.6417773062,
+    "fy2025_finished_goods_gross": 9.9273705736,
+    "h1_yuanjiang_revenue": 79.6529921268,
+    "h1_yuanjiang_volume_tonnes": 38826.65,
+    "h1_yuanjiang_revenue_growth": -0.2732,
+    "h1_yuanjiang_volume_growth": -0.1666,
+    "year_end2025_goodwill_impairment": 3.1461038634,
+    "h1_2026_d_and_a": 4.5750028254
+  },
+  "fact_sources": {
+    "annual2025": "../evidence/raw/2025年报.pdf",
+    "half2026": "../evidence/raw/2026半年报.pdf",
+    "q32026": "../evidence/raw/2026三季报.pdf",
+    "ir": "../evidence/raw/2025年度业绩说明会.pdf"
+  },
+  "assumption_notes": {
+    "period": "三段持有年度利润，参考相邻自然年度经营规模，非已披露年度预测；第三段年化经营净利用于期末PE。",
+    "cash": "9月30日现金基准平移至研究日，估计变动0；不假称掌握11月7日余额。金融资产收益与经营PE分开。",
+    "probabilities": "研究者暂定主观分布，未经统计校准；依据与更新条件见README。"
+  }
+}

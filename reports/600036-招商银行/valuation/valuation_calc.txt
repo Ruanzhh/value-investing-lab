@@ -1,7 +1,0 @@
-asof 2026-11-06 Asia/Shanghai | price 42.54 | BPS0 46.87 | n=3.1513 to 2029-12-31
-exit PB base 0.953 (P20/P50/P80=0.878/0.953/1.039)
-BPS3 base 58.51 → FV3 55.75
-y=4.7147% (fwd 4.7147% trail 4.7391%) dps_fwd=2.006
-B20_TR=35.61 B22_TR=33.73 B20_pure=31.39
-vs old 35.62: delta=-0.01 (-0.03%)
-px 42.54 vs B20: +19.5%

@@ -1,8 +1,0 @@
-source: Exa market quote SZ:002415 (WebSearch 交叉；Yahoo 当日会话印亦在 35.5x)
-as_of: 2026-11-05 13:36:30 Asia/Shanghai（盘中快照）
-price: 35.59 CNY (+1.19% vs prev close 35.17)
-open/high/low: 34.92 / 35.63 / 34.81
-volume: ~49.3M
-total_shares: 9,164,871,550
-mkt_cap_approx: 35.59 × 91.65亿 ≈ 3,262 亿元
-note: 收盘后应以正式收盘价覆盖；本箱行情 API 仍不可用。

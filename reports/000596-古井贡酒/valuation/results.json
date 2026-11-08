@@ -1,0 +1,654 @@
+{
+  "expected": {
+    "terminal_operating_value": 564.4529746385396,
+    "terminal_cash": 98.92137375369504,
+    "terminal_value": 663.3743483922345,
+    "years": [
+      {
+        "revenue": 154.08018,
+        "core_np": 24.036013590000003,
+        "total_np": 24.98314315536876,
+        "operating_fcfe": 18.46101359,
+        "capex": 7.9,
+        "nwc_increase": 6.2,
+        "dividend_total": 15.925
+      },
+      {
+        "revenue": 160.873341138,
+        "core_np": 27.280878439240503,
+        "total_np": 28.33228323599549,
+        "operating_fcfe": 22.405878439240503,
+        "capex": 8.1,
+        "nwc_increase": 5.4,
+        "dividend_total": 15.51973437045737
+      },
+      {
+        "revenue": 170.18157812447524,
+        "core_np": 30.968237849123124,
+        "total_np": 32.12800877300958,
+        "operating_fcfe": 26.493237849123126,
+        "capex": 8.5,
+        "nwc_increase": 4.7,
+        "dividend_total": 17.72745350442146
+      }
+    ],
+    "a_buy_price": 83.42456917888376,
+    "a_equivalent_buy_market_cap": 440.9822726795795,
+    "a_price_irr": 0.08950654335099661,
+    "a_price": 105.01,
+    "weighted_net_cashflows": [
+      [
+        "2026-12-31",
+        1.0
+      ],
+      [
+        "2027-07-17",
+        2.0126749905410524
+      ],
+      [
+        "2028-07-17",
+        2.9360072588833463
+      ],
+      [
+        "2029-07-17",
+        3.353661275902661
+      ],
+      [
+        "2029-11-07",
+        125.39607433097252
+      ]
+    ],
+    "a_buy_price_irr": 0.17999999999999983
+  },
+  "b_share_conditional": {
+    "relative_exit_price": 0.44737403294924294,
+    "price_cny": 46.9787472,
+    "buy_cny": 40.42523718027631,
+    "buy_hkd": 47.16403441790684,
+    "irr_constant_relative_discount": 0.11788738156864109,
+    "actual_ab_market_cap": 485.44535664000006,
+    "a_equivalent_market_cap": 555.08286
+  },
+  "business_cases": {
+    "decline": {
+      "initial_excess_cash": 77.5751264642,
+      "rows": [
+        {
+          "year": 1,
+          "end": "2027-11-07",
+          "revenue": 135.1296,
+          "core_np": 13.730265600000001,
+          "core_margin": 0.10160812730889457,
+          "da": 8,
+          "capex": 6,
+          "maintenance": 5,
+          "growth_capex": 1,
+          "nwc_increase": 10,
+          "operating_fcfe": 5.730265600000003,
+          "excess_cash_interest": 0.8711584501667898,
+          "total_np": 14.601424050166791,
+          "cash_open": 77.5751264642,
+          "dividend_total": 15.925,
+          "cash_close": 68.25155051436677
+        },
+        {
+          "year": 2,
+          "end": "2028-11-07",
+          "revenue": 125.83268352,
+          "core_np": 12.342646763520001,
+          "core_margin": 0.09808776558085758,
+          "da": 8,
+          "capex": 6,
+          "maintenance": 5,
+          "growth_capex": 1,
+          "nwc_increase": 8,
+          "operating_fcfe": 6.342646763520001,
+          "excess_cash_interest": 0.834371500077033,
+          "total_np": 13.177018263597034,
+          "cash_open": 68.25155051436677,
+          "dividend_total": 6.570640822575056,
+          "cash_close": 68.85792795538875
+        },
+        {
+          "year": 3,
+          "end": "2029-11-07",
+          "revenue": 120.849709252608,
+          "core_np": 11.417323541987328,
+          "core_margin": 0.09447539106711535,
+          "da": 8,
+          "capex": 6,
+          "maintenance": 5,
+          "growth_capex": 1,
+          "nwc_increase": 5,
+          "operating_fcfe": 8.41732354198733,
+          "excess_cash_interest": 0.8540334168814212,
+          "total_np": 12.271356958868749,
+          "cash_open": 68.85792795538875,
+          "dividend_total": 5.929658218618665,
+          "cash_close": 72.19962669563877
+        }
+      ],
+      "dividends": [
+        [
+          "2026-12-31",
+          1.0
+        ],
+        [
+          "2027-07-17",
+          2.0126749905410524
+        ],
+        [
+          "2028-07-17",
+          1.243027019026685
+        ],
+        [
+          "2029-07-17",
+          1.1217665945173412
+        ]
+      ],
+      "terminal_excess_cash": 72.19962669563877
+    },
+    "stagnation": {
+      "initial_excess_cash": 77.5751264642,
+      "rows": [
+        {
+          "year": 1,
+          "end": "2027-11-07",
+          "revenue": 148.41,
+          "core_np": 21.568424999999994,
+          "core_margin": 0.14532999797857285,
+          "da": 8.5,
+          "capex": 8.0,
+          "maintenance": 5.5,
+          "growth_capex": 2.5,
+          "nwc_increase": 6,
+          "operating_fcfe": 16.068424999999994,
+          "excess_cash_interest": 0.9328517221858954,
+          "total_np": 22.50127672218589,
+          "cash_open": 77.5751264642,
+          "dividend_total": 15.925,
+          "cash_close": 78.6514031863859
+        },
+        {
+          "year": 2,
+          "end": "2028-11-07",
+          "revenue": 150.621309,
+          "core_np": 22.448366441249995,
+          "core_margin": 0.1490384500724927,
+          "da": 8.5,
+          "capex": 8.0,
+          "maintenance": 5.5,
+          "growth_capex": 2.5,
+          "nwc_increase": 4,
+          "operating_fcfe": 18.948366441249995,
+          "excess_cash_interest": 1.0092376441656954,
+          "total_np": 23.45760408541569,
+          "cash_open": 78.6514031863859,
+          "dividend_total": 13.500766033311534,
+          "cash_close": 85.10824123849005
+        },
+        {
+          "year": 3,
+          "end": "2029-11-07",
+          "revenue": 153.63373518,
+          "core_np": 23.465060276999996,
+          "core_margin": 0.1527337745808752,
+          "da": 8.5,
+          "capex": 8.0,
+          "maintenance": 5.5,
+          "growth_capex": 2.5,
+          "nwc_increase": 3,
+          "operating_fcfe": 20.965060276999996,
+          "excess_cash_interest": 1.0936681889362856,
+          "total_np": 24.55872846593628,
+          "cash_open": 85.10824123849005,
+          "dividend_total": 14.074562451249413,
+          "cash_close": 93.09240725317699
+        }
+      ],
+      "dividends": [
+        [
+          "2026-12-31",
+          1.0
+        ],
+        [
+          "2027-07-17",
+          2.0126749905410524
+        ],
+        [
+          "2028-07-17",
+          2.554060921928024
+        ],
+        [
+          "2029-07-17",
+          2.662611133418353
+        ]
+      ],
+      "terminal_excess_cash": 93.09240725317699
+    },
+    "recovery": {
+      "initial_excess_cash": 77.5751264642,
+      "rows": [
+        {
+          "year": 1,
+          "end": "2027-11-07",
+          "revenue": 155.9376,
+          "core_np": 25.564937999999998,
+          "core_margin": 0.16394338504632622,
+          "da": 8.5,
+          "capex": 8.0,
+          "maintenance": 5.5,
+          "growth_capex": 2.5,
+          "nwc_increase": 5,
+          "operating_fcfe": 21.064937999999998,
+          "excess_cash_interest": 0.962668561308728,
+          "total_np": 26.527606561308726,
+          "cash_open": 77.5751264642,
+          "dividend_total": 15.925,
+          "cash_close": 83.67773302550873
+        },
+        {
+          "year": 2,
+          "end": "2028-11-07",
+          "revenue": 164.55315240000002,
+          "core_np": 29.422493110500003,
+          "core_margin": 0.17880236678164058,
+          "da": 8.5,
+          "capex": 8.0,
+          "maintenance": 5.5,
+          "growth_capex": 2.5,
+          "nwc_increase": 4,
+          "operating_fcfe": 25.9224931105,
+          "excess_cash_interest": 1.0975755441377206,
+          "total_np": 30.520068654637726,
+          "cash_open": 83.67773302550873,
+          "dividend_total": 17.242944264850674,
+          "cash_close": 93.45485741529575
+        },
+        {
+          "year": 3,
+          "end": "2029-11-07",
+          "revenue": 177.04273666716,
+          "core_np": 34.27942338759435,
+          "core_margin": 0.19362230856179996,
+          "da": 8.5,
+          "capex": 8.5,
+          "maintenance": 5.5,
+          "growth_capex": 3,
+          "nwc_increase": 4,
+          "operating_fcfe": 30.27942338759435,
+          "excess_cash_interest": 1.2280333492127824,
+          "total_np": 35.50745673680713,
+          "cash_open": 93.45485741529575,
+          "dividend_total": 19.838044625514524,
+          "cash_close": 105.1242695265884
+        }
+      ],
+      "dividends": [
+        [
+          "2026-12-31",
+          1.0
+        ],
+        [
+          "2027-07-17",
+          2.0126749905410524
+        ],
+        [
+          "2028-07-17",
+          3.2620023202517356
+        ],
+        [
+          "2029-07-17",
+          3.7529407161397135
+        ]
+      ],
+      "terminal_excess_cash": 105.1242695265884
+    },
+    "strong": {
+      "initial_excess_cash": 77.5751264642,
+      "rows": [
+        {
+          "year": 1,
+          "end": "2027-11-07",
+          "revenue": 171.66600000000003,
+          "core_np": 31.791961500000006,
+          "core_margin": 0.18519661144315125,
+          "da": 9,
+          "capex": 9.0,
+          "maintenance": 5.5,
+          "growth_capex": 3.5,
+          "nwc_increase": 6,
+          "operating_fcfe": 25.791961500000006,
+          "excess_cash_interest": 0.9908772138688934,
+          "total_np": 32.7828387138689,
+          "cash_open": 77.5751264642,
+          "dividend_total": 15.925,
+          "cash_close": 88.43296517806894
+        },
+        {
+          "year": 2,
+          "end": "2028-11-07",
+          "revenue": 192.60925200000005,
+          "core_np": 40.24196285100002,
+          "core_margin": 0.20893058060886924,
+          "da": 9.5,
+          "capex": 10,
+          "maintenance": 6,
+          "growth_capex": 4,
+          "nwc_increase": 8,
+          "operating_fcfe": 31.741962851000018,
+          "excess_cash_interest": 1.174547215234598,
+          "total_np": 41.416510066234615,
+          "cash_open": 88.43296517806894,
+          "dividend_total": 21.308845164014784,
+          "cash_close": 100.04063008028876
+        },
+        {
+          "year": 3,
+          "end": "2029-11-07",
+          "revenue": 214.14296637360007,
+          "core_np": 48.38802446768643,
+          "core_margin": 0.2259613065379288,
+          "da": 10,
+          "capex": 11.0,
+          "maintenance": 6.5,
+          "growth_capex": 4.5,
+          "nwc_increase": 8,
+          "operating_fcfe": 39.38802446768643,
+          "excess_cash_interest": 1.3351776221753304,
+          "total_np": 49.72320208986176,
+          "cash_open": 100.04063008028876,
+          "dividend_total": 26.9207315430525,
+          "cash_close": 113.84310062709802
+        }
+      ],
+      "dividends": [
+        [
+          "2026-12-31",
+          1.0
+        ],
+        [
+          "2027-07-17",
+          2.0126749905410524
+        ],
+        [
+          "2028-07-17",
+          4.031185237233217
+        ],
+        [
+          "2029-07-17",
+          5.092836084572929
+        ]
+      ],
+      "terminal_excess_cash": 113.84310062709802
+    }
+  },
+  "joint_scenarios": [
+    {
+      "id": "D",
+      "business": "decline",
+      "weight": 0.15,
+      "pe": 12,
+      "pe_range": [
+        10,
+        14
+      ],
+      "terminal_operating_value": 137.00788250384792,
+      "terminal_cash": 72.19962669563877,
+      "terminal_value": 209.2075091994867,
+      "dividends": [
+        [
+          "2026-12-31",
+          1.0
+        ],
+        [
+          "2027-07-17",
+          2.0126749905410524
+        ],
+        [
+          "2028-07-17",
+          1.243027019026685
+        ],
+        [
+          "2029-07-17",
+          1.1217665945173412
+        ]
+      ],
+      "irr_at_a_price": -0.25833468414825844,
+      "irr_at_buy": -0.1965345135794439,
+      "cumulative_at_a_price": -0.5723265100166649,
+      "cumulative_at_buy": -0.46166946230370776,
+      "own_18pct_buy": 28.486889785203523
+    },
+    {
+      "id": "S",
+      "business": "stagnation",
+      "weight": 0.25,
+      "pe": 16,
+      "pe_range": [
+        14,
+        18
+      ],
+      "terminal_operating_value": 375.44096443199993,
+      "terminal_cash": 93.09240725317699,
+      "terminal_value": 468.5333716851769,
+      "dividends": [
+        [
+          "2026-12-31",
+          1.0
+        ],
+        [
+          "2027-07-17",
+          2.0126749905410524
+        ],
+        [
+          "2028-07-17",
+          2.554060921928024
+        ],
+        [
+          "2029-07-17",
+          2.662611133418353
+        ]
+      ],
+      "irr_at_a_price": -0.02795788344311928,
+      "irr_at_buy": 0.05297443875369512,
+      "cumulative_at_a_price": -0.07850618582271496,
+      "cumulative_at_buy": 0.15992286659899135,
+      "own_18pct_buy": 60.28667930801863
+    },
+    {
+      "id": "R_low",
+      "business": "recovery",
+      "weight": 0.2,
+      "pe": 16,
+      "pe_range": [
+        14,
+        18
+      ],
+      "terminal_operating_value": 548.4707742015096,
+      "terminal_cash": 105.1242695265884,
+      "terminal_value": 653.595043728098,
+      "dividends": [
+        [
+          "2026-12-31",
+          1.0
+        ],
+        [
+          "2027-07-17",
+          2.0126749905410524
+        ],
+        [
+          "2028-07-17",
+          3.2620023202517356
+        ],
+        [
+          "2029-07-17",
+          3.7529407161397135
+        ]
+      ],
+      "irr_at_a_price": 0.08651643877926152,
+      "irr_at_buy": 0.17692315293776606,
+      "cumulative_at_a_price": 0.2716414927034161,
+      "cumulative_at_buy": 0.6006684177469608,
+      "own_18pct_buy": 82.80191600491565
+    },
+    {
+      "id": "R",
+      "business": "recovery",
+      "weight": 0.2,
+      "pe": 20,
+      "pe_range": [
+        18,
+        22
+      ],
+      "terminal_operating_value": 685.588467751887,
+      "terminal_cash": 105.1242695265884,
+      "terminal_value": 790.7127372784754,
+      "dividends": [
+        [
+          "2026-12-31",
+          1.0
+        ],
+        [
+          "2027-07-17",
+          2.0126749905410524
+        ],
+        [
+          "2028-07-17",
+          3.2620023202517356
+        ],
+        [
+          "2029-07-17",
+          3.7529407161397135
+        ]
+      ],
+      "irr_at_a_price": 0.15446277211343584,
+      "irr_at_buy": 0.2502777761305769,
+      "cumulative_at_a_price": 0.5183918775427903,
+      "cumulative_at_buy": 0.9112634638708703,
+      "own_18pct_buy": 98.5705210179495
+    },
+    {
+      "id": "U_low",
+      "business": "strong",
+      "weight": 0.1,
+      "pe": 18,
+      "pe_range": [
+        16,
+        20
+      ],
+      "terminal_operating_value": 870.9844404183557,
+      "terminal_cash": 113.84310062709802,
+      "terminal_value": 984.8275410454537,
+      "dividends": [
+        [
+          "2026-12-31",
+          1.0
+        ],
+        [
+          "2027-07-17",
+          2.0126749905410524
+        ],
+        [
+          "2028-07-17",
+          4.031185237233217
+        ],
+        [
+          "2029-07-17",
+          5.092836084572929
+        ]
+      ],
+      "irr_at_a_price": 0.24383222273486138,
+      "irr_at_buy": 0.34711274237529877,
+      "cumulative_at_a_price": 0.8877900350808148,
+      "cumulative_at_buy": 1.3762403993812131,
+      "own_18pct_buy": 122.33294957882661
+    },
+    {
+      "id": "U",
+      "business": "strong",
+      "weight": 0.1,
+      "pe": 24,
+      "pe_range": [
+        22,
+        26
+      ],
+      "terminal_operating_value": 1161.3125872244743,
+      "terminal_cash": 113.84310062709802,
+      "terminal_value": 1275.1556878515723,
+      "dividends": [
+        [
+          "2026-12-31",
+          1.0
+        ],
+        [
+          "2027-07-17",
+          2.0126749905410524
+        ],
+        [
+          "2028-07-17",
+          4.031185237233217
+        ],
+        [
+          "2029-07-17",
+          5.092836084572929
+        ]
+      ],
+      "irr_at_a_price": 0.3508713319475433,
+      "irr_at_buy": 0.4626739478310301,
+      "cumulative_at_a_price": 1.4102505585856955,
+      "cumulative_at_buy": 2.033883346935499,
+      "own_18pct_buy": 155.72083521642887
+    }
+  ],
+  "sensitivity": {
+    "target_0.12": 96.95888839397702,
+    "target_0.15": 89.84232786191626,
+    "target_0.18": 83.42456917888376,
+    "target_0.2": 79.49225530618239,
+    "all_pe_shift_-4": 69.17911629973085,
+    "all_pe_shift_4": 97.67002205803666,
+    "weight_10pp_R_to_D": 76.41620605560918,
+    "weight_10pp_R_to_R_low": 81.84770867758039,
+    "weight_10pp_S_to_U": 92.96798476972478,
+    "delay_1": {
+      "irr_at_a_price": 0.06717462458131107,
+      "irr_at_buy": 0.13389151846778413
+    },
+    "delay_2": {
+      "irr_at_a_price": 0.05377290119450462,
+      "irr_at_buy": 0.10663218035611977
+    },
+    "cash_minus10": 82.2303311527031,
+    "cash_plus10": 84.61880720506444,
+    "dividend_tax_0.1": 82.71095125669555,
+    "dividend_tax_0.2": 81.99733333450735,
+    "yield_zero": 83.04126019031533,
+    "yield_2.4pct": 83.8134709285971,
+    "selling_ratio_shift_-0.02": 89.5076580991027,
+    "selling_ratio_shift_0.02": 77.34148025866484,
+    "all_paths_pe25": 107.54626838242494
+  },
+  "reverse_conditions": {
+    "market_0": {
+      "terminal_equity_needed": 506.4823828894327,
+      "pe_on_expected_core": 13.160613500883386,
+      "core_np_at_20pe": 20.378050456786884
+    },
+    "market_0.18": {
+      "terminal_equity_needed": 851.0729105691838,
+      "pe_on_expected_core": 24.287837767197534,
+      "core_np_at_20pe": 37.607576840774435
+    },
+    "buy_0": {
+      "terminal_equity_needed": 392.2561844340518,
+      "pe_on_expected_core": 9.472118242874535,
+      "core_np_at_20pe": 14.666740534017839
+    },
+    "buy_0.18": {
+      "terminal_equity_needed": 663.3743483922345,
+      "pe_on_expected_core": 18.226835423718565,
+      "core_np_at_20pe": 28.222648731926974
+    }
+  }
+}

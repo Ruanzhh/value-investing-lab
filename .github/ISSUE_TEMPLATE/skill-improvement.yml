@@ -1,39 +1,39 @@
 name: skill 改进
-description: 改进 a-share-deep-valuation 的规则、流程或容易误用的写法
+description: 改进价值投资理念、量化原则或深估过程
 title: "[skill 改进] "
 body:
   - type: markdown
     attributes:
       value: |
-        针对 `skills/a-share-deep-valuation/`。请指向具体文件，并说明改了之后哪一类错误会减少。
+        针对 `skills/value-investing/` 或 `skills/deep-valuation/`。请指向具体文件，并说明改了之后哪一类错误会减少。
         不要在这里询问个股买卖。
   - type: input
     id: ticker
     attributes:
       label: 公司代码
-      description: 若问题是由某一家的研报暴露的，填写六位代码；否则填「不适用」。
-      placeholder: 不适用
+      description: 针对某家公司时填写公司代码及市场；否则填「不适用」并说明原因。
+      placeholder: 不适用（通用方法问题）
     validations:
       required: true
   - type: input
     id: path
     attributes:
       label: 引用文件路径
-      description: 技能内的相对路径。
-      placeholder: skills/a-share-deep-valuation/SKILL.md
+      description: 技能内的仓库相对路径。
+      placeholder: skills/value-investing/references/quantitative-principles.md
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
       label: 证据链接
-      description: 规则冲突、算错的例子，或可复核的外部依据。可以同时引用本仓文件。
+      description: 规则冲突、计算反例或可复核的外部依据。
     validations:
       required: true
   - type: textarea
     id: change
     attributes:
       label: 建议怎么改
-      description: 写清要改的句子或步骤。不要附上未披露硬数或个人持仓。
+      description: 写清要改的原则及理由，不附未披露数据或个人持仓。
     validations:
       required: true

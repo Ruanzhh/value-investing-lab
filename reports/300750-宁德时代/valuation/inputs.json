@@ -1,0 +1,309 @@
+{
+  "research_date": "2026-11-07",
+  "currency": "CNY",
+  "amount_unit": "亿元",
+  "shares_unit": "亿股",
+  "forecast_dates": [
+    "2027-11-07",
+    "2028-11-07",
+    "2029-11-07"
+  ],
+  "facts": {
+    "balance_date": "2026-09-30",
+    "share_date": "2026-10-31",
+    "quote_date": "2026-11-06",
+    "cash_equivalents": 3333.97571,
+    "trading_assets": 627.79978,
+    "short_debt": 398.97579,
+    "long_debt": 763.54823,
+    "bonds": 527.37747,
+    "current_noncurrent_liabilities": 168.711,
+    "lease_liabilities": 40.64886,
+    "long_payables": 16.32147,
+    "net_derivative_liabilities": 10.17009,
+    "provisions": 1041.10971,
+    "long_equity_investments": 728.40531,
+    "other_equity_investments": 131.48849,
+    "other_financial_investments": 118.24729,
+    "buyback_at_sep30": 33.03,
+    "buyback_at_oct31": 53.6012561264,
+    "registered_a": 44.08949386,
+    "registered_h": 2.183003,
+    "employee_treasury": 0.28319044,
+    "pending_cancel": 0.19605919,
+    "a_price": 254.22,
+    "h_price_hkd": 380,
+    "hkd_cny": 0.8516
+  },
+  "common": {
+    "operating_parent_fraction": 0.93,
+    "cash_parent_fraction": 0.93,
+    "portfolio_parent_fraction": 0.8,
+    "operating_cash_buffer": 600,
+    "old_provision_reserve_fraction": 1,
+    "cash_aftertax_yield": 0.02,
+    "portfolio_cash_yield": 0.02,
+    "dividend_target_fraction": 0.5,
+    "remaining_buyback": 146.3987438736,
+    "buyback_execution_price": 250,
+    "employee_transfer_shares": 0.08081586,
+    "employee_transfer_price": 158.42,
+    "entry_fee": 0.001,
+    "exit_fee": 0.001,
+    "dividend_tax": 0,
+    "repay_debt_at_start": false,
+    "normal_tax_rate": 0.18
+  },
+  "scenarios": {
+    "base": {
+      "battery_gwh": [
+        1100,
+        1300,
+        1500
+      ],
+      "battery_asp_cny_kwh": [
+        530.0,
+        520.0,
+        510.0
+      ],
+      "other_revenue": [
+        600,
+        650,
+        700
+      ],
+      "core_nopat_margin": [
+        0.095,
+        0.1,
+        0.105
+      ],
+      "da": [
+        320,
+        370,
+        420
+      ],
+      "maintenance_capex": [
+        330,
+        370,
+        410
+      ],
+      "growth_capex": [
+        280,
+        310,
+        320
+      ],
+      "working_capital_increase": [
+        200,
+        130,
+        100
+      ],
+      "other_growth_investment": [
+        30,
+        30,
+        30
+      ],
+      "portfolio_realization": 1.0,
+      "borrowing_rate": 0.022,
+      "terminal_pe_range": [
+        15,
+        20
+      ]
+    },
+    "downside": {
+      "battery_gwh": [
+        1000,
+        1100,
+        1180
+      ],
+      "battery_asp_cny_kwh": [
+        500.0,
+        480.0,
+        460.0
+      ],
+      "other_revenue": [
+        600,
+        600,
+        600
+      ],
+      "core_nopat_margin": [
+        0.075,
+        0.07,
+        0.065
+      ],
+      "da": [
+        320,
+        360,
+        390
+      ],
+      "maintenance_capex": [
+        330,
+        360,
+        390
+      ],
+      "growth_capex": [
+        250,
+        220,
+        180
+      ],
+      "working_capital_increase": [
+        350,
+        220,
+        120
+      ],
+      "other_growth_investment": [
+        30,
+        20,
+        10
+      ],
+      "portfolio_realization": 0.6,
+      "borrowing_rate": 0.035,
+      "terminal_pe_range": [
+        10,
+        12
+      ]
+    },
+    "upside": {
+      "battery_gwh": [
+        1220,
+        1520,
+        1800
+      ],
+      "battery_asp_cny_kwh": [
+        540.0,
+        530.0,
+        520.0
+      ],
+      "other_revenue": [
+        650,
+        750,
+        850
+      ],
+      "core_nopat_margin": [
+        0.108,
+        0.115,
+        0.12
+      ],
+      "da": [
+        340,
+        400,
+        460
+      ],
+      "maintenance_capex": [
+        350,
+        400,
+        450
+      ],
+      "growth_capex": [
+        350,
+        400,
+        430
+      ],
+      "working_capital_increase": [
+        180,
+        160,
+        150
+      ],
+      "other_growth_investment": [
+        40,
+        40,
+        40
+      ],
+      "portfolio_realization": 1.0,
+      "borrowing_rate": 0.022,
+      "terminal_pe_range": [
+        20,
+        25
+      ]
+    }
+  },
+  "source_map": {
+    "balance_and_cash": "F3（第6—12页）",
+    "share_capital": "C1、C2",
+    "employee_plan": "C3",
+    "quotes": "Q1—Q3",
+    "all_forecasts": "研究假设，推导见valuation/README.md；不是公司指引",
+    "parent_fractions": "经营93%、现金93%、投资80%均为近似；四川时代实际79.2%已核对。投资按归母账面代理，非逐项已确认净处置值",
+    "price_units": "电池价格统一元/kWh；原0.53元/Wh换为530元/kWh，收入换算因子由10改为0.01，计算收入不变",
+    "risk_treatment": "旧义务一次储备；未来质保返利在利润率内、营运资金不再扣旧义务。投资情景值已反映损失；不再叠加出售折价",
+    "capital_structure": "保留债务及类债务，假设到期等额续借且不新增净债务；经营净利扣除税后利息，不再把本金从PE股权价值重复扣除；另测起点偿债情景",
+    "pe_ranges": "研究判断；依据优势持续性、现金转化及再投资回报区分区间，外部研报只交叉参照，不是公司指引"
+  },
+  "financial_reconciliation": {
+    "fy2025_parent_profit": 722.01282,
+    "ytd2025_parent_profit": 490.34109,
+    "ytd2026_parent_profit": 645.30063,
+    "fy2025_cfo": 1332.19982,
+    "ytd2025_cfo": 806.6043,
+    "ytd2026_cfo": 616.25487,
+    "h12026_cfo": 602.16851,
+    "q32025_cfo": 219.73364,
+    "fy2025_capex": 423.44558,
+    "ytd2025_capex": 300.8778,
+    "ytd2026_capex": 421.67472,
+    "h12026_capex": 250.72772,
+    "ytd2026_revenue": 4421.37424,
+    "ytd2026_operating_costs_ex_finance": [
+      3416.95013,
+      35.39029,
+      33.71025,
+      93.15309,
+      185.16986,
+      6.42154,
+      35.95279
+    ],
+    "normal_operating_tax_assumption": 0.18,
+    "fy2025_inventory_cash_change": -398.37988,
+    "fy2025_receivables_cash_change": -169.11542,
+    "fy2025_payables_cash_change": 899.65735,
+    "h12026_inventory_cash_change": -378.59085,
+    "h12026_receivables_cash_change": -330.26925,
+    "h12026_payables_cash_change": 716.90439,
+    "ytd2026_interest_expense": 25.28779,
+    "ytd2026_interest_income": 74.12521,
+    "ytd2026_associate_income": 84.35673
+  },
+  "valuation_policy": {
+    "method": "three_year_normalized_parent_operating_net_income_times_pe",
+    "current_point_value": null,
+    "status": "期末盈利与PE联合情景按主观概率加权，形成单一主预测；区间及敏感性留附录，不指定当前点估值"
+  },
+  "decision_policy": {
+    "method": "target_return_price_relationship",
+    "return_metric": "irr_of_expected_cashflows",
+    "target_return_examples": [
+      0.12,
+      0.15,
+      0.18,
+      0.2
+    ],
+    "selected_target_return": 0.18,
+    "user_risk_tolerance": null,
+    "status": "默认以18%目标年化和概率加权现金流反推合理买入价；其他收益率仅供敏感性对照，不追加五折",
+    "target_return_source": "用户指定的默认目标年化；后续研究沿用，除非用户另行指定"
+  },
+  "probability_assessment": {
+    "type": "subjective_discrete_approximation",
+    "status": "研究者主观概率，未经历史频率校准；不是各精确数值发生的统计概率，也未覆盖全部尾部风险",
+    "cases": [
+      {
+        "scenario": "base",
+        "probability": 0.6,
+        "representative_pe": 20,
+        "rationale": "份额、客户与技术制造优势支持持续增长，作为最大权重路径；采用20倍代表正常恢复并延续增长的经营状态，15倍保留为倍数压力，不另当作基准安全折扣。现金恢复和资本回报仍待验证。"
+      },
+      {
+        "scenario": "downside",
+        "probability": 0.25,
+        "representative_pe": 10,
+        "rationale": "已出现毛利与现金转化压力，税费转嫁、海外准入及扩产风险尚未解决，故给实质下行权重；10倍代表优势受损的联合压力。"
+      },
+      {
+        "scenario": "upside",
+        "probability": 0.15,
+        "representative_pe": 25,
+        "rationale": "储能及海外提供超预期机会，但高销量、高利润率和高投入回报需共同兑现，权重低于正常恢复；25倍代表持续高质量增长。"
+      }
+    ],
+    "update_triggers": "持续回款及利润率恢复提高正常/有利权重；单位利润持续下滑、资金占用加重或海外受阻提高不利权重。按经营证据更新，不按股价或希望得到的结论调整。",
+    "limitations": "三条代表路径是对连续联合分布的简化；单独的估值压缩、灾难性尾部与路径内变化未完整纳入概率。原倍数与利润率网格继续用于误差检验。"
+  }
+}

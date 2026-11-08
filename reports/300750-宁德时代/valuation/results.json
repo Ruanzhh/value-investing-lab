@@ -1,0 +1,946 @@
+{
+  "research_date": "2026-11-07",
+  "currency": "CNY",
+  "amount_unit": "亿元",
+  "method": "three_year_normalized_parent_operating_net_income_times_pe",
+  "current_fair_equity": null,
+  "current_downside_equity": null,
+  "missing_reason": "本次提供三年后概率加权价值预测及目标回报下的合理买入价，未单独估计当前合理价值",
+  "selected_target_return": 0.18,
+  "market_equity_at_snapshot": 11793.0335229746,
+  "historical_reconciliation": {
+    "ttm_parent_profit": 876.9723600000001,
+    "ttm_cfo": 1141.85039,
+    "ttm_capex": 544.2425000000001,
+    "ttm_cfo_less_capex": 597.60789,
+    "headline_ttm_pe": 13.44744037654117,
+    "q32026_cfo": 14.086360000000013,
+    "q32026_capex": 170.94699999999997,
+    "q32026_cfo_yoy": -0.9358934753913875,
+    "core_ytd_ebit": 614.6262899999997,
+    "core_ytd_nopat": 503.9935577999998,
+    "core_ytd_parent_net_income": 449.4295400999998,
+    "fy2025_three_wc_items_net": 332.1620499999999,
+    "h12026_three_wc_items_net": 8.044290000000046
+  },
+  "probability_weighted_forecast": {
+    "research_date": "2026-11-07",
+    "scenario": "probability_weighted",
+    "primary_return_metric": "irr_of_expected_cashflows",
+    "terminal_date": "2029-11-07",
+    "terminal_years": 3.0006844626967832,
+    "rows": [
+      {
+        "date": "2027-11-07",
+        "years_from_research": 0.999315537303217,
+        "revenue": 6343.7,
+        "parent_operating_net_income": 510.666215672067,
+        "parent_operating_fcfe": -9.203784327932997,
+        "dividend": 283.672020919058,
+        "dividend_per_share": 6.263670040722789
+      },
+      {
+        "date": "2028-11-07",
+        "years_from_research": 2.001368925393566,
+        "revenue": 7236.9,
+        "parent_operating_net_income": 613.559462672067,
+        "parent_operating_fcfe": 160.64946267206702,
+        "dividend": 331.42070567492453,
+        "dividend_per_share": 7.3179932877608795
+      },
+      {
+        "date": "2029-11-07",
+        "years_from_research": 3.0006844626967832,
+        "revenue": 8048.5,
+        "parent_operating_net_income": 714.354257672067,
+        "parent_operating_fcfe": 311.664257672067,
+        "dividend": 380.6032102316738,
+        "dividend_per_share": 8.403976245550446
+      }
+    ],
+    "terminal_equity": 16654.920468792818,
+    "terminal_per_share": 367.7519059969784,
+    "terminal_operating_equity": 14334.399118997113,
+    "terminal_nonoperating_assets": 2320.5213497957043,
+    "a_irr_of_expected_cashflows": 0.15546607819958702,
+    "probability_weighted_a_scenario_irr": 0.11792099898316356,
+    "a_expected_cumulative_return": 0.5300952436950808,
+    "cases": [
+      {
+        "scenario": "base",
+        "probability": 0.6,
+        "representative_pe": 20,
+        "terminal_equity": 18181.66168045243,
+        "a_scenario_irr": 0.18998693743531303
+      },
+      {
+        "scenario": "downside",
+        "probability": 0.25,
+        "representative_pe": 10,
+        "terminal_equity": 4843.976056830487,
+        "a_scenario_irr": -0.22934330333079128
+      },
+      {
+        "scenario": "upside",
+        "probability": 0.15,
+        "representative_pe": 25,
+        "terminal_equity": 30232.862975424912,
+        "a_scenario_irr": 0.40843108236449044
+      }
+    ],
+    "price_return_relationship": [
+      {
+        "target_return": 0.12,
+        "entry_price": 278.605166883083,
+        "entry_equity": 12758.235286632427
+      },
+      {
+        "target_return": 0.15,
+        "entry_price": 257.78496141044263,
+        "entry_equity": 11804.81047004441
+      },
+      {
+        "target_return": 0.18,
+        "entry_price": 239.01460815544394,
+        "entry_equity": 10945.255042843819
+      },
+      {
+        "target_return": 0.2,
+        "entry_price": 227.5163775925966,
+        "entry_equity": 10418.713727971808
+      }
+    ],
+    "reasonable_buy": {
+      "target_return": 0.18,
+      "return_metric": "irr_of_expected_cashflows",
+      "source": "用户指定的默认目标年化；后续研究沿用，除非用户另行指定",
+      "entry_price": 239.01460815544394,
+      "entry_equity": 10945.255042843819,
+      "downside_cumulative_return": -0.5019829610872681
+    }
+  },
+  "probability_weight_sensitivities": [
+    {
+      "move_10pp_from_base_to": "downside",
+      "terminal_equity": 15321.151906430623,
+      "a_irr_of_expected_cashflows": 0.12387481013977342
+    },
+    {
+      "move_10pp_from_base_to": "upside",
+      "terminal_equity": 17860.040598290067,
+      "a_irr_of_expected_cashflows": 0.18240239187827811
+    }
+  ],
+  "scenarios": {
+    "base": {
+      "pe_range": [
+        15,
+        20
+      ],
+      "bounds": [
+        {
+          "research_date": "2026-11-07",
+          "scenario": "base",
+          "terminal_pe": 15,
+          "bridge": {
+            "opening_debt": 1915.58282,
+            "debt_repaid": 0,
+            "continuing_debt": 1915.58282,
+            "group_cash_after_reserves": 2289.9244338736003,
+            "parent_cash": 2129.6297235024485,
+            "parent_portfolio": 782.512872,
+            "initial_shares": 45.79324723
+          },
+          "rows": [
+            {
+              "date": "2027-11-07",
+              "years_from_research": 0.999315537303217,
+              "revenue": 6430.0,
+              "group_nopat": 610.85,
+              "group_interest_expense": 42.14282204,
+              "group_aftertax_interest": 34.557114072800005,
+              "group_operating_net_income": 576.2928859272,
+              "parent_operating_net_income": 535.952383912296,
+              "group_net_reinvestment": 520,
+              "parent_operating_fcfe": 52.35238391229602,
+              "financial_cash_income": 58.24285191004897,
+              "dividend": 297.0976179111725,
+              "dividend_per_share": 6.560116300688344,
+              "buyback": 146.3987438736,
+              "employee_proceeds": 12.8028485412,
+              "employee_transfer_shares": 0.08081586,
+              "cash": 1809.531446081221,
+              "portfolio": 782.512872,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            },
+            {
+              "date": "2028-11-07",
+              "years_from_research": 2.001368925393566,
+              "revenue": 7410.0,
+              "group_nopat": 741.0,
+              "group_interest_expense": 42.14282204,
+              "group_aftertax_interest": 34.557114072800005,
+              "group_operating_net_income": 706.4428859272,
+              "parent_operating_net_income": 656.991883912296,
+              "group_net_reinvestment": 470,
+              "parent_operating_fcfe": 219.891883912296,
+              "financial_cash_income": 51.84088636162443,
+              "dividend": 354.41638513696023,
+              "dividend_per_share": 7.825753439945632,
+              "buyback": 0,
+              "employee_proceeds": 0.0,
+              "employee_transfer_shares": 0,
+              "cash": 1726.847831218181,
+              "portfolio": 782.512872,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            },
+            {
+              "date": "2029-11-07",
+              "years_from_research": 3.0006844626967832,
+              "revenue": 8350.0,
+              "group_nopat": 876.75,
+              "group_interest_expense": 42.14282204,
+              "group_aftertax_interest": 34.557114072800005,
+              "group_operating_net_income": 842.1928859272,
+              "parent_operating_net_income": 783.239383912296,
+              "group_net_reinvestment": 440,
+              "parent_operating_fcfe": 374.039383912296,
+              "financial_cash_income": 50.187214064363616,
+              "dividend": 416.7132989883298,
+              "dividend_per_share": 9.20131142291517,
+              "buyback": 0,
+              "employee_proceeds": 0.0,
+              "employee_transfer_shares": 0,
+              "cash": 1734.3611302065106,
+              "portfolio": 782.512872,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            }
+          ],
+          "terminal_operating_equity": 11748.59075868444,
+          "terminal_nonoperating_assets": 2516.8740022065103,
+          "terminal_equity": 14265.46476089095,
+          "terminal_per_share": 314.99110821816066,
+          "terminal_date": "2029-11-07",
+          "terminal_years": 3.0006844626967832,
+          "a_annual_return": 0.10187829052680575,
+          "a_cumulative_return": 0.3292635233285779,
+          "h_cny_annual_return_assuming_premium_converges": 0.014844191958545694,
+          "whole_equity_annual_return_at_snapshot": 0.09702537158415969
+        },
+        {
+          "research_date": "2026-11-07",
+          "scenario": "base",
+          "terminal_pe": 20,
+          "bridge": {
+            "opening_debt": 1915.58282,
+            "debt_repaid": 0,
+            "continuing_debt": 1915.58282,
+            "group_cash_after_reserves": 2289.9244338736003,
+            "parent_cash": 2129.6297235024485,
+            "parent_portfolio": 782.512872,
+            "initial_shares": 45.79324723
+          },
+          "rows": [
+            {
+              "date": "2027-11-07",
+              "years_from_research": 0.999315537303217,
+              "revenue": 6430.0,
+              "group_nopat": 610.85,
+              "group_interest_expense": 42.14282204,
+              "group_aftertax_interest": 34.557114072800005,
+              "group_operating_net_income": 576.2928859272,
+              "parent_operating_net_income": 535.952383912296,
+              "group_net_reinvestment": 520,
+              "parent_operating_fcfe": 52.35238391229602,
+              "financial_cash_income": 58.24285191004897,
+              "dividend": 297.0976179111725,
+              "dividend_per_share": 6.560116300688344,
+              "buyback": 146.3987438736,
+              "employee_proceeds": 12.8028485412,
+              "employee_transfer_shares": 0.08081586,
+              "cash": 1809.531446081221,
+              "portfolio": 782.512872,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            },
+            {
+              "date": "2028-11-07",
+              "years_from_research": 2.001368925393566,
+              "revenue": 7410.0,
+              "group_nopat": 741.0,
+              "group_interest_expense": 42.14282204,
+              "group_aftertax_interest": 34.557114072800005,
+              "group_operating_net_income": 706.4428859272,
+              "parent_operating_net_income": 656.991883912296,
+              "group_net_reinvestment": 470,
+              "parent_operating_fcfe": 219.891883912296,
+              "financial_cash_income": 51.84088636162443,
+              "dividend": 354.41638513696023,
+              "dividend_per_share": 7.825753439945632,
+              "buyback": 0,
+              "employee_proceeds": 0.0,
+              "employee_transfer_shares": 0,
+              "cash": 1726.847831218181,
+              "portfolio": 782.512872,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            },
+            {
+              "date": "2029-11-07",
+              "years_from_research": 3.0006844626967832,
+              "revenue": 8350.0,
+              "group_nopat": 876.75,
+              "group_interest_expense": 42.14282204,
+              "group_aftertax_interest": 34.557114072800005,
+              "group_operating_net_income": 842.1928859272,
+              "parent_operating_net_income": 783.239383912296,
+              "group_net_reinvestment": 440,
+              "parent_operating_fcfe": 374.039383912296,
+              "financial_cash_income": 50.187214064363616,
+              "dividend": 416.7132989883298,
+              "dividend_per_share": 9.20131142291517,
+              "buyback": 0,
+              "employee_proceeds": 0.0,
+              "employee_transfer_shares": 0,
+              "cash": 1734.3611302065106,
+              "portfolio": 782.512872,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            }
+          ],
+          "terminal_operating_equity": 15664.78767824592,
+          "terminal_nonoperating_assets": 2516.8740022065103,
+          "terminal_equity": 18181.66168045243,
+          "terminal_per_share": 401.46338433180443,
+          "terminal_date": "2029-11-07",
+          "terminal_years": 3.0006844626967832,
+          "a_annual_return": 0.18998693743531303,
+          "a_cumulative_return": 0.6687313241829438,
+          "h_cny_annual_return_assuming_premium_converges": 0.09619857382332964,
+          "whole_equity_annual_return_at_snapshot": 0.18475853385739127
+        }
+      ]
+    },
+    "downside": {
+      "pe_range": [
+        10,
+        12
+      ],
+      "bounds": [
+        {
+          "research_date": "2026-11-07",
+          "scenario": "downside",
+          "terminal_pe": 10,
+          "bridge": {
+            "opening_debt": 1915.58282,
+            "debt_repaid": 0,
+            "continuing_debt": 1915.58282,
+            "group_cash_after_reserves": 2289.9244338736003,
+            "parent_cash": 2129.6297235024485,
+            "parent_portfolio": 469.5077232,
+            "initial_shares": 45.79324723
+          },
+          "rows": [
+            {
+              "date": "2027-11-07",
+              "years_from_research": 0.999315537303217,
+              "revenue": 5600.0,
+              "group_nopat": 420.0,
+              "group_interest_expense": 67.0453987,
+              "group_aftertax_interest": 54.97722693400001,
+              "group_operating_net_income": 365.022773066,
+              "parent_operating_net_income": 339.47117895138,
+              "group_net_reinvestment": 640,
+              "parent_operating_fcfe": -255.72882104862,
+              "financial_cash_income": 51.98274893404897,
+              "dividend": 195.7269639427145,
+              "dividend_per_share": 4.321783714296674,
+              "buyback": 146.3987438736,
+              "employee_proceeds": 12.8028485412,
+              "employee_transfer_shares": 0.08081586,
+              "cash": 1596.560792112763,
+              "portfolio": 469.5077232,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            },
+            {
+              "date": "2028-11-07",
+              "years_from_research": 2.001368925393566,
+              "revenue": 5880.0,
+              "group_nopat": 411.6,
+              "group_interest_expense": 67.0453987,
+              "group_aftertax_interest": 54.97722693400001,
+              "group_operating_net_income": 356.62277306600004,
+              "parent_operating_net_income": 331.65917895138006,
+              "group_net_reinvestment": 460,
+              "parent_operating_fcfe": -96.14082104861997,
+              "financial_cash_income": 41.32137030625526,
+              "dividend": 186.49027462881764,
+              "dividend_per_share": 4.117831368402722,
+              "buyback": 0,
+              "employee_proceeds": 0.0,
+              "employee_transfer_shares": 0,
+              "cash": 1355.2510667415806,
+              "portfolio": 469.5077232,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            },
+            {
+              "date": "2029-11-07",
+              "years_from_research": 3.0006844626967832,
+              "revenue": 6028.0,
+              "group_nopat": 391.82,
+              "group_interest_expense": 67.0453987,
+              "group_aftertax_interest": 54.97722693400001,
+              "group_operating_net_income": 336.842773066,
+              "parent_operating_net_income": 313.26377895138,
+              "group_net_reinvestment": 310,
+              "parent_operating_fcfe": 24.963778951380007,
+              "financial_cash_income": 36.49517579883161,
+              "dividend": 174.8794773751058,
+              "dividend_per_share": 3.861457113827462,
+              "buyback": 0,
+              "employee_proceeds": 0.0,
+              "employee_transfer_shares": 0,
+              "cash": 1241.8305441166865,
+              "portfolio": 469.5077232,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            }
+          ],
+          "terminal_operating_equity": 3132.6377895138003,
+          "terminal_nonoperating_assets": 1711.3382673166866,
+          "terminal_equity": 4843.976056830487,
+          "terminal_per_share": 106.95826682817284,
+          "terminal_date": "2029-11-07",
+          "terminal_years": 3.0006844626967832,
+          "a_annual_return": -0.22934330333079128,
+          "a_cumulative_return": -0.5317703272344384,
+          "h_cny_annual_return_assuming_premium_converges": -0.29020190161951687,
+          "whole_equity_annual_return_at_snapshot": -0.23273653152331425
+        },
+        {
+          "research_date": "2026-11-07",
+          "scenario": "downside",
+          "terminal_pe": 12,
+          "bridge": {
+            "opening_debt": 1915.58282,
+            "debt_repaid": 0,
+            "continuing_debt": 1915.58282,
+            "group_cash_after_reserves": 2289.9244338736003,
+            "parent_cash": 2129.6297235024485,
+            "parent_portfolio": 469.5077232,
+            "initial_shares": 45.79324723
+          },
+          "rows": [
+            {
+              "date": "2027-11-07",
+              "years_from_research": 0.999315537303217,
+              "revenue": 5600.0,
+              "group_nopat": 420.0,
+              "group_interest_expense": 67.0453987,
+              "group_aftertax_interest": 54.97722693400001,
+              "group_operating_net_income": 365.022773066,
+              "parent_operating_net_income": 339.47117895138,
+              "group_net_reinvestment": 640,
+              "parent_operating_fcfe": -255.72882104862,
+              "financial_cash_income": 51.98274893404897,
+              "dividend": 195.7269639427145,
+              "dividend_per_share": 4.321783714296674,
+              "buyback": 146.3987438736,
+              "employee_proceeds": 12.8028485412,
+              "employee_transfer_shares": 0.08081586,
+              "cash": 1596.560792112763,
+              "portfolio": 469.5077232,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            },
+            {
+              "date": "2028-11-07",
+              "years_from_research": 2.001368925393566,
+              "revenue": 5880.0,
+              "group_nopat": 411.6,
+              "group_interest_expense": 67.0453987,
+              "group_aftertax_interest": 54.97722693400001,
+              "group_operating_net_income": 356.62277306600004,
+              "parent_operating_net_income": 331.65917895138006,
+              "group_net_reinvestment": 460,
+              "parent_operating_fcfe": -96.14082104861997,
+              "financial_cash_income": 41.32137030625526,
+              "dividend": 186.49027462881764,
+              "dividend_per_share": 4.117831368402722,
+              "buyback": 0,
+              "employee_proceeds": 0.0,
+              "employee_transfer_shares": 0,
+              "cash": 1355.2510667415806,
+              "portfolio": 469.5077232,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            },
+            {
+              "date": "2029-11-07",
+              "years_from_research": 3.0006844626967832,
+              "revenue": 6028.0,
+              "group_nopat": 391.82,
+              "group_interest_expense": 67.0453987,
+              "group_aftertax_interest": 54.97722693400001,
+              "group_operating_net_income": 336.842773066,
+              "parent_operating_net_income": 313.26377895138,
+              "group_net_reinvestment": 310,
+              "parent_operating_fcfe": 24.963778951380007,
+              "financial_cash_income": 36.49517579883161,
+              "dividend": 174.8794773751058,
+              "dividend_per_share": 3.861457113827462,
+              "buyback": 0,
+              "employee_proceeds": 0.0,
+              "employee_transfer_shares": 0,
+              "cash": 1241.8305441166865,
+              "portfolio": 469.5077232,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            }
+          ],
+          "terminal_operating_equity": 3759.16534741656,
+          "terminal_nonoperating_assets": 1711.3382673166866,
+          "terminal_equity": 5470.503614733247,
+          "terminal_per_share": 120.79241896417955,
+          "terminal_date": "2029-11-07",
+          "terminal_years": 3.0006844626967832,
+          "a_annual_return": -0.1993262672141794,
+          "a_cumulative_return": -0.477461022410277,
+          "h_cny_annual_return_assuming_premium_converges": -0.26248379348566464,
+          "whole_equity_annual_return_at_snapshot": -0.20284728850393002
+        }
+      ]
+    },
+    "upside": {
+      "pe_range": [
+        20,
+        25
+      ],
+      "bounds": [
+        {
+          "research_date": "2026-11-07",
+          "scenario": "upside",
+          "terminal_pe": 20,
+          "bridge": {
+            "opening_debt": 1915.58282,
+            "debt_repaid": 0,
+            "continuing_debt": 1915.58282,
+            "group_cash_after_reserves": 2289.9244338736003,
+            "parent_cash": 2129.6297235024485,
+            "parent_portfolio": 782.512872,
+            "initial_shares": 45.79324723
+          },
+          "rows": [
+            {
+              "date": "2027-11-07",
+              "years_from_research": 0.999315537303217,
+              "revenue": 7238.0,
+              "group_nopat": 781.704,
+              "group_interest_expense": 42.14282204,
+              "group_aftertax_interest": 34.557114072800005,
+              "group_operating_net_income": 747.1468859272,
+              "parent_operating_net_income": 694.846603912296,
+              "group_net_reinvestment": 580,
+              "parent_operating_fcfe": 155.44660391229596,
+              "financial_cash_income": 58.24285191004897,
+              "dividend": 376.5447279111725,
+              "dividend_per_share": 8.314362211570758,
+              "buyback": 146.3987438736,
+              "employee_proceeds": 12.8028485412,
+              "employee_transfer_shares": 0.08081586,
+              "cash": 1833.1785560812211,
+              "portfolio": 782.512872,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            },
+            {
+              "date": "2028-11-07",
+              "years_from_research": 2.001368925393566,
+              "revenue": 8806.0,
+              "group_nopat": 1012.69,
+              "group_interest_expense": 42.14282204,
+              "group_aftertax_interest": 34.557114072800005,
+              "group_operating_net_income": 978.1328859272,
+              "parent_operating_net_income": 909.6635839122961,
+              "group_net_reinvestment": 600,
+              "parent_operating_fcfe": 351.6635839122961,
+              "financial_cash_income": 52.31382856162442,
+              "dividend": 480.98870623696024,
+              "dividend_per_share": 10.620555877952134,
+              "buyback": 0,
+              "employee_proceeds": 0.0,
+              "employee_transfer_shares": 0,
+              "cash": 1756.1672623181812,
+              "portfolio": 782.512872,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            },
+            {
+              "date": "2029-11-07",
+              "years_from_research": 3.0006844626967832,
+              "revenue": 10210.0,
+              "group_nopat": 1225.2,
+              "group_interest_expense": 42.14282204,
+              "group_aftertax_interest": 34.557114072800005,
+              "group_operating_net_income": 1190.6428859272,
+              "parent_operating_net_income": 1107.2978839122961,
+              "group_net_reinvestment": 610,
+              "parent_operating_fcfe": 539.9978839122961,
+              "financial_cash_income": 50.77360268636363,
+              "dividend": 579.0357432993299,
+              "dividend_per_share": 12.785500755629853,
+              "buyback": 0,
+              "employee_proceeds": 0.0,
+              "employee_transfer_shares": 0,
+              "cash": 1767.9030056175113,
+              "portfolio": 782.512872,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            }
+          ],
+          "terminal_operating_equity": 22145.957678245923,
+          "terminal_nonoperating_assets": 2550.4158776175113,
+          "terminal_equity": 24696.373555863433,
+          "terminal_per_share": 545.3126277846732,
+          "terminal_date": "2029-11-07",
+          "terminal_years": 3.0006844626967832,
+          "a_annual_return": 0.3205143275145893,
+          "a_cumulative_return": 1.2654072149314035,
+          "h_cny_annual_return_assuming_premium_converges": 0.21617148811235654,
+          "whole_equity_annual_return_at_snapshot": 0.3146959219173796
+        },
+        {
+          "research_date": "2026-11-07",
+          "scenario": "upside",
+          "terminal_pe": 25,
+          "bridge": {
+            "opening_debt": 1915.58282,
+            "debt_repaid": 0,
+            "continuing_debt": 1915.58282,
+            "group_cash_after_reserves": 2289.9244338736003,
+            "parent_cash": 2129.6297235024485,
+            "parent_portfolio": 782.512872,
+            "initial_shares": 45.79324723
+          },
+          "rows": [
+            {
+              "date": "2027-11-07",
+              "years_from_research": 0.999315537303217,
+              "revenue": 7238.0,
+              "group_nopat": 781.704,
+              "group_interest_expense": 42.14282204,
+              "group_aftertax_interest": 34.557114072800005,
+              "group_operating_net_income": 747.1468859272,
+              "parent_operating_net_income": 694.846603912296,
+              "group_net_reinvestment": 580,
+              "parent_operating_fcfe": 155.44660391229596,
+              "financial_cash_income": 58.24285191004897,
+              "dividend": 376.5447279111725,
+              "dividend_per_share": 8.314362211570758,
+              "buyback": 146.3987438736,
+              "employee_proceeds": 12.8028485412,
+              "employee_transfer_shares": 0.08081586,
+              "cash": 1833.1785560812211,
+              "portfolio": 782.512872,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            },
+            {
+              "date": "2028-11-07",
+              "years_from_research": 2.001368925393566,
+              "revenue": 8806.0,
+              "group_nopat": 1012.69,
+              "group_interest_expense": 42.14282204,
+              "group_aftertax_interest": 34.557114072800005,
+              "group_operating_net_income": 978.1328859272,
+              "parent_operating_net_income": 909.6635839122961,
+              "group_net_reinvestment": 600,
+              "parent_operating_fcfe": 351.6635839122961,
+              "financial_cash_income": 52.31382856162442,
+              "dividend": 480.98870623696024,
+              "dividend_per_share": 10.620555877952134,
+              "buyback": 0,
+              "employee_proceeds": 0.0,
+              "employee_transfer_shares": 0,
+              "cash": 1756.1672623181812,
+              "portfolio": 782.512872,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            },
+            {
+              "date": "2029-11-07",
+              "years_from_research": 3.0006844626967832,
+              "revenue": 10210.0,
+              "group_nopat": 1225.2,
+              "group_interest_expense": 42.14282204,
+              "group_aftertax_interest": 34.557114072800005,
+              "group_operating_net_income": 1190.6428859272,
+              "parent_operating_net_income": 1107.2978839122961,
+              "group_net_reinvestment": 610,
+              "parent_operating_fcfe": 539.9978839122961,
+              "financial_cash_income": 50.77360268636363,
+              "dividend": 579.0357432993299,
+              "dividend_per_share": 12.785500755629853,
+              "buyback": 0,
+              "employee_proceeds": 0.0,
+              "employee_transfer_shares": 0,
+              "cash": 1767.9030056175113,
+              "portfolio": 782.512872,
+              "portfolio_sale": 0,
+              "shares": 45.2884681145056
+            }
+          ],
+          "terminal_operating_equity": 27682.447097807402,
+          "terminal_nonoperating_assets": 2550.4158776175113,
+          "terminal_equity": 30232.862975424912,
+          "terminal_per_share": 667.5620579390171,
+          "terminal_date": "2029-11-07",
+          "terminal_years": 3.0006844626967832,
+          "a_annual_return": 0.40843108236449044,
+          "a_cumulative_return": 1.7453268732928269,
+          "h_cny_annual_return_assuming_premium_converges": 0.2973466844715914,
+          "whole_equity_annual_return_at_snapshot": 0.40223789107256136
+        }
+      ]
+    }
+  },
+  "price_return_relationship": [
+    {
+      "illustrative_target_return": 0.12,
+      "bounds": [
+        {
+          "terminal_pe": 15,
+          "entry_price": 242.36468635072663,
+          "entry_equity": 11098.66600188023,
+          "downside_annual_return": -0.21667254736391112,
+          "downside_cumulative_return": -0.5088667858228835
+        },
+        {
+          "terminal_pe": 20,
+          "entry_price": 303.7862043248451,
+          "entry_equity": 13911.356759710925,
+          "downside_annual_return": -0.2747593189949057,
+          "downside_cumulative_return": -0.6081673699600388
+        }
+      ]
+    },
+    {
+      "illustrative_target_return": 0.15,
+      "bounds": [
+        {
+          "terminal_pe": 15,
+          "entry_price": 224.3312212548953,
+          "entry_equity": 10272.855076333251,
+          "downside_annual_return": -0.19569714718932646,
+          "downside_cumulative_return": -0.46938572908133014
+        },
+        {
+          "terminal_pe": 20,
+          "entry_price": 281.06911829378845,
+          "entry_equity": 12871.06762274557,
+          "downside_annual_return": -0.25529311581269953,
+          "downside_cumulative_return": -0.5764979513471805
+        }
+      ]
+    },
+    {
+      "illustrative_target_return": 0.18,
+      "bounds": [
+        {
+          "terminal_pe": 15,
+          "entry_price": 208.07051252193426,
+          "entry_equity": 9528.224421189747,
+          "downside_annual_return": -0.1747226473231343,
+          "downside_cumulative_return": -0.4279182284519394
+        },
+        {
+          "terminal_pe": 20,
+          "entry_price": 260.5891050685923,
+          "entry_equity": 11933.221313850492,
+          "downside_annual_return": -0.23582475778511175,
+          "downside_cumulative_return": -0.5432144126703643
+        }
+      ]
+    },
+    {
+      "illustrative_target_return": 0.2,
+      "bounds": [
+        {
+          "terminal_pe": 15,
+          "entry_price": 198.10821160594142,
+          "entry_equity": 9072.01831236403,
+          "downside_annual_return": -0.1607401676234504,
+          "downside_cumulative_return": -0.3991498563056476
+        },
+        {
+          "terminal_pe": 20,
+          "entry_price": 248.04382242256588,
+          "entry_equity": 11358.732084070776,
+          "downside_annual_return": -0.22284465359890077,
+          "downside_cumulative_return": -0.5201116228257576
+        }
+      ]
+    }
+  ],
+  "a_required_terminal_pe_at_base_profit": {
+    "0": 10.15029816524728,
+    "0.12": 15.965078203885234,
+    "0.15": 17.633934310661555,
+    "0.2": 20.618414141374434
+  },
+  "a_required_terminal_pe_at_downside_profit_for_break_even": 29.583028321064475,
+  "downside_break_even_equity": 5450.923506581724,
+  "base_two_year_delay_a_annual_return": [
+    0.06136012603910379,
+    0.11231047090722324
+  ],
+  "base_dividend_tax_20pct_a_annual_return": [
+    0.09617626129779777,
+    0.1847305496728392
+  ],
+  "sensitivities": {
+    "repay_debt_at_start": {
+      "terminal_equity_range": [
+        13019.48925072,
+        17096.376750720003
+      ],
+      "a_return_range": [
+        0.06886860368956882,
+        0.16531185871878484
+      ]
+    },
+    "half_old_provisions": {
+      "terminal_equity_range": [
+        14764.24997541601,
+        18680.44689497749
+      ],
+      "a_return_range": [
+        0.11429464230194586,
+        0.20066019413174974
+      ]
+    },
+    "no_remaining_buyback": {
+      "terminal_equity_range": [
+        14414.80611951641,
+        18331.003039077892
+      ],
+      "a_return_range": [
+        0.10074297737189053,
+        0.18794968845606597
+      ]
+    },
+    "no_employee_transfer": {
+      "terminal_equity_range": [
+        14252.404575094073,
+        18168.60149465555
+      ],
+      "a_return_range": [
+        0.10222525685868755,
+        0.19043275603878673
+      ]
+    },
+    "parent_portfolio_0": {
+      "terminal_equity_range": [
+        13459.24096635648,
+        17375.43788591796
+      ],
+      "a_return_range": [
+        0.08120629358991327,
+        0.17232838971354447
+      ]
+    },
+    "parent_portfolio_1500": {
+      "terminal_equity_range": [
+        15004.692466356479,
+        18920.88938591796
+      ],
+      "a_return_range": [
+        0.12018403622002294,
+        0.20573973410510782
+      ]
+    }
+  },
+  "margin_and_multiple_grid": [
+    {
+      "nopat_margin_shift": -0.01,
+      "by_pe": [
+        {
+          "pe": 12,
+          "terminal_equity": 10879.757564204063,
+          "a_annual_return": 0.009054970892809489
+        },
+        {
+          "pe": 15,
+          "terminal_equity": 12996.510715940953,
+          "a_annual_return": 0.06714373992490896
+        },
+        {
+          "pe": 20,
+          "terminal_equity": 16524.432635502435,
+          "a_annual_return": 0.15171112155098687
+        },
+        {
+          "pe": 25,
+          "terminal_equity": 20052.35455506391,
+          "a_annual_return": 0.22526810477282078
+        }
+      ]
+    },
+    {
+      "nopat_margin_shift": 0,
+      "by_pe": [
+        {
+          "pe": 12,
+          "terminal_equity": 11915.746609154063,
+          "a_annual_return": 0.04127100903673442
+        },
+        {
+          "pe": 15,
+          "terminal_equity": 14265.46476089095,
+          "a_annual_return": 0.10187829052680575
+        },
+        {
+          "pe": 20,
+          "terminal_equity": 18181.66168045243,
+          "a_annual_return": 0.18998693743531303
+        },
+        {
+          "pe": 25,
+          "terminal_equity": 22097.85860001391,
+          "a_annual_return": 0.26653183847137785
+        }
+      ]
+    },
+    {
+      "nopat_margin_shift": 0.01,
+      "by_pe": [
+        {
+          "pe": 12,
+          "terminal_equity": 12951.73565410406,
+          "a_annual_return": 0.07173231982284889
+        },
+        {
+          "pe": 15,
+          "terminal_equity": 15534.418805840949,
+          "a_annual_return": 0.1346742761693519
+        },
+        {
+          "pe": 20,
+          "terminal_equity": 19838.89072540243,
+          "a_annual_return": 0.22606892456220884
+        },
+        {
+          "pe": 25,
+          "terminal_equity": 24143.36264496391,
+          "a_annual_return": 0.3053893155716668
+        }
+      ]
+    }
+  ],
+  "verification": "现金/组合/股份守恒、利息与偿债口径、PE与经营分离、IRR和盈亏平衡逆推、单位及延迟、概率归一和期望现金流检查通过；预测未经独立审阅"
+}

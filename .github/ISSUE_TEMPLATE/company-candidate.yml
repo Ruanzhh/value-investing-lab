@@ -18,7 +18,7 @@ body:
     id: path
     attributes:
       label: 引用文件路径
-      description: 若本仓已有相关笔记，写相对路径。若还没有，填「不适用」，并说明为什么现有十二家里没有可对照的文件。
+      description: 若本仓已有相关笔记，写相对路径。若还没有，填「不适用」，并说明为什么仓库中没有可对照的文件。
       placeholder: 不适用
     validations:
       required: true
