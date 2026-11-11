@@ -9,7 +9,7 @@
 用公开信息理解企业，将经营判断推导为盈利、现金与价值。<br>
 AI 辅助研究，证据支持结论，反证推动修正。
 
-[**阅读研究 ↓**](#公司研究)　 /　 [**使用方法 ↓**](#开始一份研究)　 /　 [**提出挑战 ↗**](https://github.com/ruanzh6/value-investing-lab/issues/new/choose)
+[**阅读研究 ↓**](#公司研究)　 /　 [**使用方法 ↓**](#开始一份研究)　 /　 [**提出挑战 ↗**](https://github.com/Ruanzhh/value-investing-lab/issues/new/choose)
 
 </div>
 
@@ -70,7 +70,7 @@ reports/<代码>-<中文公司名>/
 
 数据有误、假设站不住，或出现了足以推翻判断的新证据，都值得讨论。
 
-**[提交 Issue →](https://github.com/ruanzh6/value-investing-lab/issues/new/choose)** 请附公司代码、仓库内文件路径和可复核的证据链接。讨论聚焦事实、口径、计算与证伪条件；只问「现在能不能买 / 要不要卖」的 Issue 不受理。
+**[提交 Issue →](https://github.com/Ruanzhh/value-investing-lab/issues/new/choose)** 请附公司代码、仓库内文件路径和可复核的证据链接。讨论聚焦事实、口径、计算与证伪条件；只问「现在能不能买 / 要不要卖」的 Issue 不受理。
 
 内容改动通过 Pull Request 提交，写明修改对象及证据。不要提交未披露的内部数据、个人持仓、密钥或未经审阅的草稿。完整规则见 [AGENTS.md](AGENTS.md)。
 
