@@ -1,11 +1,11 @@
 name: skill 改进
-description: 改进价值投资理念、量化原则或深估过程
+description: 改进价值投资理念、量化原则、深估过程或组合决策规则
 title: "[skill 改进] "
 body:
   - type: markdown
     attributes:
       value: |
-        针对 `skills/value-investing/` 或 `skills/deep-valuation/`。请指向具体文件，并说明改了之后哪一类错误会减少。
+        针对 `skills/value-investing/`、`skills/deep-valuation/` 或 `skills/portfolio-decision/`。请指向具体文件，并说明改了之后哪一类错误会减少。
         不要在这里询问个股买卖。
   - type: input
     id: ticker
