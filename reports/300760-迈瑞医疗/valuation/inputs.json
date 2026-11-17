@@ -1,0 +1,12 @@
+{
+ "start":"2026-11-17", "dates":["2027-11-17","2028-11-17","2029-11-17"],
+ "shares":12.11799431,"price":184.30,"price_date":"2026-11-16", "buy_fee":0.0003,"sell_fee":0.0008,"dividend_tax":0.10,
+ "sell_target_return":0.04,
+ "opening_surplus":115.28,"cash_yield":0.02,
+ "scenarios":[
+ {"name":"温和复苏、正常定价","p":0.45,"revenue":[396,435.6,479.16],"margin":[0.27,0.275,0.28],"pe":22,"conversion":0.85,"payout":0.65},
+ {"name":"温和复苏、估值压缩","p":0.20,"revenue":[396,435.6,479.16],"margin":[0.27,0.275,0.28],"pe":16,"conversion":0.85,"payout":0.65},
+ {"name":"价格压力持续、盈利受损","p":0.25,"revenue":[360,365,375],"margin":[0.24,0.235,0.23],"pe":15,"conversion":0.75,"payout":0.60},
+ {"name":"全球化与新业务兑现","p":0.10,"revenue":[410,470,540],"margin":[0.28,0.29,0.30],"pe":27,"conversion":0.85,"payout":0.65}
+ ]
+}
