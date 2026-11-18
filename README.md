@@ -29,7 +29,7 @@
 - **03 · 接受挑战**
   最强反方解释是什么？哪些证据出现后，必须改变判断？
 
-> **方法与基建**：[`value-investing`](skills/value-investing/SKILL.md) 维护投资理念与[量化原则](skills/value-investing/references/quantitative-principles.md)；[`deep-valuation`](skills/deep-valuation/SKILL.md) 指导取证、挑战与报告产出；[`portfolio-decision`](skills/portfolio-decision/SKILL.md) 根据已有研究、个人持仓与可投资现金形成组合建议。
+> **方法与基建**：[`value-investing`](skills/value-investing/SKILL.md) 维护投资理念与[量化原则](skills/value-investing/references/quantitative-principles.md)；[`deep-valuation`](skills/deep-valuation/SKILL.md) 指导取证、挑战与报告产出；[`valuation-review`](skills/valuation-review/SKILL.md) 审查已有研究的证据、分歧与估值推导；[`portfolio-decision`](skills/portfolio-decision/SKILL.md) 根据已有研究、个人持仓与可投资现金形成组合建议。
 
 ## 公司研究
 
@@ -37,7 +37,7 @@
 
 | 公司 · A股代码 | 买入市值 | 买入股价 | 卖出市值 | 卖出股价 | 研究日期 |
 | :--- | ---: | ---: | ---: | ---: | :--- |
-| [**宁德时代 · 300750**](reports/300750-宁德时代/README.md) | 10,945.26 | 239.01 | 15,899.46 | 347.20 | 2026-11-07 |
+| [**宁德时代 · 300750**](reports/300750-宁德时代/README.md) | 10,524.43 | 229.85 | 15,225.62 | 332.52 | 2026-11-17 |
 | [**古井贡酒 · 000596**](reports/000596-古井贡酒/README.md) | 440.98 | 83.42 | 635.84 | 120.29 | 2026-11-07 |
 | [**迈瑞医疗 · 300760**](reports/300760-迈瑞医疗/README.md) | 1,785.62 | 147.35 | 2,586.92 | 213.48 | 2026-11-17 |
 

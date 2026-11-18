@@ -13,12 +13,17 @@ def bridge(x, s):
     debt=sum(f[k] for k in ('short_debt','long_debt','bonds','current_noncurrent_liabilities',
                             'lease_liabilities','long_payables'))
     repayment=debt if c['repay_debt_at_start'] else 0
+    buyback_paid=f['buyback_at_oct31']-f['buyback_at_sep30']+f.get('buyback_after_oct31',0)
     group_cash=(f['cash_equivalents']+f['trading_assets']-repayment-c['operating_cash_buffer']
-                -f['provisions']*c['old_provision_reserve_fraction']-f['net_derivative_liabilities']
-                -(f['buyback_at_oct31']-f['buyback_at_sep30']))
+                -f['provisions']*c['old_provision_reserve_fraction']-f['net_derivative_liabilities'])
+    # 母公司回购的现金全额归母；旧算法先扣集团现金再乘93%，少扣了7%。
+    if not c.get('buyback_deduction_at_parent',False):group_cash-=buyback_paid
+    parent_cash=group_cash*c['cash_parent_fraction']
+    if c.get('buyback_deduction_at_parent',False):parent_cash-=buyback_paid
+    parent_cash+=c.get('opening_cash_adjustment',0)
     portfolio=sum(f[k] for k in ('long_equity_investments','other_equity_investments','other_financial_investments'))
     return {'opening_debt':debt,'debt_repaid':repayment,'continuing_debt':debt-repayment,
-            'group_cash_after_reserves':group_cash,'parent_cash':group_cash*c['cash_parent_fraction'],
+            'group_cash_after_reserves':group_cash,'parent_cash':parent_cash,
             'parent_portfolio':portfolio*s['portfolio_realization']*c['portfolio_parent_fraction'],
             'initial_shares':f['registered_a']+f['registered_h']-f['employee_treasury']-f['pending_cancel']}
 
@@ -40,9 +45,10 @@ def simulate(x,name='base',*,pe,margin_shift=0,portfolio_override=None):
         parent_income=net_income*c['operating_parent_fraction']
         reinvestment=(s['maintenance_capex'][i]+s['growth_capex'][i]-s['da'][i]
                       +s['working_capital_increase'][i]+s['other_growth_investment'][i])
-        parent_fcfe=(net_income-reinvestment)*c['operating_parent_fraction']
+        fraction=c.get('first_period_fraction',1) if i==0 else 1
+        parent_fcfe=(net_income-reinvestment)*c['operating_parent_fraction']*fraction
         opening_cash,opening_portfolio,opening_shares=cash,portfolio,shares
-        financial_cash=cash*c['cash_aftertax_yield']+portfolio*c['portfolio_cash_yield']
+        financial_cash=(cash*c['cash_aftertax_yield']+portfolio*c['portfolio_cash_yield'])*fraction
         buyback=c['remaining_buyback'] if i==0 else 0
         transfer=c['employee_transfer_shares'] if i==0 else 0
         proceeds=transfer*c['employee_transfer_price']
@@ -52,7 +58,7 @@ def simulate(x,name='base',*,pe,margin_shift=0,portfolio_override=None):
         if sale>portfolio+1e-8:raise ValueError('资金不足：须显式调整融资或投资，不隐含填平')
         portfolio-=sale;cash+=sale
         # 分红参考核心净利及资产现金收益，未假定全部权益法收益可以收到现金。
-        target=max(parent_income+financial_cash,0)*c['dividend_target_fraction']
+        target=max(parent_income*fraction+financial_cash,0)*c['dividend_target_fraction']
         dividend=min(max(cash,0),target);cash-=dividend
         assert shares>0 and cash>=-1e-8 and portfolio>=-1e-8
         assert isclose(opening_cash+parent_fcfe+financial_cash+proceeds-buyback+sale-dividend,cash,abs_tol=1e-7)
@@ -61,7 +67,7 @@ def simulate(x,name='base',*,pe,margin_shift=0,portfolio_override=None):
         rows.append({'date':ds,'years_from_research':t,'revenue':revenue,'group_nopat':nopat,
                      'group_interest_expense':interest,'group_aftertax_interest':aftertax_interest,
                      'group_operating_net_income':net_income,'parent_operating_net_income':parent_income,
-                     'group_net_reinvestment':reinvestment,'parent_operating_fcfe':parent_fcfe,
+                     'period_fraction':fraction,'group_net_reinvestment':reinvestment,'parent_operating_fcfe':parent_fcfe,
                      'financial_cash_income':financial_cash,'dividend':dividend,
                      'dividend_per_share':dividend/shares,'buyback':buyback,
                      'employee_proceeds':proceeds,'employee_transfer_shares':transfer,
@@ -126,12 +132,22 @@ def historical_reconciliation(x,market):
     out['core_ytd_parent_net_income']=(out['core_ytd_ebit']-h['ytd2026_interest_expense'])*(1-h['normal_operating_tax_assumption'])*x['common']['operating_parent_fraction']
     for period in ['fy2025','h12026']:
         out[period+'_three_wc_items_net']=sum(h[period+'_'+key+'_cash_change'] for key in ['inventory','receivables','payables'])
+    if 'h12026_core_ebit' in h:
+        out['q32026_core_ebit']=out['core_ytd_ebit']-h['h12026_core_ebit']
+        out['q32026_core_nopat_margin']=out['q32026_core_ebit']*(1-h['normal_operating_tax_assumption'])/(h['ytd2026_revenue']-h['h12026_revenue'])
     return out
 
 
 def self_checks(x):
     base=simulate(x,pe=15);c=x['common'];last=base['rows'][-1]
-    assert isclose(base['rows'][0]['revenue'],6430)
+    s=x['scenarios']['base']
+    assert isclose(base['rows'][0]['revenue'],s['battery_gwh'][0]*s['battery_asp_cny_kwh'][0]*.01+s['other_revenue'][0])
+    for s in x['scenarios'].values():
+        if 'margin_build' in s:
+            b=s['margin_build']
+            for i in range(3):
+                margin=(b['gross_margin'][i]-sum(v[i] for k,v in b.items() if k!='gross_margin'))*(1-c['normal_tax_rate'])
+                assert isclose(margin,s['core_nopat_margin'][i],abs_tol=1e-12)
     assert isclose(base['terminal_equity'],last['parent_operating_net_income']*15+last['cash']+last['portfolio'])
     assert base['bridge']['debt_repaid']==0 and base['bridge']['continuing_debt']>0
     y=deepcopy(x);y['common']['repay_debt_at_start']=True
@@ -215,7 +231,8 @@ def calculate(x):
     self_checks(x)
     f,c=x['facts'],x['common']
     shares=bridge(x,x['scenarios']['base'])['initial_shares']
-    market=(shares-f['registered_h'])*f['a_price']+f['registered_h']*f['h_price_hkd']*f['hkd_cny']
+    # 新研究仅定价A股；不同日期的A/H报价不能拼成当前实际总市值。
+    market=shares*f['a_price']
     scenarios={}
     for name,s in x['scenarios'].items():
         bounds=[]
@@ -223,8 +240,6 @@ def calculate(x):
             z=simulate(x,name,pe=pe)
             z['a_annual_return']=irr(z,f['a_price'],c)
             z['a_cumulative_return']=cumulative_return(z,f['a_price'],c)
-            z['h_cny_annual_return_assuming_premium_converges']=irr(z,f['h_price_hkd']*f['hkd_cny'],c)
-            z['whole_equity_annual_return_at_snapshot']=irr(z,market/shares,c)
             bounds.append(z)
         scenarios[name]={'pe_range':s['terminal_pe_range'],'bounds':bounds}
     base=scenarios['base']['bounds'];down=scenarios['downside']['bounds'][0]
@@ -261,26 +276,94 @@ def calculate(x):
     weight_sensitivities=[]
     for target in ['downside','upside']:
         cases=deepcopy(x['probability_assessment']['cases'])
+        base_total=sum(z['probability'] for z in cases if z['scenario']=='base')
+        target_total=sum(z['probability'] for z in cases if z['scenario']==target)
         for item in cases:
-            if item['scenario']=='base':item['probability']-=.10
-            elif item['scenario']==target:item['probability']+=.10
+            if item['scenario']=='base':item['probability']*=1-.10/base_total
+            elif item['scenario']==target:item['probability']*=1+.10/target_total
         z=probability_weighted_forecast(x,cases)
         weight_sensitivities.append({'move_10pp_from_base_to':target,'terminal_equity':z['terminal_equity'],
                                     'a_irr_of_expected_cashflows':z['a_irr_of_expected_cashflows']})
     return {'research_date':x['research_date'],'currency':x['currency'],'amount_unit':'亿元',
             'method':x['valuation_policy']['method'],'current_fair_equity':None,'current_downside_equity':None,
             'missing_reason':'本次提供三年后概率加权价值预测及目标回报下的合理买入价，未单独估计当前合理价值',
-            'selected_target_return':x['decision_policy']['selected_target_return'],'market_equity_at_snapshot':market,
+            'selected_target_return':x['decision_policy']['selected_target_return'],'a_equivalent_market_equity_at_snapshot':market,
             'historical_reconciliation':historical_reconciliation(x,market),
             'probability_weighted_forecast':weighted,'probability_weight_sensitivities':weight_sensitivities,
             'scenarios':scenarios,'price_return_relationship':target_tables,
-            'a_required_terminal_pe_at_base_profit':{str(rate):required_pe(base[0],f['a_price'],c,rate) for rate in [0,.12,.15,.20]},
+            'a_required_terminal_pe_at_base_profit':{str(rate):required_pe(base[0],f['a_price'],c,rate) for rate in [0,.12,.15,.18,.20]},
             'a_required_terminal_pe_at_downside_profit_for_break_even':required_pe(down,f['a_price'],c,0),
             'downside_break_even_equity':price_for_return(down,0,c)*shares,
             'base_two_year_delay_a_annual_return':[irr(delayed_realization(z),f['a_price'],c) for z in base],
             'base_dividend_tax_20pct_a_annual_return':[irr(z,f['a_price'],c,.2) for z in base],
             'sensitivities':sensitivities,'margin_and_multiple_grid':sensitivity_grid,
+            'revision_comparison':revision_comparison(x),'weighted_stress':weighted_stress(x),
             'verification':'现金/组合/股份守恒、利息与偿债口径、PE与经营分离、IRR和盈亏平衡逆推、单位及延迟、概率归一和期望现金流检查通过；预测未经独立审阅'}
+
+
+def concise(z):
+    return {'buy':z['reasonable_buy']['entry_price'],'sell':z['reasonable_sell']['price'],
+            'terminal_equity':z['terminal_equity'],'terminal_parent_operating_profit':z['rows'][-1]['parent_operating_net_income'],
+            'irr':z['a_irr_of_expected_cashflows']}
+
+
+def revision_comparison(x):
+    """按固定顺序归因；各项相互作用归入后一步，不伪装成唯一归因。"""
+    old=deepcopy(x)
+    for path,value in x['revision_baseline']['original_input_overrides']:
+        dest=old
+        for key in path[:-1]:dest=dest[key]
+        dest[path[-1]]=deepcopy(value)
+    start=concise(probability_weighted_forecast(old))
+    assert isclose(start['buy'],x['revision_baseline']['buy'],abs_tol=1e-9)
+    assert isclose(start['sell'],x['revision_baseline']['sell'],abs_tol=1e-9)
+    steps=[dict(step='原模型复现',**start)]
+    groups=[('日期经过',[['research_date']]),
+            ('股份现金归属与剩余期间', [['facts','pending_cancel'],['facts','buyback_after_oct31'],
+                ['common','remaining_buyback'],['common','buyback_deduction_at_parent'],['common','first_period_fraction']]),
+            ('销量修订', [['scenarios',s,'battery_gwh'] for s in x['scenarios']]),
+            ('毛利费用税费推导', [['scenarios',s,'core_nopat_margin'] for s in x['scenarios']]),
+            ('折旧与扩产支出', [['scenarios',s,k] for s in x['scenarios'] for k in ['da','growth_capex']]),
+            ('营运资金', [['scenarios',s,'working_capital_increase'] for s in x['scenarios']]),
+            ('联合概率补全', [['probability_assessment','cases']])]
+    for label,paths in groups:
+        for path in paths:
+            src,dst=x,old
+            for key in path[:-1]:src,dst=src[key],dst[key]
+            dst[path[-1]]=deepcopy(src[path[-1]])
+        z=concise(probability_weighted_forecast(old))
+        z['buy_change']=z['buy']-steps[-1]['buy']
+        steps.append(dict(step=label,**z))
+    expected=probability_weighted_forecast(x)
+    assert isclose(steps[-1]['buy'],expected['reasonable_buy']['entry_price'],abs_tol=1e-9)
+    old['facts']['a_price']=x['facts']['a_price']
+    steps.append(dict(step='仅更新参考行情，不改估值',**concise(probability_weighted_forecast(old))))
+    return steps
+
+
+def weighted_stress(x):
+    out={}
+    for shift in [-.01,.01]:
+        y=deepcopy(x)
+        for s in y['scenarios'].values():s['core_nopat_margin']=[v+shift for v in s['core_nopat_margin']]
+        out[f'nopat_margin_{shift:+.2f}']=concise(probability_weighted_forecast(y))
+    for field in ['growth_capex','working_capital_increase']:
+        y=deepcopy(x)
+        for s in y['scenarios'].values():s[field]=[v+100 for v in s[field]]
+        out[field+'_plus100_each_year']=concise(probability_weighted_forecast(y))
+    for delta in [-200,200]:
+        y=deepcopy(x);y['common']['opening_cash_adjustment']=delta
+        out[f'parent_cash_{delta:+}']=concise(probability_weighted_forecast(y))
+    for yield_ in [0,.04]:
+        y=deepcopy(x);y['common']['portfolio_cash_yield']=yield_
+        out[f'portfolio_cash_yield_{yield_}']=concise(probability_weighted_forecast(y))
+    y=deepcopy(x);y['common']['dividend_tax']=.2
+    out['dividend_tax20pct']=concise(probability_weighted_forecast(y))
+    z=probability_weighted_forecast(x);delayed=delayed_realization(z,2)
+    out['terminal_delay2years']={'buy':price_for_return(delayed,.18,x['common']),
+        'irr_at_reference':irr(delayed,x['facts']['a_price'],x['common']),
+        'irr_at_original_buy':irr(delayed,z['reasonable_buy']['entry_price'],x['common'])}
+    return out
 
 
 if __name__=='__main__':

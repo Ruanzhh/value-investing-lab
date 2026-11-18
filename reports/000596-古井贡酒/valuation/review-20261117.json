@@ -1,0 +1,146 @@
+{
+  "status": "原时点条件压力测试，不是新正式估值；金额亿元，每股元",
+  "original_pricing_date": "2026-11-07",
+  "original_price": 105.01,
+  "original": {
+    "buy": 83.42456917888376,
+    "sell": 120.28825513989902,
+    "irr_at_original_price": 0.08950654335099661,
+    "terminal_equity": 663.3743483922345,
+    "annual_total_profit": [
+      24.98314315536876,
+      28.33228323599549,
+      32.12800877300958
+    ]
+  },
+  "tests": {
+    "all_selling_ratio_plus_0.02": {
+      "buy": 77.34148025866484,
+      "sell": 111.44795202000458,
+      "irr_at_original_price": 0.06118924891348965,
+      "terminal_equity": 613.8323832412557,
+      "annual_total_profit": [
+        22.65814828489184,
+        25.882043370797447,
+        29.52541095884582
+      ]
+    },
+    "all_selling_ratio_plus_0.04": {
+      "buy": 71.25839133844592,
+      "sell": 102.60764890011012,
+      "irr_at_original_price": 0.03132280632650264,
+      "terminal_equity": 564.2904180902767,
+      "annual_total_profit": [
+        20.333153414414927,
+        23.43180350559942,
+        26.922813144682067
+      ]
+    },
+    "ordinary_recovery_selling_ratio_stays33pct": {
+      "buy": 79.85245461859081,
+      "sell": 115.06773929007822,
+      "irr_at_original_price": 0.07298194055087281,
+      "terminal_equity": 632.8226670706047,
+      "annual_total_profit": [
+        24.98314315536876,
+        27.587362970931682,
+        30.51797288423188
+      ]
+    },
+    "fy2026_profit_only_23.1": {
+      "buy": 83.37870704168603,
+      "sell": 120.27790372407176,
+      "irr_at_original_price": 0.08941523177365662,
+      "terminal_equity": 664.3010121630426,
+      "annual_total_profit": [
+        24.986507648443197,
+        28.343258693680852,
+        32.13904405320231
+      ]
+    },
+    "fy2026_profit_and_equal_cash_loss_23.1": {
+      "buy": 83.21151371802074,
+      "sell": 120.03379776143193,
+      "irr_at_original_price": 0.0886543948717392,
+      "terminal_equity": 662.8707172289055,
+      "annual_total_profit": [
+        24.96971921608879,
+        28.326259820935896,
+        32.12201093542102
+      ]
+    },
+    "fy2026_profit_only_20": {
+      "buy": 83.27715516646244,
+      "sell": 120.25498273188285,
+      "irr_at_original_price": 0.08921378403325131,
+      "terminal_equity": 666.352910512689,
+      "annual_total_profit": [
+        24.99395759739373,
+        28.367561492841293,
+        32.1634793164862
+      ]
+    },
+    "fy2026_profit_and_equal_cash_loss_20": {
+      "buy": 82.73974805468116,
+      "sell": 119.47035642339765,
+      "irr_at_original_price": 0.08677017614544924,
+      "terminal_equity": 661.7555339386766,
+      "annual_total_profit": [
+        24.939994779111707,
+        28.312922259018215,
+        32.10873000933202
+      ]
+    },
+    "all_annual_nwc_increase_plus5": {
+      "buy": 81.66755906808031,
+      "sell": 117.71978160267133,
+      "irr_at_original_price": 0.08144116678242452,
+      "terminal_equity": 648.176403993931,
+      "annual_total_profit": [
+        24.953305507470287,
+        28.241947575332787,
+        31.97723292990687
+      ]
+    },
+    "all_annual_growth_capex_plus5": {
+      "buy": 81.66755906808031,
+      "sell": 117.71978160267133,
+      "irr_at_original_price": 0.08144116678242452,
+      "terminal_equity": 648.176403993931,
+      "annual_total_profit": [
+        24.953305507470287,
+        28.241947575332787,
+        31.97723292990687
+      ]
+    },
+    "interim_dividend_delayed_90days": {
+      "buy": 83.3876786575771,
+      "sell": 120.28144545151987,
+      "irr_at_original_price": 0.08944153095591079,
+      "terminal_equity": 663.3806355790585,
+      "annual_total_profit": [
+        24.998815747012486,
+        28.332436493752276,
+        32.128084034719386
+      ]
+    }
+  },
+  "broker_2026_2028_parent_profit": {
+    "guotai_haitong_eps_times_shares": [
+      23.099819999999998,
+      31.66314,
+      37.160579999999996
+    ],
+    "china_merchants_eps_times_shares": [
+      23.099819999999998,
+      26.218559999999997,
+      27.487199999999998
+    ],
+    "soochow": [
+      24.3,
+      26.5,
+      29.6
+    ]
+  },
+  "time_passage_only_buy_nov17": 83.80346866439649
+}
