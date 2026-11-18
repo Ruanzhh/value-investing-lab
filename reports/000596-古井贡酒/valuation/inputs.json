@@ -6,6 +6,7 @@
   "units": "财务金额为亿元；股份为亿股；每股金额为元",
   "return_definition": "IRR_of_probability_weighted_per_share_cashflows",
   "target_return": 0.18,
+  "sell_target_return": 0.04,
   "shares": 5.286,
   "a_shares": 4.086,
   "b_shares": 1.2,

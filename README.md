@@ -29,18 +29,19 @@
 - **03 · 接受挑战**
   最强反方解释是什么？哪些证据出现后，必须改变判断？
 
-> **方法与基建**：[`value-investing`](skills/value-investing/SKILL.md) 维护投资理念与[量化原则](skills/value-investing/references/quantitative-principles.md)；[`deep-valuation`](skills/deep-valuation/SKILL.md) 指导取证、挑战与报告产出；[`portfolio-decision`](skills/portfolio-decision/SKILL.md) 根据已有研究、个人持仓与可投资现金形成组合建议。
+> **方法与基建**：[`value-investing`](skills/value-investing/SKILL.md) 维护投资理念与[量化原则](skills/value-investing/references/quantitative-principles.md)；[`deep-valuation`](skills/deep-valuation/SKILL.md) 指导取证、挑战与报告产出；[`valuation-review`](skills/valuation-review/SKILL.md) 审查已有研究的证据、分歧与估值推导；[`portfolio-decision`](skills/portfolio-decision/SKILL.md) 根据已有研究、个人持仓与可投资现金形成组合建议。
 
 ## 公司研究
 
-**按三年预测、18%目标年化反推，金额均为人民币，采用报告中的税费假设。** 点击公司查看完整判断、证据与计算。
+**买入价按18%年化、卖出价按4%持有年化反推，共用各报告的三年预测与税费假设。** 市值单位为人民币亿元，股价为元/股；点击公司查看依据与风险。
 
-| 公司 · A股代码 | 合理买入市值（亿元） | 对应A股股价（元/股） | 研究日期 |
-| :--- | ---: | ---: | :--- |
-| [**宁德时代 · 300750**](reports/300750-宁德时代/README.md) | 约10,945 | 约239.01 | 2026-11-07 |
-| [**古井贡酒 · 000596**](reports/000596-古井贡酒/README.md) | 440.98 | 83.42 | 2026-11-07 |
+| 公司 · A股代码 | 买入市值 | 买入股价 | 卖出市值 | 卖出股价 | 研究日期 |
+| :--- | ---: | ---: | ---: | ---: | :--- |
+| [**宁德时代 · 300750**](reports/300750-宁德时代/README.md) | 10,524.43 | 229.85 | 15,225.62 | 332.52 | 2026-11-17 |
+| [**古井贡酒 · 000596**](reports/000596-古井贡酒/README.md) | 440.98 | 83.42 | 635.84 | 120.29 | 2026-11-07 |
+| [**迈瑞医疗 · 300760**](reports/300760-迈瑞医疗/README.md) | 1,785.62 | 147.35 | 2,586.92 | 213.48 | 2026-11-17 |
 
-<sub>市值为对应A股价格乘全部普通股股数的等价市值，不是A/H或A/B分别报价后的实际总市值。数字沿用研究日测算，不随行情或日期自动更新；达到该价格不等于可以直接买入。</sub>
+<sub>均为A股口径，市值＝对应股价×原模型计价股数：宁德时代扣除员工库存股及待注销股份，古井贡酒和迈瑞医疗采用全部普通股；不等于A/H或A/B分别报价后的实际总市值。价格对应各自研究日，不随行情或日期自动更新。卖出价表示继续持有的模型年化降至4%，达到后须复核研究及税费，并非到期目标价或自动交易指令。</sub>
 
 ## 人机协作工作流
 

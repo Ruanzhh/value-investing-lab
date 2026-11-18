@@ -1,0 +1,444 @@
+{
+  "research_date": "2026-11-18",
+  "forecast_dates": [
+    "2027-11-17",
+    "2028-11-17",
+    "2029-11-17"
+  ],
+  "currency": "CNY",
+  "amount_unit": "亿元",
+  "shares_unit": "亿股",
+  "facts": {
+    "reference_price": 393.0,
+    "price_date": "2026-11-17",
+    "registered_shares": 11.77909641,
+    "treasury_shares": 0.05653063,
+    "awards_shares": 0.1474697,
+    "cash_equivalents": 534.8946712097,
+    "post_balance_dividend": 14.067078936,
+    "financial_assets": 63.6778984051,
+    "redemption_book_liability": 50.6300063538,
+    "ordinary_debt": 18.5616607235,
+    "revenue_2025": 382.3993564067,
+    "parent_profit_2025": 107.9725430045,
+    "cfo_2025": 108.9612616003,
+    "capex_2025": 27.5999469591,
+    "revenue_9m2026": 695.4705772209,
+    "parent_profit_9m2026": 222.3793900675,
+    "group_profit_9m2026": 240.9540913858,
+    "cfo_9m2026": 80.0844419449,
+    "capex_9m2026": 91.6087556449,
+    "cfo_h12026": 17.9967483202,
+    "operating_costs_9m2026_ex_finance": [
+      372.8089170447,
+      2.4069625377,
+      2.3123792156,
+      11.2494797559,
+      18.6268159025,
+      0.2084336343,
+      0.1390437883
+    ],
+    "interest_expense_9m2026": 0.4555926939
+  },
+  "common": {
+    "revenue_anchor_2026": 1050,
+    "opening_nwc": 310,
+    "nci_cash_exclusion": 20,
+    "operating_cash_buffer": 60,
+    "old_equipment_payable_reserve": 45,
+    "old_warranty_reserve": 3.5,
+    "opening_parent_cash_adjustment": 0,
+    "portfolio_parent_fraction": 0.9,
+    "cash_yield_aftertax": 0.015,
+    "portfolio_yield_aftertax": 0.01,
+    "tax_rate": 0.15,
+    "borrowing_rate": 0.035,
+    "parent_other_ownership": 0.995,
+    "terahop_ownership_after_warrant": 0.6325071496663489,
+    "award_proceeds_price_proxy": 44,
+    "awards_vesting_fractions": [
+      0.4,
+      0.4,
+      0.2
+    ],
+    "liquidity_reserve": 55.3247749,
+    "redemption_annual_growth": 0.03,
+    "redemption_covered_stake": 0.17082936129647283,
+    "redemption_cost_multiplier": 1.0,
+    "capex_funding_fraction_override": null,
+    "entry_fee": 0.001,
+    "exit_fee": 0.001,
+    "dividend_tax": 0.0,
+    "buy_return": 0.18,
+    "sell_return": 0.04,
+    "first_period_fraction": 0.9972602739726028
+  },
+  "scenarios": {
+    "normal": {
+      "volume_growth": [
+        0.5,
+        0.35,
+        0.25
+      ],
+      "mix_asp_change": [
+        0.08,
+        0,
+        -0.03
+      ],
+      "gross_margin": [
+        0.45,
+        0.43,
+        0.41
+      ],
+      "cash_and_recurring_opex_rate": [
+        0.06,
+        0.065,
+        0.07
+      ],
+      "fx_cost_rate": [
+        0.007,
+        0.007,
+        0.007
+      ],
+      "impairment_rate": [
+        0.004,
+        0.006,
+        0.008
+      ],
+      "terahop_profit_share": [
+        0.3,
+        0.35,
+        0.4
+      ],
+      "da": [
+        30,
+        50,
+        70
+      ],
+      "maintenance_capex": [
+        35,
+        50,
+        65
+      ],
+      "growth_capex": [
+        180,
+        220,
+        220
+      ],
+      "nwc_revenue_ratio": [
+        0.3,
+        0.3,
+        0.29
+      ],
+      "other_investment_cash": [
+        5,
+        5,
+        5
+      ],
+      "portfolio_realization": 1,
+      "payout": 0.2
+    },
+    "upside": {
+      "volume_growth": [
+        0.75,
+        0.5,
+        0.3
+      ],
+      "mix_asp_change": [
+        0.12,
+        0.02,
+        0
+      ],
+      "gross_margin": [
+        0.46,
+        0.45,
+        0.44
+      ],
+      "cash_and_recurring_opex_rate": [
+        0.058,
+        0.06,
+        0.062
+      ],
+      "fx_cost_rate": [
+        0.005,
+        0.005,
+        0.005
+      ],
+      "impairment_rate": [
+        0.003,
+        0.004,
+        0.005
+      ],
+      "terahop_profit_share": [
+        0.35,
+        0.45,
+        0.5
+      ],
+      "da": [
+        35,
+        65,
+        95
+      ],
+      "maintenance_capex": [
+        40,
+        60,
+        85
+      ],
+      "growth_capex": [
+        250,
+        330,
+        370
+      ],
+      "nwc_revenue_ratio": [
+        0.3,
+        0.3,
+        0.29
+      ],
+      "other_investment_cash": [
+        8,
+        8,
+        8
+      ],
+      "portfolio_realization": 1,
+      "payout": 0.2
+    },
+    "cycle": {
+      "volume_growth": [
+        0.15,
+        -0.05,
+        0.15
+      ],
+      "mix_asp_change": [
+        -0.01,
+        -0.05,
+        -0.03
+      ],
+      "gross_margin": [
+        0.38,
+        0.32,
+        0.32
+      ],
+      "cash_and_recurring_opex_rate": [
+        0.08,
+        0.09,
+        0.09
+      ],
+      "fx_cost_rate": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "impairment_rate": [
+        0.015,
+        0.025,
+        0.02
+      ],
+      "terahop_profit_share": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "da": [
+        30,
+        42,
+        48
+      ],
+      "maintenance_capex": [
+        35,
+        40,
+        45
+      ],
+      "growth_capex": [
+        115,
+        80,
+        70
+      ],
+      "nwc_revenue_ratio": [
+        0.35,
+        0.38,
+        0.34
+      ],
+      "other_investment_cash": [
+        3,
+        2,
+        2
+      ],
+      "portfolio_realization": 0.8,
+      "payout": 0.1
+    },
+    "access": {
+      "volume_growth": [
+        0.1,
+        -0.2,
+        -0.05
+      ],
+      "mix_asp_change": [
+        -0.15,
+        -0.08,
+        -0.08
+      ],
+      "gross_margin": [
+        0.3,
+        0.22,
+        0.2
+      ],
+      "cash_and_recurring_opex_rate": [
+        0.1,
+        0.12,
+        0.12
+      ],
+      "fx_cost_rate": [
+        0.015,
+        0.015,
+        0.015
+      ],
+      "impairment_rate": [
+        0.04,
+        0.04,
+        0.025
+      ],
+      "terahop_profit_share": [
+        0.15,
+        0.1,
+        0.1
+      ],
+      "da": [
+        30,
+        40,
+        45
+      ],
+      "maintenance_capex": [
+        35,
+        35,
+        35
+      ],
+      "growth_capex": [
+        95,
+        35,
+        15
+      ],
+      "nwc_revenue_ratio": [
+        0.5,
+        0.58,
+        0.6
+      ],
+      "other_investment_cash": [
+        2,
+        1,
+        1
+      ],
+      "portfolio_realization": 0.5,
+      "payout": 0
+    },
+    "limited": {
+      "volume_growth": [
+        0.5,
+        0.35,
+        0.1
+      ],
+      "mix_asp_change": [
+        0.08,
+        0,
+        -0.08
+      ],
+      "gross_margin": [
+        0.45,
+        0.43,
+        0.36
+      ],
+      "cash_and_recurring_opex_rate": [
+        0.06,
+        0.065,
+        0.07
+      ],
+      "fx_cost_rate": [
+        0.007,
+        0.007,
+        0.007
+      ],
+      "impairment_rate": [
+        0.004,
+        0.006,
+        0.008
+      ],
+      "terahop_profit_share": [
+        0.3,
+        0.35,
+        0.4
+      ],
+      "da": [
+        30,
+        50,
+        70
+      ],
+      "maintenance_capex": [
+        35,
+        50,
+        65
+      ],
+      "growth_capex": [
+        180,
+        220,
+        220
+      ],
+      "nwc_revenue_ratio": [
+        0.3,
+        0.3,
+        0.35
+      ],
+      "other_investment_cash": [
+        5,
+        5,
+        5
+      ],
+      "portfolio_realization": 1,
+      "payout": 0.2
+    }
+  },
+  "cases": [
+    {
+      "scenario": "normal",
+      "probability": 0.21,
+      "pe": 15,
+      "label": "正常增长、优势延续"
+    },
+    {
+      "scenario": "normal",
+      "probability": 0.14,
+      "pe": 10,
+      "label": "正常增长、倍数压缩"
+    },
+    {
+      "scenario": "upside",
+      "probability": 0.1,
+      "pe": 18,
+      "label": "高速增长、溢价兑现"
+    },
+    {
+      "scenario": "upside",
+      "probability": 0.05,
+      "pe": 12,
+      "label": "高速增长、普通倍数"
+    },
+    {
+      "scenario": "cycle",
+      "probability": 0.2,
+      "pe": 9,
+      "label": "资本开支周期与技术竞争受损"
+    },
+    {
+      "scenario": "access",
+      "probability": 0.15,
+      "pe": 7,
+      "label": "商业准入严重受限"
+    },
+    {
+      "scenario": "limited",
+      "probability": 0.15,
+      "pe": 10,
+      "label": "后期新型号部分受限"
+    }
+  ],
+  "assumption_status": "所有未来量价、利润率、投入、归属与联合概率均为可挑战的研究假设，非管理层指引；详细依据见README。",
+  "model_boundary": "2026全年1050亿元为9月累计加Q4假设的收入锚；未来三期为滚动年度代理，非精确自然年；11月18日起至原2027年11月17日的首期364天：当期利润及期间经营投入按364/365，期末营运资金仍按收入目标重建，不将存量资金需求按天缩减；其后两期年度现金预算不变。TeraHop回购义务与换股只作明确合约不完备下的条件测算。"
+}
