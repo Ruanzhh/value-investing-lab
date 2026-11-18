@@ -117,6 +117,15 @@
       "entry_price": 239.01460815544394,
       "entry_equity": 10945.255042843819,
       "downside_cumulative_return": -0.5019829610872681
+    },
+    "reasonable_sell": {
+      "target_return": 0.04,
+      "pricing_date": "2026-11-07",
+      "terminal_date": "2029-11-07",
+      "price": 347.2009665720309,
+      "equivalent_market_cap": 15899.459700727975,
+      "net_sale_proceeds": 346.8537656054589,
+      "return_metric": "irr_of_expected_cashflows_on_net_sale_proceeds"
     }
   },
   "probability_weight_sensitivities": [

@@ -276,6 +276,7 @@
       0.2
     ],
     "selected_target_return": 0.18,
+    "sell_target_return": 0.04,
     "user_risk_tolerance": null,
     "status": "默认以18%目标年化和概率加权现金流反推合理买入价；其他收益率仅供敏感性对照，不追加五折",
     "target_return_source": "用户指定的默认目标年化；后续研究沿用，除非用户另行指定"

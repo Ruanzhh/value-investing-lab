@@ -120,6 +120,15 @@ def run(d):
                     a_price=price, weighted_net_cashflows=flows,
                     a_buy_price_irr=irr(buy*(1+d['tax_fees']['a_buy']),flows,d['research_date']))
     assert abs(expected['a_buy_price_irr']-d['target_return'])<1e-9
+    # 将未来现金流折至研究日，再还原现在卖出前的报价。
+    sell_pv=pv(flows,d['research_date'],d['sell_target_return'])
+    sell_price=sell_pv/(1-d['tax_fees']['a_sell'])
+    expected['reasonable_sell']=dict(target_return=d['sell_target_return'],pricing_date=d['research_date'],
+                                    terminal_date=d['terminal_date'],price=sell_price,
+                                    equivalent_market_cap=sell_price*d['shares'],net_sale_proceeds=sell_pv,
+                                    return_metric='irr_of_expected_cashflows_on_net_sale_proceeds')
+    assert abs(irr(sell_price*(1-d['tax_fees']['a_sell']),flows,d['research_date'])-d['sell_target_return'])<1e-9
+
     for p in paths:
         fl=flows_for(d,p)
         p['irr_at_a_price']=irr(price*(1+d['tax_fees']['a_buy']),fl,d['research_date'])

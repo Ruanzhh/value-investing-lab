@@ -189,6 +189,18 @@ def probability_weighted_forecast(x, cases=None):
                                 'source':x['decision_policy']['target_return_source'],
                                 'entry_price':buy_price,'entry_equity':buy_price*shares}
     assert isclose(irr(weighted,buy_price,c),target,abs_tol=1e-10)
+    # 继续持有的机会成本是现在卖出的净额，不能扣作新买入费用。
+    sell_rate=x['decision_policy']['sell_target_return']
+    sell_pv=price_for_return(weighted,sell_rate,c)*(1+c['entry_fee'])
+    sell_price=sell_pv/(1-c['exit_fee'])
+    weighted['reasonable_sell']={'target_return':sell_rate,'pricing_date':x['research_date'],
+                                'terminal_date':weighted['terminal_date'],
+                                'price':sell_price,'equivalent_market_cap':sell_price*shares,
+                                'net_sale_proceeds':sell_pv,
+                                'return_metric':'irr_of_expected_cashflows_on_net_sale_proceeds'}
+    holding_c=dict(c,entry_fee=0)
+    assert isclose(irr(weighted,sell_price*(1-c['exit_fee']),holding_c),sell_rate,abs_tol=1e-10)
+
     # 期望现金流现值必须等于情景现值的加权和；平均IRR没有这一性质。
     for rate in [0,.12,.15,.20]:
         assert isclose(price_for_return(weighted,rate,c),

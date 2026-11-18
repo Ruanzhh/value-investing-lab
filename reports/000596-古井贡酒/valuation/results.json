@@ -58,7 +58,16 @@
         125.39607433097252
       ]
     ],
-    "a_buy_price_irr": 0.17999999999999983
+    "a_buy_price_irr": 0.17999999999999983,
+    "reasonable_sell": {
+      "target_return": 0.04,
+      "pricing_date": "2026-11-07",
+      "terminal_date": "2029-11-07",
+      "price": 120.28825513989902,
+      "equivalent_market_cap": 635.8437166695062,
+      "net_sale_proceeds": 120.1920245357871,
+      "return_metric": "irr_of_expected_cashflows_on_net_sale_proceeds"
+    }
   },
   "b_share_conditional": {
     "relative_exit_price": 0.44737403294924294,
