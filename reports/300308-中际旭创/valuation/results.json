@@ -41,34 +41,34 @@
       {
         "date": "2029-11-17",
         "years": 2.9979466119096507,
-        "revenue": 2341.59128634375,
-        "parent_operating_profit": 522.800268081847,
-        "fcfe": 296.97950327970966,
-        "dividend": 101.60147577575678,
-        "dps": 8.559492172280917,
+        "revenue": 2272.5285600937505,
+        "parent_operating_profit": 493.9907130221891,
+        "fcfe": 267.4160252740747,
+        "dividend": 95.8395647638252,
+        "dps": 8.074075677811301,
         "capex": 241.25,
-        "change_nwc": 89.45874907987499,
-        "net_reinvestment": 269.358749079875
+        "change_nwc": 90.34571426737502,
+        "net_reinvestment": 270.24571426737504
       }
     ],
-    "terminal_equity": 7862.545731593823,
-    "terminal_price": 662.3860345524278,
-    "terminal_operating_value": 7099.772469342463,
-    "terminal_assets": 762.77326225136,
-    "terminal_operating_profit": 522.8538733649781,
-    "terminal_pre_redemption_profit": 522.800268081847,
+    "terminal_equity": 7256.651469649995,
+    "terminal_price": 611.3420201546015,
+    "terminal_operating_value": 6517.679774392338,
+    "terminal_assets": 738.9716952576566,
+    "terminal_operating_profit": 494.04431830532025,
+    "terminal_pre_redemption_profit": 493.9907130221891,
     "redemption_net_value_loss": 7.923479261027065,
-    "buy_price": 418.294050901804,
-    "sell_price": 609.4084969936705,
-    "buy_equivalent_market_cap": 4903.4795270790655,
-    "sell_equivalent_market_cap": 7143.831192899234,
-    "reference_irr": 0.2051338294988977
+    "buy_price": 386.9833758014109,
+    "sell_price": 563.5948991352194,
+    "buy_equivalent_market_cap": 4536.4380785984995,
+    "sell_equivalent_market_cap": 6606.778278385074,
+    "reference_irr": 0.17386005272001215
   },
   "cases": [
     {
       "label": "正常增长、优势延续",
       "scenario": "normal",
-      "probability": 0.3,
+      "probability": 0.21,
       "pe": 15,
       "research_date": "2026-11-18",
       "terminal_date": "2029-11-17",
@@ -164,14 +164,14 @@
       "redemption_acquired_profit": 0,
       "redemption_net_value_loss": 0,
       "reference_irr": 0.33634256356420067,
-      "buy_irr": 0.3084071009785555,
+      "buy_irr": 0.34334600861109477,
       "reference_cumulative_return": 1.3596918739163728,
-      "buy_cumulative_return": 1.2170023801434255
+      "buy_cumulative_return": 1.3963791843219369
     },
     {
       "label": "正常增长、倍数压缩",
       "scenario": "normal",
-      "probability": 0.2,
+      "probability": 0.14,
       "pe": 10,
       "research_date": "2026-11-18",
       "terminal_date": "2029-11-17",
@@ -267,9 +267,9 @@
       "redemption_acquired_profit": 0,
       "redemption_net_value_loss": 0,
       "reference_irr": 0.18759715669702792,
-      "buy_irr": 0.16270692652373564,
+      "buy_irr": 0.19383769085021696,
       "reference_cumulative_return": 0.6608362798021439,
-      "buy_cumulative_return": 0.5604062657717985
+      "buy_cumulative_return": 0.6866581325632823
     },
     {
       "label": "高速增长、溢价兑现",
@@ -370,9 +370,9 @@
       "redemption_acquired_profit": 0,
       "redemption_net_value_loss": 0,
       "reference_irr": 0.6370010827361836,
-      "buy_irr": 0.6027882733274514,
+      "buy_irr": 0.6455782184511627,
       "reference_cumulative_return": 3.3152811742249737,
-      "buy_cumulative_return": 3.054338085407135
+      "buy_cumulative_return": 3.382373010102393
     },
     {
       "label": "高速增长、普通倍数",
@@ -473,9 +473,9 @@
       "redemption_acquired_profit": 0,
       "redemption_net_value_loss": 0,
       "reference_irr": 0.4463204837294966,
-      "buy_irr": 0.41601256411508325,
+      "buy_irr": 0.4539193341360047,
       "reference_cumulative_return": 1.9784069214480184,
-      "buy_cumulative_return": 1.7983040103141548
+      "buy_cumulative_return": 2.024713704316194
     },
     {
       "label": "资本开支周期与技术竞争受损",
@@ -576,9 +576,9 @@
       "redemption_acquired_profit": 0,
       "redemption_net_value_loss": 0,
       "reference_irr": -0.20207357797887965,
-      "buy_irr": -0.2186087730350757,
+      "buy_irr": -0.1979294633739041,
       "reference_cumulative_return": -0.4889849517142987,
-      "buy_cumulative_return": -0.5198857991326635
+      "buy_cumulative_return": -0.4810399450354156
     },
     {
       "label": "商业准入严重受限",
@@ -679,143 +679,293 @@
       "redemption_acquired_profit": 0.3573685542078626,
       "redemption_net_value_loss": 52.82319507351377,
       "reference_irr": -0.5270989419104941,
-      "buy_irr": -0.5368364345759407,
+      "buy_irr": -0.5246590505367532,
       "reference_cumulative_return": -0.89407982734923,
-      "buy_cumulative_return": -0.9004847719875304
+      "buy_cumulative_return": -0.8924330334202412
+    },
+    {
+      "label": "后期新型号部分受限",
+      "scenario": "limited",
+      "probability": 0.15,
+      "pe": 10,
+      "research_date": "2026-11-18",
+      "terminal_date": "2029-11-17",
+      "terminal_years": 2.9979466119096507,
+      "rows": [
+        {
+          "date": "2027-11-17",
+          "years": 0.9965776865160849,
+          "revenue": 1701.0,
+          "ebit_margin": 0.379,
+          "group_aftertax_interest": 0.5522094065241251,
+          "group_operating_profit": 547.4249405934759,
+          "parent_fraction": 0.8862521448999047,
+          "parent_operating_profit": 485.15652777267087,
+          "nwc": 510.29999999999995,
+          "change_nwc": 200.29999999999995,
+          "capex": 215,
+          "da": 30,
+          "net_reinvestment": 390.29999999999995,
+          "period_fraction": 0.9972602739726028,
+          "period_net_reinvestment": 389.7794520547945,
+          "fcfe": 138.38445638469926,
+          "financial_cash": 6.440321778053453,
+          "dividend": 98.05353071684478,
+          "dps": 8.32263159397644,
+          "shares": 11.78155366,
+          "cash": 441.194306439608,
+          "portfolio": 57.81010856459,
+          "portfolio_sale": 0,
+          "award_proceeds": 2.59546672
+        },
+        {
+          "date": "2028-11-17",
+          "years": 1.998631074606434,
+          "revenue": 2296.3500000000004,
+          "ebit_margin": 0.352,
+          "group_aftertax_interest": 0.5522094065241251,
+          "group_operating_profit": 686.515710593476,
+          "parent_fraction": 0.8681275023832221,
+          "parent_operating_profit": 595.9831691843573,
+          "nwc": 688.9050000000001,
+          "change_nwc": 178.60500000000013,
+          "capex": 270,
+          "da": 50,
+          "net_reinvestment": 403.60500000000013,
+          "period_fraction": 1,
+          "period_net_reinvestment": 403.60500000000013,
+          "fcfe": 245.60256858497678,
+          "financial_cash": 7.19601568224002,
+          "dividend": 120.63583697331947,
+          "dps": 10.188371584676647,
+          "shares": 11.84054154,
+          "cash": 575.9525204535054,
+          "portfolio": 57.81010856459,
+          "portfolio_sale": 0,
+          "award_proceeds": 2.59546672
+        },
+        {
+          "date": "2029-11-17",
+          "years": 2.9979466119096507,
+          "revenue": 2323.906200000001,
+          "ebit_margin": 0.27499999999999997,
+          "group_aftertax_interest": 0.5522094065241251,
+          "group_operating_profit": 542.6608648434759,
+          "parent_fraction": 0.8500028598665396,
+          "parent_operating_profit": 461.26328705460423,
+          "nwc": 813.3671700000002,
+          "change_nwc": 124.46217000000013,
+          "capex": 285,
+          "da": 70,
+          "net_reinvestment": 344.4621700000001,
+          "period_fraction": 1,
+          "period_net_reinvestment": 344.4621700000001,
+          "fcfe": 168.46945743877,
+          "financial_cash": 9.21738889244848,
+          "dividend": 94.09613518941055,
+          "dps": 7.927199151843693,
+          "shares": 11.87003548,
+          "cash": 660.8409649553133,
+          "portfolio": 57.81010856459,
+          "portfolio_sale": 0,
+          "award_proceeds": 1.29773336
+        }
+      ],
+      "terminal_operating_profit": 461.26328705460423,
+      "terminal_pre_redemption_profit": 461.26328705460423,
+      "terminal_operating_value": 4612.632870546042,
+      "terminal_assets": 718.6510735199033,
+      "terminal_equity": 5331.283944065945,
+      "terminal_price": 449.1379956739561,
+      "redemption_exercised": false,
+      "redemption_settlement": 0,
+      "redemption_acquired_profit": 0,
+      "redemption_net_value_loss": 0,
+      "reference_irr": 0.0663492928860977,
+      "buy_irr": 0.07196893109622005,
+      "reference_cumulative_return": 0.20776694046101207,
+      "buy_cumulative_return": 0.22654469747753758
     }
   ],
   "stress": {
     "gross_margin_-0.03": {
-      "buy_price": 377.51648083793367,
-      "sell_price": 549.9585043869763,
-      "reference_irr": 0.16408400980159932,
-      "terminal_equity": 7092.390142426567,
-      "terminal_operating_profit": 472.0295823862466
+      "buy_price": 348.4389138626291,
+      "sell_price": 507.41237736041296,
+      "reference_irr": 0.13294918161590152,
+      "terminal_equity": 6529.820523710647,
+      "terminal_operating_profit": 444.71696695456706
     },
     "gross_margin_+0.03": {
-      "buy_price": 459.07162096567424,
-      "sell_price": 668.8584896003647,
-      "reference_irr": 0.2436241370819422,
-      "terminal_equity": 8632.70132076108,
-      "terminal_operating_profit": 573.6781643437098
+      "buy_price": 425.52783774019264,
+      "sell_price": 619.777420910026,
+      "reference_irr": 0.21216487320554822,
+      "terminal_equity": 7983.482415589345,
+      "terminal_operating_profit": 543.3716696560735
     },
     "nwc_revenue_ratio_+0.05": {
-      "buy_price": 412.93957091160513,
-      "sell_price": 601.5756350114602,
-      "reference_irr": 0.19990128457295875,
-      "terminal_equity": 7758.374638785734,
-      "terminal_operating_profit": 522.8538733649781
+      "buy_price": 381.7791460195182,
+      "sell_price": 555.9818823846886,
+      "reference_irr": 0.16849653103035978,
+      "terminal_equity": 7155.41555258304,
+      "terminal_operating_profit": 494.04431830532025
     },
     "growth_capex_+50": {
-      "buy_price": 411.41232069951354,
-      "sell_price": 599.34023340736,
-      "reference_irr": 0.19840047989280907,
-      "terminal_equity": 7728.425056039693,
-      "terminal_operating_profit": 522.8538733649781
+      "buy_price": 380.10164559912045,
+      "sell_price": 553.5266355489089,
+      "reference_irr": 0.16675699558941492,
+      "terminal_equity": 7122.5307940958655,
+      "terminal_operating_profit": 494.04431830532025
     },
     "terahop_profit_share_+0.1": {
-      "buy_price": 401.2997199073809,
-      "sell_price": 584.6504806094136,
-      "reference_irr": 0.18836096199403018,
-      "terminal_equity": 7543.427724224237,
-      "terminal_operating_profit": 500.4245027655934
+      "buy_price": 371.3243221806186,
+      "sell_price": 540.7906528446722,
+      "reference_irr": 0.1575816290958335,
+      "terminal_equity": 6963.372473933536,
+      "terminal_operating_profit": 472.84356212872217
     },
     "opening_parent_cash_adjustment_-100": {
-      "buy_price": 412.9352095326456,
-      "sell_price": 601.5751383199481,
-      "reference_irr": 0.199896406657445,
-      "terminal_equity": 7758.674962926672,
-      "terminal_operating_profit": 522.8538733649781
+      "buy_price": 381.6245344322526,
+      "sell_price": 555.761540461497,
+      "reference_irr": 0.16833678977883093,
+      "terminal_equity": 7152.780700982845,
+      "terminal_operating_profit": 494.04431830532025
     },
     "opening_parent_cash_adjustment_100": {
-      "buy_price": 423.65289227096235,
-      "sell_price": 617.2418556673931,
-      "reference_irr": 0.2103261709134795,
-      "terminal_equity": 7966.416500260974,
-      "terminal_operating_profit": 522.8538733649781
+      "buy_price": 392.34221717056926,
+      "sell_price": 571.4282578089419,
+      "reference_irr": 0.179331841684791,
+      "terminal_equity": 7360.522238317146,
+      "terminal_operating_profit": 494.04431830532025
     },
     "redemption_cost_multiplier_2": {
-      "buy_price": 417.539340713194,
-      "sell_price": 608.3042094313682,
-      "reference_irr": 0.20439910088597657,
-      "terminal_equity": 7847.80227757689,
-      "terminal_operating_profit": 524.5966702768892
+      "buy_price": 386.22866561280097,
+      "sell_price": 562.4906115729171,
+      "reference_irr": 0.17308528936868728,
+      "terminal_equity": 7241.908015633062,
+      "terminal_operating_profit": 495.78711521723136
     },
     "capex_funding_fraction_override_1": {
-      "buy_price": 411.62951592862134,
-      "sell_price": 599.6581125890223,
-      "reference_irr": 0.19861414817084533,
-      "terminal_equity": 7732.719286042481,
-      "terminal_operating_profit": 522.8538733649781
+      "buy_price": 380.31203046105935,
+      "sell_price": 553.8345498409051,
+      "reference_irr": 0.16697544739310832,
+      "terminal_equity": 7126.6919818571305,
+      "terminal_operating_profit": 494.04431830532025
     },
     "dividend_tax_0.2": {
-      "buy_price": 415.1312135814067,
-      "sell_price": 605.3080373161094,
-      "reference_irr": 0.20199069429727345,
-      "terminal_equity": 7862.545731593823,
-      "terminal_operating_profit": 522.8538733649781
+      "buy_price": 383.87958741035465,
+      "sell_price": 559.5808395079329,
+      "reference_irr": 0.17069282141921216,
+      "terminal_equity": 7256.651469649995,
+      "terminal_operating_profit": 494.04431830532025
     },
     "award_proceeds_price_proxy_0": {
-      "buy_price": 417.95583948399263,
-      "sell_price": 608.9136894163676,
-      "reference_irr": 0.20480467694167726,
-      "terminal_equity": 7855.957363054335,
-      "terminal_operating_profit": 522.8538733649781
+      "buy_price": 386.6451643835996,
+      "sell_price": 563.1000915579165,
+      "reference_irr": 0.17351298432031192,
+      "terminal_equity": 7250.063101110506,
+      "terminal_operating_profit": 494.04431830532025
     },
     "portfolio_parent_fraction_0.5": {
-      "buy_price": 417.103993294629,
-      "sell_price": 607.6684787822487,
-      "reference_irr": 0.20397471653377341,
-      "terminal_equity": 7839.432445347449,
-      "terminal_operating_profit": 522.8538733649781
+      "buy_price": 385.7933181942359,
+      "sell_price": 561.8548809237975,
+      "reference_irr": 0.172637953585549,
+      "terminal_equity": 7233.538183403622,
+      "terminal_operating_profit": 494.04431830532025
     },
     "move10pp_normal_to_access": {
-      "buy_price": 370.74576675264217,
-      "sell_price": 540.1933629280603,
-      "reference_irr": 0.157001721163201,
-      "terminal_equity": 6974.997705006716,
-      "terminal_operating_profit": 459.5625816612112
+      "buy_price": 339.435091652249,
+      "sell_price": 494.37976506960916,
+      "reference_irr": 0.12299548311418562,
+      "terminal_equity": 6369.103443062888,
+      "terminal_operating_profit": 430.75302660155324
     },
     "move10pp_normal_to_upside": {
-      "buy_price": 461.20410486705936,
-      "sell_price": 672.0886489581376,
-      "reference_irr": 0.24553619039983154,
-      "terminal_equity": 8683.9510681464,
-      "terminal_operating_profit": 561.6695417890229
+      "buy_price": 429.89342976666626,
+      "sell_price": 626.2750510996864,
+      "reference_irr": 0.21633290639450486,
+      "terminal_equity": 8078.056806202571,
+      "terminal_operating_profit": 532.8599867293649
     },
     "all_pe_capped10": {
-      "buy_price": 320.1470831904384,
-      "sell_price": 465.8004241770473,
-      "reference_irr": 0.10080521908063911,
-      "terminal_equity": 5945.219945891845,
-      "terminal_operating_profit": 522.8538733649781
+      "buy_price": 303.88597788631057,
+      "sell_price": 442.0072693904268,
+      "reference_irr": 0.08147388067834604,
+      "terminal_equity": 5633.322828301562,
+      "terminal_operating_profit": 494.04431830532025
     },
     "terminal_delay_two_years_no_extra_dividend": {
-      "reference_irr": 0.11989357687003677,
-      "buy_price": 304.93445899412626,
-      "irr_at_original_buy": 0.10563159582163062
+      "reference_irr": 0.10219140660013049,
+      "buy_price": 282.359367586069,
+      "irr_at_original_buy": 0.10569484646090299
     },
     "fair_value_subsidiary_stake_swap_h_price_ratio": {
       "0.7": {
-        "expected_total_equity": 8481.980635819971,
-        "expected_per_share": 642.3881901527214,
-        "buy_price": 406.1429346637915
+        "expected_total_equity": 7829.291932121308,
+        "expected_per_share": 592.8664978567672,
+        "buy_price": 375.75725489998644
       },
       "1": {
-        "expected_total_equity": 8481.980635819971,
-        "expected_per_share": 662.3860345524276,
-        "buy_price": 418.29405090180387
+        "expected_total_equity": 7829.291932121308,
+        "expected_per_share": 611.3420201546015,
+        "buy_price": 386.9833758014109
       },
       "1.3": {
-        "expected_total_equity": 8481.980635819971,
-        "expected_per_share": 673.706038632421,
-        "buy_price": 425.17232651198896
+        "expected_total_equity": 7829.291932121308,
+        "expected_per_share": 621.8030695835552,
+        "buy_price": 393.33973226874474
       }
     }
   },
-  "uniform_terminal_pe_required": {
-    "0": 6.975744054899426,
-    "0.18": 12.633829713184873
+  "policy_review": {
+    "prior_price_without_limited": 418.29405090180387,
+    "joint_sensitivity": [
+      {
+        "margin_shift": -0.02,
+        "prices": {
+          "0.05": 416.760555787503,
+          "0.1": 394.5914006223495,
+          "0.15": 372.4222454571959,
+          "0.2": 350.25309029204243,
+          "0.25": 328.08393512688895
+        },
+        "severe_weight_at_reference": 0.10358922252673604
+      },
+      {
+        "margin_shift": 0,
+        "prices": {
+          "0.05": 434.53165995057265,
+          "0.1": 410.75751787599177,
+          "0.15": 386.98337580141083,
+          "0.2": 363.20923372682995,
+          "0.25": 339.435091652249
+        },
+        "severe_weight_at_reference": 0.13734628534709126
+      },
+      {
+        "margin_shift": 0.02,
+        "prices": {
+          "0.05": 452.3027641136424,
+          "0.1": 426.9236351296341,
+          "0.15": 401.54450614562575,
+          "0.2": 376.1653771616176,
+          "0.25": 350.78624817760914
+        },
+        "severe_weight_at_reference": 0.1668337261515354
+      }
+    ],
+    "limited_at_normal_mean_pe": 397.6087045668013,
+    "limited_weight_at_reference": 0.12117616829101677,
+    "limited_sensitivity": {
+      "0": 418.29405090180387,
+      "0.1": 397.4202675015419,
+      "0.15": 386.98337580141083,
+      "0.2": 376.5464841012798,
+      "0.3": 355.6727007010178
+    }
   },
-  "verification": "逐路径现金与股数守恒、同经营不同PE、期望现金流现值线性、18%及4%逆推、回购权益与结算对称、平价换股每股中性检查通过；主观假设不因此被证明。"
+  "uniform_terminal_pe_required": {
+    "0": 7.4423769450555675,
+    "0.18": 13.430406546151215
+  },
+  "verification": "逐路径现金与股数守恒、同经营不同PE、期望现金流现值线性、18%及4%逆推、回购权益与结算对称、平价换股每股中性、准入权重临界点回代检查通过。"
 }

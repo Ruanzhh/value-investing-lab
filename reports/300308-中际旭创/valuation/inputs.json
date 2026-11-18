@@ -329,18 +329,82 @@
       ],
       "portfolio_realization": 0.5,
       "payout": 0
+    },
+    "limited": {
+      "volume_growth": [
+        0.5,
+        0.35,
+        0.1
+      ],
+      "mix_asp_change": [
+        0.08,
+        0,
+        -0.08
+      ],
+      "gross_margin": [
+        0.45,
+        0.43,
+        0.36
+      ],
+      "cash_and_recurring_opex_rate": [
+        0.06,
+        0.065,
+        0.07
+      ],
+      "fx_cost_rate": [
+        0.007,
+        0.007,
+        0.007
+      ],
+      "impairment_rate": [
+        0.004,
+        0.006,
+        0.008
+      ],
+      "terahop_profit_share": [
+        0.3,
+        0.35,
+        0.4
+      ],
+      "da": [
+        30,
+        50,
+        70
+      ],
+      "maintenance_capex": [
+        35,
+        50,
+        65
+      ],
+      "growth_capex": [
+        180,
+        220,
+        220
+      ],
+      "nwc_revenue_ratio": [
+        0.3,
+        0.3,
+        0.35
+      ],
+      "other_investment_cash": [
+        5,
+        5,
+        5
+      ],
+      "portfolio_realization": 1,
+      "payout": 0.2
     }
   },
   "cases": [
     {
       "scenario": "normal",
-      "probability": 0.3,
+      "probability": 0.21,
       "pe": 15,
       "label": "正常增长、优势延续"
     },
     {
       "scenario": "normal",
-      "probability": 0.2,
+      "probability": 0.14,
       "pe": 10,
       "label": "正常增长、倍数压缩"
     },
@@ -367,6 +431,12 @@
       "probability": 0.15,
       "pe": 7,
       "label": "商业准入严重受限"
+    },
+    {
+      "scenario": "limited",
+      "probability": 0.15,
+      "pe": 10,
+      "label": "后期新型号部分受限"
     }
   ],
   "assumption_status": "所有未来量价、利润率、投入、归属与联合概率均为可挑战的研究假设，非管理层指引；详细依据见README。",

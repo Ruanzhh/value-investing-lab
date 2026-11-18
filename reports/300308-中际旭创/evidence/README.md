@@ -72,6 +72,24 @@ H1TeraHop净利润31.70亿元，归少数损益10.15亿元，经营现金却为�
 
 [11月10日媒体对Reuters的转述](https://www.tomshardware.com/tech-industry/policy/microsoft-lobbies-against-potential-ban-on-chinese-optical-networking-gear-for-ai-data-centers-as-fcc-mulls-restricting-imports-industry-group-says-move-could-grind-data-center-rollout-to-a-halt)称3.2T限制仍在讨论；只作二手政策风险信号，不视为已出台规定。必须把政策升级放入2028—2029收入及利润压力，而非只减几倍PE。泰国制造不自动规避按企业身份设定的限制。
 
+## 11月18日复核新增的证据与分歧
+
+**毛利率的历史起点。** A股合并报表按营业收入减营业成本重算，2024、2025年分别为33.80%、42.04%，2026年前三季为46.39%。2025年仅光模块的42.61%和2026上半年仅该产品的46.59%属于分产品口径。管理层披露三季度单季约46.6%，较二季度约高0.2个百分点。公司把改善归于高端占比、硅光和良率，也指出新品初期光源、电芯片和组装均需爬坡。Tower披露首款NPO器件进入早期生产，佐证工艺进展，没有披露量产良率、客户价或毛利。[2025年报](https://static.cninfo.com.cn/finalpage/2026-03-31/1225056459.PDF) · [半年报](https://static.cninfo.com.cn/finalpage/2026-08-22/1225491753.PDF) · [三季报](https://static.cninfo.com.cn/finalpage/2026-10-30/1225643953.PDF) · [11月3日公司记录，第4至5页](https://pdf.dfcfw.com/pdf/H2_AN202611031831382786_1.pdf) · [Tower与中际联合公告](https://towerjazz.gcs-web.com/node/17216/pdf)
+
+| 合并毛利率 | 2027 | 2028 | 2029 | 核验口径 |
+|---|---:|---:|---:|---|
+| 群益，10月30日 | 45.31% | 43.45% | 未提供 | 第3页用1减经营成本除以营业收入，分子分别104886、185207，分母191796、327509，单位百万元。[原研报](https://pdf.dfcfw.com/pdf/H3_AP202610301831210025_1.pdf) |
+| 开源，8月23日 | 45.9% | 44.9% | 未提供 | 财务预测表直接列示，时间早于三季报。[原研报](https://pdf.dfcfw.com/pdf/H3_AP202608231828344475_1.pdf) |
+| 本研究正常经营 | 45% | 43% | 41% | 模型为截至各年11月的滚动近似。末年41%是竞争加剧、同代年降和高端红利减弱的假设。两家券商的公开表都只预测到2028年。 |
+
+非机构研究Winter复盘11月3日交流，把“小幅年降”和“高端占比增加”追溯到同一场管理层发言。它还提出纵向整合对议价权的影响未被澄清，需保留远期毛利下行空间。个人作者“新时代已经来了”的2027年归母利润与收入估算隐含约30%归母净利率，无法单独验证任何一个合并毛利率。现有数据支持45%的近期起点，对2029年的约束较弱。报告采用联合敏感性表达这部分误差。[Winter公开纪要](https://app.winterresearch.com/b/home/innolight_call_1103) · [个人估值正文及配图](https://caifuhao.eastmoney.com/news/20261030004420394466460)
+
+**准入的范围与时点。** 11月10日路透正文引用大摩10月客户材料及消息人士，讨论3.2T门槛，以及2028年放量、2029年广泛装机的产业预测。没有取得大摩原件。11月17日路透又引述三名知情人士，即使云厂商游说，政府仍打算推进，也可能搁置。两名知情人士称客户曾表示替换最长需十年，这反映客户立场，无法保证实际宽限期。报道首次发布于美东17日06:05，在A股17日收盘之后、18日上午估值之前。未查到确认速度门槛、适用企业和生效日的光模块专项最终条文。[11月10日路透刊载正文](https://www.streetinsider.com/Reuters/Exclusive-Microsoft%2Bpresses%2BTrump%2Bto%2Bscuttle%2Bban%2Bon%2BChinese%2Bdata%2Bcenter%2Btech/27317603.html) · [11月17日路透刊载正文](https://www.marketscreener.com/news/trump-s-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-ce785edcd98bf423)
+
+9月公布的FCC一般性最终规则针对清单主体的逻辑硬件组件和新授权申请，保留对既有授权的处理。S.5548引入文本第2节规定相关联邦采购禁令从成法后五年起效，即便2026年成法，直接禁令也在本模型2029年终点以后。客户提前换供或其他FCC行动仍可更早影响订单。Lumentum在11月上旬的10-Q中披露当时尚无光模块专项最终规则。11月6日更新的清单仅取得分析者转述，不能视为本研究直接核验了估值日的完整动态名单。[FCC最终规则第138至145行附近](https://www.govinfo.gov/content/pkg/FR-2026-09-11/html/2026-18535.htm) · [S.5548引入文本](https://www.govinfo.gov/content/pkg/BILLS-119s5548is/html/BILLS-119s5548is.htm) · [Lumentum 10-Q风险披露](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001633978/d16467b4-c933-45bd-a644-f80d3273fc35.pdf) · [FourWeekMBA对名单的阅读](https://fourweekmba.com/ai-optics-ban-advances-despite-amazon-google-meta-lobbying/)
+
+行业研究机构Cignal AI在8月认为替代供应不足会妨碍限制落地，同时提醒若“新型号”包括800G、1.6T改款，现有速率的订单也会受影响。11月17日个人署名作者Vincent Jiang则强调3.2T在2028至2029年导入，认为短期存量受冲击有限。两者对适用范围的分歧有估值意义。前者早于最新政策报道，后者把讨论中的门槛写得过于确定，其关于量化资金造成跌幅的归因也不能验证经营概率。美国客户收入57.3%和61.7%来自招股书，说明一旦流失的潜在损失规模，无法据此推算发生概率。[Cignal AI原文](https://cignal.ai/2026/08/fcc-ban-on-new-chinese-optical-modules/) · [Vincent Jiang署名分析](https://theinference.org/article/zhongji-innolight-fell-8-to-a-year-low-on-quant-selling-not-a-us-transceiver-ban-that-only-bites-in-2028) · [H股招股书](https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0722/2026072200013.pdf)
+
 ## 股份、分红与资本配置
 
 三季报注册股数11.77909641亿（含H股0.62675亿）；已回购0.05653063亿股，约49.9725亿元，已反映9月末现金，不再扣一次。[11月6日回购用途公告](https://static.cninfo.com.cn/finalpage/2026-11-06/1225660601.PDF)：改注销仍待11月25日会议；它不构成新的未来回购预算。均价约884元的回购不应仅因减少股数就称创造价值。
@@ -97,7 +115,7 @@ H1TeraHop净利润31.70亿元，归少数损益10.15亿元，经营现金却为�
 
 [Marvell与Lumentum11月2日交易公告](https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity)确认签署全股票收购协议，尚待完成。DSP、光源和模块纵向整合增加中际未来议价及价值分配风险；不等于当前已经断供。本模型正常毛利逐步回落、受损路径更低，而非在每条路径重复扣一笔“并购风险费”。
 
-[历史行情](https://cn.investing.com/equities/shandong-zhongji-electrical-historical-data)与[金融界行情](https://summary.jrj.com.cn/stock/sz/300308)交叉支持11月17日A股收盘393元；18日上午页面已出现盘中数，未把它当当日收盘。此前研究在本仓没有中际旭创旧估值；本次是首次完整估值，不伪造旧值对比。
+[历史行情](https://cn.investing.com/equities/shandong-zhongji-electrical-historical-data)与[金融界行情](https://summary.jrj.com.cn/stock/sz/300308)交叉支持11月17日A股收盘393元；18日上午页面已出现盘中数，未把它当当日收盘。复核沿用同一收盘价、估值日及预测终点，价格变化完全来自经营情景的修订。
 
 
 ### 交付前补核的英伟达季报

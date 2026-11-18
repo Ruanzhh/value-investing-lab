@@ -147,6 +147,60 @@ def stresses(x,z,cases):
     out['fair_value_subsidiary_stake_swap_h_price_ratio']=swap
     return out
 
+def policy_review(x):
+    """调权仅从正常状态按原有倍数比例拨入，其他状态互斥且固定。"""
+    reference = x['facts']['reference_price']
+    central = {s: sum(c['probability'] for c in x['cases'] if c['scenario'] == s)
+               for s in ('normal', 'access', 'limited')}
+
+    def price(severe, limited, margin_shift=0):
+        y = deepcopy(x)
+        weights = dict(access=severe, limited=limited,
+                       normal=sum(central.values()) - severe - limited)
+        assert min(weights.values()) >= 0
+        for case in y['cases']:
+            state = case['scenario']
+            if state in weights:
+                case['probability'] *= weights[state] / central[state]
+        for state in ('normal', 'limited'):
+            margins = y['scenarios'][state]['gross_margin']
+            y['scenarios'][state]['gross_margin'] = [m + margin_shift for m in margins]
+        return weighted(y)[0]['buy_price']
+
+    limited = central['limited']
+    severe = central['access']
+    movable = sum(central.values())
+    def crossing(weight, fixed, calculate_price):
+        # 固定逐路径现金流时，目标回报对应的入场价格对联合权重呈线性。
+        limit = movable - fixed
+        start, end = calculate_price(0), calculate_price(limit)
+        if isclose(start, end) or not min(start, end) <= reference <= max(start, end):
+            return None
+        threshold = limit * (start - reference) / (start - end)
+        assert isclose(calculate_price(threshold), reference, abs_tol=1e-7), weight
+        return threshold
+
+    table = []
+    for margin_shift in (-.02, 0, .02):
+        threshold = crossing('severe', limited, lambda w: price(w, limited, margin_shift))
+        table.append(dict(margin_shift=margin_shift,
+                          prices={str(w): price(w, limited, margin_shift) for w in (.05, .10, .15, .20, .25)},
+                          severe_weight_at_reference=threshold))
+    base = price(severe, limited)
+    assert isclose(base, weighted(x)[0]['buy_price'], abs_tol=1e-8)
+    no_limited = price(severe, 0)
+    limited_threshold = crossing('limited', severe, lambda w: price(severe, w))
+    same_multiple = deepcopy(x)
+    normal_pe = sum(c['pe'] * c['probability'] for c in x['cases']
+                    if c['scenario'] == 'normal') / central['normal']
+    for case in same_multiple['cases']:
+        if case['scenario'] == 'limited':
+            case['pe'] = normal_pe
+    return dict(prior_price_without_limited=no_limited, joint_sensitivity=table,
+                limited_at_normal_mean_pe=weighted(same_multiple)[0]['buy_price'],
+                limited_weight_at_reference=limited_threshold,
+                limited_sensitivity={str(w): price(severe, w) for w in (0,.10,.15,.20,.30)})
+
 def breakeven(x):
     out={}
     for target in [0,.18]:
@@ -171,7 +225,7 @@ def run(x):
     assert all(v['rows'][-1]['cash']>=0 for v in cases)
     f=x['facts'];core_ebit=f['revenue_9m2026']-sum(f['operating_costs_9m2026_ex_finance'])
     reconciliation={'core_ebit_9m':core_ebit,'reported_parent_fraction_9m':f['parent_profit_9m2026']/f['group_profit_9m2026'],'normalized_parent_profit_9m_proxy':(core_ebit-f['revenue_9m2026']*.007-f['interest_expense_9m2026'])*(1-x['common']['tax_rate'])*f['parent_profit_9m2026']/f['group_profit_9m2026'],'cfo_less_capex_9m':f['cfo_9m2026']-f['capex_9m2026'],'q3_cfo':f['cfo_9m2026']-f['cfo_h12026']}
-    return dict(research_date=x['research_date'],currency=x['currency'],amount_unit='亿元',historical_reconciliation=reconciliation,weighted=z,cases=cases,stress=stresses(x,z,cases),uniform_terminal_pe_required=breakeven(x),verification='逐路径现金与股数守恒、同经营不同PE、期望现金流现值线性、18%及4%逆推、回购权益与结算对称、平价换股每股中性检查通过；主观假设不因此被证明。')
+    return dict(research_date=x['research_date'],currency=x['currency'],amount_unit='亿元',historical_reconciliation=reconciliation,weighted=z,cases=cases,stress=stresses(x,z,cases),policy_review=policy_review(x),uniform_terminal_pe_required=breakeven(x),verification='逐路径现金与股数守恒、同经营不同PE、期望现金流现值线性、18%及4%逆推、回购权益与结算对称、平价换股每股中性、准入权重临界点回代检查通过。')
 
 if __name__=='__main__':
     x=json.loads((HERE/'inputs.json').read_text());o=run(x)
