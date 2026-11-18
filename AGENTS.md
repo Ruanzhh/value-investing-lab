@@ -10,6 +10,7 @@
 - `reports/` 下实际存在的公司报告、证据附录和估值计算材料（旧版报告已清空，新研究按现行技能逐家生成）
 - `skills/value-investing/` 里的理念框架与量化原则
 - `skills/deep-valuation/` 里的研究过程要点与产出结构
+- `skills/portfolio-decision/` 里的组合决策要点与计算口径
 
 不要假设仓库外面还有隐藏底稿。文中若出现「内部文稿未发布」或「未发布的更早工作目录」，那些材料不在本仓，不要编造其内容，也不要把它写成已经核对过的数字来源。
 
@@ -47,6 +48,7 @@
 | `reports/<代码>-<中文公司名>/` | 一家公司的主报告 `README.md`，及 `evidence/`、`valuation/` 附录 |
 | `skills/value-investing/` | 价值投资技能；入口为 `SKILL.md`，量化原则放在 `references/` |
 | `skills/deep-valuation/` | 深估过程技能；入口为 `SKILL.md`，产出结构放在 `references/` |
+| `skills/portfolio-decision/` | 私人组合决策技能；入口为 `SKILL.md`，计算口径放在 `references/` |
 | `.github/ISSUE_TEMPLATE/` | 数据纠错、证伪信号、新公司候选、skill 改进 |
 | `CHANGELOG.md` | 版本记录 |
 
@@ -81,6 +83,8 @@ reports/<代码>-<中文公司名>/
 ## 估值技能状态
 
 开展深估使用 [深估过程技能](skills/deep-valuation/SKILL.md)，理念依据 [价值投资技能](skills/value-investing/SKILL.md)，涉及定价与回报时读取其 [量化原则](skills/value-investing/references/quantitative-principles.md)。规则在技能内维护，此处不复制公式或参数。
+
+基于已有研究分析个人持仓及资金安排时使用 [组合决策技能](skills/portfolio-decision/SKILL.md)。只共享技能本身；私人输入及方案不写入公开仓库，不改写公司研究结论。
 
 旧估值 skill 已删除。既有报告中的方法、参数和历史审阅意见仅用于理解该次研究，不作为新研究的默认规则；不要从 Git 历史恢复旧技能执行，也不要自动沿用其固定门槛。
 

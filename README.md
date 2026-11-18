@@ -29,7 +29,7 @@
 - **03 · 接受挑战**
   最强反方解释是什么？哪些证据出现后，必须改变判断？
 
-> **方法与基建**：本项目将投资框架沉淀为 AI 可执行的 Skill。[`value-investing`](skills/value-investing/SKILL.md) 维护投资理念与[量化原则](skills/value-investing/references/quantitative-principles.md)；[`deep-valuation`](skills/deep-valuation/SKILL.md) 则负责指导具体的取证、挑战与报告产出。
+> **方法与基建**：[`value-investing`](skills/value-investing/SKILL.md) 维护投资理念与[量化原则](skills/value-investing/references/quantitative-principles.md)；[`deep-valuation`](skills/deep-valuation/SKILL.md) 指导取证、挑战与报告产出；[`portfolio-decision`](skills/portfolio-decision/SKILL.md) 根据已有研究、个人持仓与可投资现金形成组合建议。
 
 ## 公司研究
 
@@ -49,6 +49,14 @@
 ```text
 按照 deep-valuation skill 的准则完成对「公司名」的评估，需要保证 value-investing skill 中的准则都已经深刻执行，且市场公开信息已充分利用。
 ```
+
+已有研究后，可在私人会话中分析组合：
+
+```text
+使用 portfolio-decision skill，根据已有研究和最新行情，分析我提供的持仓与可投资现金，给出买入、持有或换仓方案，并说明调整后的仓位和剩余现金。
+```
+
+该技能每次开始分析时提示适用前提与风险，不执行交易。持仓、资金及私人方案不要提交到本仓库或公开 Issue。
 
 <details>
 <summary><strong>查看目录结构与极简管理原则</strong></summary>
