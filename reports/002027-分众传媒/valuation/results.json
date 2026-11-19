@@ -1,0 +1,382 @@
+{
+  "buy_price": 3.784496127231609,
+  "sell_price": 5.436420347901662,
+  "buy_equity_equivalent": 546.5644893175241,
+  "sell_equity_equivalent": 785.1386845888621,
+  "reference_equity": 815.9842845190001,
+  "expected_profit": [
+    45.469622499999986,
+    47.415603,
+    49.817511999999994
+  ],
+  "expected_dps": [
+    0.24074067961534806,
+    0.2518243090253901,
+    0.2649057835546809
+  ],
+  "expected_terminal_equity": 838.7840422856683,
+  "expected_terminal_price": 5.327572310301285,
+  "old_holder_equivalent_terminal_equity": 769.4186336007841,
+  "expected_irr": 0.025755511196349112,
+  "required_terminal_price_for_18": 8.396376800070035,
+  "required_terminal_price_for_breakeven": 4.898142741998179,
+  "uniform_pe_increase_for_18": 9.691621579893278,
+  "paths": [
+    {
+      "id": "base",
+      "weight": 0.35,
+      "shares": 159.76740235,
+      "pe": 16,
+      "opening_liquid": 78.39409960719999,
+      "illiquid_value": 16.8262636362,
+      "annual": [
+        {
+          "profit": 46.789749999999984,
+          "old_profit": 46.575999999999986,
+          "target_profit": 0.21375,
+          "revenue": 142,
+          "fcfe": 42.89474999999999,
+          "dividend": 39.771287499999985,
+          "dps": 0.2489324287370814,
+          "investment_cash_income": 0.9407291952863999,
+          "integration_cash": 1,
+          "liquid_end": 81.4582913024864
+        },
+        {
+          "profit": 49.49399999999999,
+          "old_profit": 48.443999999999996,
+          "target_profit": 1.05,
+          "revenue": 148.5,
+          "fcfe": 45.898999999999994,
+          "dividend": 42.06989999999999,
+          "dps": 0.2633196721058161,
+          "investment_cash_income": 0.9774994956298368,
+          "integration_cash": 0.3,
+          "liquid_end": 85.96489079811624
+        },
+        {
+          "profit": 52.131519999999995,
+          "old_profit": 50.13652,
+          "target_profit": 1.9950000000000003,
+          "revenue": 156,
+          "fcfe": 48.73652,
+          "dividend": 44.311792,
+          "dps": 0.277351896245561,
+          "investment_cash_income": 1.0315786895773948,
+          "integration_cash": 0,
+          "liquid_end": 91.42119748769363
+        }
+      ],
+      "terminal_assets": 108.24746112389363,
+      "terminal_equity": 942.3517811238935,
+      "terminal_price": 5.898273159999797,
+      "payments": [
+        0.2489324287370814,
+        0.2633196721058161,
+        6.170906437717358
+      ],
+      "irr_at_reference": 0.059901948783165904,
+      "irr_at_buy_limit": 0.2192299568229269,
+      "total_return_at_reference": 0.18250516677921502,
+      "total_return_at_buy_limit": 0.7654012496479645
+    },
+    {
+      "id": "compression",
+      "weight": 0.2,
+      "shares": 159.76740235,
+      "pe": 12,
+      "opening_liquid": 78.39409960719999,
+      "illiquid_value": 16.8262636362,
+      "annual": [
+        {
+          "profit": 46.789749999999984,
+          "old_profit": 46.575999999999986,
+          "target_profit": 0.21375,
+          "revenue": 142,
+          "fcfe": 42.89474999999999,
+          "dividend": 39.771287499999985,
+          "dps": 0.2489324287370814,
+          "investment_cash_income": 0.9407291952863999,
+          "integration_cash": 1,
+          "liquid_end": 81.4582913024864
+        },
+        {
+          "profit": 49.49399999999999,
+          "old_profit": 48.443999999999996,
+          "target_profit": 1.05,
+          "revenue": 148.5,
+          "fcfe": 45.898999999999994,
+          "dividend": 42.06989999999999,
+          "dps": 0.2633196721058161,
+          "investment_cash_income": 0.9774994956298368,
+          "integration_cash": 0.3,
+          "liquid_end": 85.96489079811624
+        },
+        {
+          "profit": 52.131519999999995,
+          "old_profit": 50.13652,
+          "target_profit": 1.9950000000000003,
+          "revenue": 156,
+          "fcfe": 48.73652,
+          "dividend": 44.311792,
+          "dps": 0.277351896245561,
+          "investment_cash_income": 1.0315786895773948,
+          "integration_cash": 0,
+          "liquid_end": 91.42119748769363
+        }
+      ],
+      "terminal_assets": 108.24746112389363,
+      "terminal_equity": 733.8257011238936,
+      "terminal_price": 4.59308776590304,
+      "payments": [
+        0.2489324287370814,
+        0.2633196721058161,
+        4.866765191935879
+      ],
+      "irr_at_reference": -0.017135703811660463,
+      "irr_at_buy_limit": 0.13142162857301598,
+      "total_return_at_reference": -0.048247066981007225,
+      "total_return_at_buy_limit": 0.4209035736260418
+    },
+    {
+      "id": "upside",
+      "weight": 0.15,
+      "shares": 159.76740235,
+      "pe": 18,
+      "opening_liquid": 78.39409960719999,
+      "illiquid_value": 22.4350181816,
+      "annual": [
+        {
+          "profit": 50.06339999999999,
+          "old_profit": 49.40339999999999,
+          "target_profit": 0.6599999999999999,
+          "revenue": 148,
+          "fcfe": 44.96839999999999,
+          "dividend": 42.55388999999999,
+          "dps": 0.26634901346632545,
+          "investment_cash_income": 0.9407291952863999,
+          "integration_cash": 1,
+          "liquid_end": 80.74933880248639
+        },
+        {
+          "profit": 56.1093,
+          "old_profit": 53.9118,
+          "target_profit": 2.1975,
+          "revenue": 161,
+          "fcfe": 51.2143,
+          "dividend": 47.692904999999996,
+          "dps": 0.2985146174907437,
+          "investment_cash_income": 0.9689920656298368,
+          "integration_cash": 0.3,
+          "liquid_end": 84.93972586811623
+        },
+        {
+          "profit": 62.40167999999999,
+          "old_profit": 58.38167999999999,
+          "target_profit": 4.0200000000000005,
+          "revenue": 175,
+          "fcfe": 57.60668,
+          "dividend": 53.04142799999999,
+          "dps": 0.3319915528438207,
+          "investment_cash_income": 1.0192767104173948,
+          "integration_cash": 0,
+          "liquid_end": 90.52425457853363
+        }
+      ],
+      "terminal_assets": 112.95927276013363,
+      "terminal_equity": 1236.1895127601335,
+      "terminal_price": 7.737432633798678,
+      "payments": [
+        0.26634901346632545,
+        0.2985146174907437,
+        8.06323424053546
+      ],
+      "irr_at_reference": 0.1574993719947445,
+      "irr_at_buy_limit": 0.33123267686227276,
+      "total_return_at_reference": 0.5266389767127433,
+      "total_return_at_buy_limit": 1.2791700475953807
+    },
+    {
+      "id": "bear",
+      "weight": 0.15,
+      "shares": 159.76740235,
+      "pe": 10,
+      "opening_liquid": 77.4245156072,
+      "illiquid_value": 7.01094318175,
+      "annual": [
+        {
+          "profit": 35.80968000000001,
+          "old_profit": 36.664680000000004,
+          "target_profit": -0.855,
+          "revenue": 132,
+          "fcfe": 30.414680000000008,
+          "dividend": 25.066776000000004,
+          "dps": 0.1568954344334059,
+          "investment_cash_income": 0.9290941872863999,
+          "integration_cash": 2,
+          "liquid_end": 81.7015137944864
+        },
+        {
+          "profit": 31.448680000000007,
+          "old_profit": 32.41368000000001,
+          "target_profit": -0.9650000000000001,
+          "revenue": 126,
+          "fcfe": 27.053680000000004,
+          "dividend": 22.014076000000003,
+          "dps": 0.1377882826921984,
+          "investment_cash_income": 0.9804181655338369,
+          "integration_cash": 1,
+          "liquid_end": 86.72153596002025
+        },
+        {
+          "profit": 30.125400000000003,
+          "old_profit": 30.950400000000002,
+          "target_profit": -0.825,
+          "revenue": 124,
+          "fcfe": 26.7304,
+          "dividend": 21.087780000000002,
+          "dps": 0.13199050425695302,
+          "investment_cash_income": 1.040658431520243,
+          "integration_cash": 0.5,
+          "liquid_end": 92.90481439154048
+        }
+      ],
+      "terminal_assets": 99.91575757329048,
+      "terminal_equity": 401.1697575732905,
+      "terminal_price": 2.5109612578819682,
+      "payments": [
+        0.1568954344334059,
+        0.1377882826921984,
+        2.6409429931326156
+      ],
+      "irr_at_reference": -0.20400138742289392,
+      "irr_at_buy_limit": -0.0851629483167557,
+      "total_return_at_reference": -0.4805758785181755,
+      "total_return_at_buy_limit": -0.22453447230263124
+    },
+    {
+      "id": "unclosed",
+      "weight": 0.15,
+      "shares": 144.42199726,
+      "pe": 14,
+      "opening_liquid": 70.53353925359998,
+      "illiquid_value": 16.8262636362,
+      "annual": [
+        {
+          "profit": 45.69532,
+          "old_profit": 45.69532,
+          "target_profit": 0.0,
+          "revenue": 124,
+          "fcfe": 41.395320000000005,
+          "dividend": 38.841022,
+          "dps": 0.2689411774999573,
+          "investment_cash_income": 0.8464024710431998,
+          "integration_cash": 0,
+          "liquid_end": 73.93423972464319
+        },
+        {
+          "profit": 47.06804,
+          "old_profit": 47.06804,
+          "target_profit": 0.0,
+          "revenue": 128,
+          "fcfe": 43.06804000000001,
+          "dividend": 40.007834,
+          "dps": 0.2770203622649997,
+          "investment_cash_income": 0.8872108766957183,
+          "integration_cash": 0,
+          "liquid_end": 77.88165660133892
+        },
+        {
+          "profit": 48.44076,
+          "old_profit": 48.44076,
+          "target_profit": 0.0,
+          "revenue": 132,
+          "fcfe": 44.64076,
+          "dividend": 41.174645999999996,
+          "dps": 0.2850995470300422,
+          "investment_cash_income": 0.934579879216067,
+          "integration_cash": 0,
+          "liquid_end": 82.28235048055498
+        }
+      ],
+      "terminal_assets": 99.10861411675498,
+      "terminal_equity": 777.2792541167549,
+      "terminal_price": 5.3820004491243445,
+      "payments": [
+        0.2689411774999573,
+        0.2770203622649997,
+        5.662794395795087
+      ],
+      "irr_at_reference": 0.03334328283337251,
+      "irr_at_buy_limit": 0.1895513997193291,
+      "total_return_at_reference": 0.09856528626545558,
+      "total_return_at_buy_limit": 0.6400846133089373
+    }
+  ],
+  "sensitivities": {
+    "pe_minus_2": {
+      "buy_price": 3.399523631681709,
+      "sell_price": 4.8734427785219525,
+      "expected_irr": -0.012720222245918567
+    },
+    "investment_zero": {
+      "buy_price": 3.7218549659539026,
+      "sell_price": 5.344814923807996,
+      "expected_irr": 0.01969682438449183
+    },
+    "tax_25pct": {
+      "buy_price": 3.508030824457675,
+      "sell_price": 5.039996884858922,
+      "expected_irr": -0.0008667817823458379
+    },
+    "three_year_capex_plus_2": {
+      "buy_price": 3.761023680363586,
+      "sell_price": 5.402094620121349,
+      "expected_irr": 0.023493891324453675
+    },
+    "persistent_capex_plus_2": {
+      "buy_price": 3.638227016378317,
+      "sell_price": 5.222518758942967,
+      "expected_irr": 0.01149087524380421
+    },
+    "payout_60pct": {
+      "buy_price": 3.762067667853258,
+      "sell_price": 5.431060533146125,
+      "expected_irr": 0.025580153625546775
+    },
+    "operating_cash_plus_10": {
+      "buy_price": 3.744432751428771,
+      "sell_price": 5.377832313194377,
+      "expected_irr": 0.021889091145386952
+    },
+    "stub_zero": {
+      "buy_price": 3.761259369265963,
+      "sell_price": 5.402439287771437,
+      "expected_irr": 0.02351665163239669
+    },
+    "bear_weight_plus_10pp": {
+      "buy_price": 3.552931406070534,
+      "sell_price": 5.101893277566298,
+      "expected_irr": 0.003330799657978889
+    },
+    "synergy_zero": {
+      "buy_price": 3.7028237984727825,
+      "sell_price": 5.317819692656625,
+      "expected_irr": 0.01790570421511395
+    },
+    "no_acquisition_all": {
+      "buy_price": 3.9789703224487796,
+      "sell_price": 5.712900654772065,
+      "expected_irr": 0.0436212757927793
+    },
+    "only_9002_percent": {
+      "buy_price": 3.7859313491964985,
+      "sell_price": 5.4385875644444255,
+      "expected_irr": 0.025898403488716304
+    },
+    "two_year_delay_frozen_value": {
+      "irr_at_reference": 0.01596070867900312,
+      "irr_at_buy_limit": 0.10926098150960983
+    }
+  }
+}

@@ -1,0 +1,525 @@
+{
+  "date": "2026-11-19",
+  "end_date": "2029-11-19",
+  "payment_dates": [
+    "2027-11-19",
+    "2028-11-19",
+    "2029-11-19"
+  ],
+  "reference_price": 5.65,
+  "reference_price_date": "2026-11-18",
+  "shares": 144.42199726,
+  "new_shares": 15.34540509,
+  "cash_consideration": 5.35225,
+  "ppa_amortization": 0.54,
+  "target_tax": 0.25,
+  "net_cash_yield": 0.012,
+  "buy_fee": 0.0003,
+  "sell_fee": 0.0008,
+  "dividend_tax": 0,
+  "buy_return": 0.18,
+  "sell_return": 0.04,
+  "assets": {
+    "cash": 33.765094041,
+    "wealth_products": 54.1729629228,
+    "deposits": 5.3050980819,
+    "restricted_reserve": 1.5,
+    "operating_cash": 20,
+    "minority_reserve": 8.9487837921,
+    "shuhe_receivable": 1.939168,
+    "other_investments": 28.043772727,
+    "target_liquid": 18.7656154744,
+    "target_restricted": 0.002,
+    "target_operating_cash": 4,
+    "target_property_debt": 1.545509,
+    "target_minority_reserve": 0.0052961208,
+    "stub_fcfe": 5.8
+  },
+  "scenarios": [
+    {
+      "id": "base",
+      "weight": 0.35,
+      "acquired": true,
+      "revenue": [
+        125,
+        130,
+        136
+      ],
+      "gross_margin": [
+        0.705,
+        0.705,
+        0.7
+      ],
+      "selling_ratio": [
+        0.18,
+        0.179,
+        0.178
+      ],
+      "admin_ratio": 0.045,
+      "research_ratio": 0.006,
+      "sales_tax_ratio": 0.02,
+      "financial_cost": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "credit_loss": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "subsidy": [
+        2,
+        2,
+        2
+      ],
+      "tax": 0.18,
+      "minority_profit": [
+        0,
+        0.1,
+        0.2
+      ],
+      "target_revenue": [
+        17,
+        18.5,
+        20
+      ],
+      "target_margin": [
+        0.025,
+        0.04,
+        0.06
+      ],
+      "synergy": [
+        0.4,
+        1.2,
+        2
+      ],
+      "depreciation": [
+        3.5,
+        3.8,
+        4.0
+      ],
+      "maintenance_capex": [
+        4.5,
+        4.5,
+        4.5
+      ],
+      "growth_capex": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "working_capital_increase": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "lease_cash_gap": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "payout": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "integration_cash": [
+        1,
+        0.3,
+        0
+      ],
+      "pe": 16,
+      "investment_recovery": 0.6,
+      "shuhe_recovery": 1
+    },
+    {
+      "id": "compression",
+      "weight": 0.2,
+      "acquired": true,
+      "revenue": [
+        125,
+        130,
+        136
+      ],
+      "gross_margin": [
+        0.705,
+        0.705,
+        0.7
+      ],
+      "selling_ratio": [
+        0.18,
+        0.179,
+        0.178
+      ],
+      "admin_ratio": 0.045,
+      "research_ratio": 0.006,
+      "sales_tax_ratio": 0.02,
+      "financial_cost": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "credit_loss": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "subsidy": [
+        2,
+        2,
+        2
+      ],
+      "tax": 0.18,
+      "minority_profit": [
+        0,
+        0.1,
+        0.2
+      ],
+      "target_revenue": [
+        17,
+        18.5,
+        20
+      ],
+      "target_margin": [
+        0.025,
+        0.04,
+        0.06
+      ],
+      "synergy": [
+        0.4,
+        1.2,
+        2
+      ],
+      "depreciation": [
+        3.5,
+        3.8,
+        4.0
+      ],
+      "maintenance_capex": [
+        4.5,
+        4.5,
+        4.5
+      ],
+      "growth_capex": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "working_capital_increase": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "lease_cash_gap": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "payout": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "integration_cash": [
+        1,
+        0.3,
+        0
+      ],
+      "pe": 12,
+      "investment_recovery": 0.6,
+      "shuhe_recovery": 1
+    },
+    {
+      "id": "upside",
+      "weight": 0.15,
+      "acquired": true,
+      "revenue": [
+        130,
+        140,
+        151
+      ],
+      "gross_margin": [
+        0.71,
+        0.715,
+        0.715
+      ],
+      "selling_ratio": [
+        0.175,
+        0.173,
+        0.17
+      ],
+      "admin_ratio": 0.045,
+      "research_ratio": 0.006,
+      "sales_tax_ratio": 0.02,
+      "financial_cost": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "credit_loss": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "subsidy": [
+        2,
+        2,
+        2
+      ],
+      "tax": 0.18,
+      "minority_profit": [
+        0.1,
+        0.2,
+        0.35
+      ],
+      "target_revenue": [
+        18,
+        21,
+        24
+      ],
+      "target_margin": [
+        0.04,
+        0.07,
+        0.1
+      ],
+      "synergy": [
+        0.7,
+        2,
+        3.5
+      ],
+      "depreciation": [
+        3.8,
+        4.3,
+        4.8
+      ],
+      "maintenance_capex": [
+        4.5,
+        4.8,
+        5.2
+      ],
+      "growth_capex": [
+        2.5,
+        2.5,
+        2.5
+      ],
+      "working_capital_increase": [
+        2,
+        2,
+        2
+      ],
+      "lease_cash_gap": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "payout": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "integration_cash": [
+        1,
+        0.3,
+        0
+      ],
+      "pe": 18,
+      "investment_recovery": 0.8,
+      "shuhe_recovery": 1
+    },
+    {
+      "id": "bear",
+      "weight": 0.15,
+      "acquired": true,
+      "revenue": [
+        117,
+        112,
+        110
+      ],
+      "gross_margin": [
+        0.68,
+        0.65,
+        0.64
+      ],
+      "selling_ratio": [
+        0.185,
+        0.185,
+        0.185
+      ],
+      "admin_ratio": 0.05,
+      "research_ratio": 0.007,
+      "sales_tax_ratio": 0.02,
+      "financial_cost": [
+        1.4,
+        1.4,
+        1.4
+      ],
+      "credit_loss": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "subsidy": [
+        1,
+        1,
+        1
+      ],
+      "tax": 0.22,
+      "minority_profit": [
+        0,
+        0,
+        0
+      ],
+      "target_revenue": [
+        15,
+        14,
+        14
+      ],
+      "target_margin": [
+        -0.03,
+        -0.04,
+        -0.03
+      ],
+      "synergy": [
+        0,
+        0,
+        0
+      ],
+      "depreciation": [
+        3.5,
+        3.5,
+        3.5
+      ],
+      "maintenance_capex": [
+        5,
+        5,
+        5
+      ],
+      "growth_capex": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "working_capital_increase": [
+        3,
+        2,
+        1
+      ],
+      "lease_cash_gap": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "payout": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "integration_cash": [
+        2,
+        1,
+        0.5
+      ],
+      "pe": 10,
+      "investment_recovery": 0.25,
+      "shuhe_recovery": 0.5
+    },
+    {
+      "id": "unclosed",
+      "weight": 0.15,
+      "acquired": false,
+      "revenue": [
+        124,
+        128,
+        132
+      ],
+      "gross_margin": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "selling_ratio": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "admin_ratio": 0.045,
+      "research_ratio": 0.006,
+      "sales_tax_ratio": 0.02,
+      "financial_cost": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "credit_loss": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "subsidy": [
+        2,
+        2,
+        2
+      ],
+      "tax": 0.18,
+      "minority_profit": [
+        0,
+        0.1,
+        0.2
+      ],
+      "target_revenue": [
+        17,
+        18.5,
+        20
+      ],
+      "target_margin": [
+        0.025,
+        0.04,
+        0.06
+      ],
+      "synergy": [
+        0.4,
+        1.2,
+        2
+      ],
+      "depreciation": [
+        2.9,
+        3.2,
+        3.4
+      ],
+      "maintenance_capex": [
+        3.9,
+        3.9,
+        3.9
+      ],
+      "growth_capex": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "working_capital_increase": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "lease_cash_gap": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "payout": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "integration_cash": [
+        1,
+        0.3,
+        0
+      ],
+      "pe": 14,
+      "investment_recovery": 0.6,
+      "shuhe_recovery": 1
+    }
+  ]
+}
