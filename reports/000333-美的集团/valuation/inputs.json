@@ -1,0 +1,32 @@
+{
+  "asof": "2026-11-19", "end": "2029-11-19", "reference": 95.01,
+  "a_ex_treasury": 67.66336227, "h_ex_treasury": 6.50204,
+  "a_options_to_vest": 0.11982416, "option_price_proxy": 45,
+  "cb_par_cny_per_tranche": 74.90375, "cb_shares": [0.93922892, 0.78557114],
+  "income_tax": 0.18, "parent_interest": 0.985,
+  "entry_fee": 0.001, "exit_fee": 0.001, "dividend_tax": 0.0,
+  "buy_yield": 0.18, "sell_yield": 0.04, "liquid_yield_after_tax": 0.015,
+  "fy26_consumer_sales": 3250, "fy26_other_sales": 1360,
+  "fy26_reported_profit_proxy": 465, "old_interim_per_share": 0.50,
+  "a_old_interim_entitled": true,
+  "balance": {
+    "cash_equivalents": 981.34557, "current_deposits_proxy": 1399,
+    "long_deposits_proxy": 540, "pledged_deposits": 197.4,
+    "operating_buffer": 500, "nci_cash_buffer": 30,
+    "short_loans": 456.20855, "long_loans": 186.97966,
+    "current_debt_and_leases": 52.17491, "long_leases": 20.57595,
+    "after_q3_net_repurchase_cost": 22, "other_settlement_reserve": 35,
+    "trade_assets": 194.68614, "other_equity_assets": 25.24114, "associates": 48.51407,
+    "financial_trading_liability": 5.64707, "nav_parent_share": 0.95
+  },
+  "paths": {
+    "base": {"volume":[0.025,0.035,0.03],"asp":[0.005,0.005,0.005],"other_growth":[0.065,0.07,0.065],"margin":[0.104,0.107,0.108],"maint":[85,90,95],"growth":[36,42,46],"da":[99,103,107],"wc":[20,18,18],"ma":[15,15,15],"payout":0.65,"nav_fraction":0.75,"cb":[1,0]},
+    "up": {"volume":[0.05,0.055,0.045],"asp":[0.01,0.01,0.01],"other_growth":[0.12,0.12,0.10],"margin":[0.111,0.115,0.117],"maint":[90,96,104],"growth":[54,62,68],"da":[102,110,119],"wc":[24,26,25],"ma":[25,25,25],"payout":0.68,"nav_fraction":0.90,"cb":[1,1]},
+    "down": {"volume":[-0.06,-0.02,0.01],"asp":[-0.025,-0.01,0],"other_growth":[-0.025,0,0.025],"margin":[0.091,0.087,0.090],"maint":[80,82,85],"growth":[22,20,22],"da":[95,95,97],"wc":[90,55,20],"ma":[20,15,10],"payout":0.52,"nav_fraction":0.50,"cb":[0,0]}
+  },
+  "cases": [
+    {"path":"base","p":0.35,"pe":14},{"path":"base","p":0.20,"pe":10},
+    {"path":"up","p":0.15,"pe":17},{"path":"up","p":0.05,"pe":12},
+    {"path":"down","p":0.25,"pe":9}
+  ]
+}
